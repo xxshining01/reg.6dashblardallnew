@@ -1,0 +1,2232 @@
+[
+  {
+    "officeCode": "60000",
+    "officeName": "นครสวรรค์",
+    "province": "นครสวรรค์",
+    "officeType": "ปจ.",
+    "regionalCode": "60000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "200",
+    "officeName": "คปณ.บิ๊กซี นครสวรรค์ 2",
+    "province": "นครสวรรค์",
+    "officeType": "คปณ.",
+    "regionalCode": "60000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60001",
+    "officeName": "สวรรค์วิถี",
+    "province": "นครสวรรค์",
+    "officeType": "ปณฝ.",
+    "regionalCode": "60001",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60002",
+    "officeName": "จิรประวัติ",
+    "province": "นครสวรรค์",
+    "officeType": "ปณฝ.",
+    "regionalCode": "60002",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60010",
+    "officeName": "ศป.นครสวรรค์",
+    "province": "ศป.นครสวรรค์",
+    "officeType": "ศป.",
+    "regionalCode": "60010",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60110",
+    "officeName": "หนองบัว",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60120",
+    "officeName": "ชุมแสง",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60130",
+    "officeName": "พยุหะคีรี",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60140",
+    "officeName": "ตาคลี",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60150",
+    "officeName": "ลาดยาว",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "428",
+    "officeName": "คปณ.แม่วงก์",
+    "province": "นครสวรรค์",
+    "officeType": "คปณ.",
+    "regionalCode": "60150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60160",
+    "officeName": "ท่าตะโก",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60170",
+    "officeName": "โกรกพระ",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60180",
+    "officeName": "บรรพตพิสัย",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60190",
+    "officeName": "ตากฟ้า",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60210",
+    "officeName": "ช่องแค",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60220",
+    "officeName": "ไพศาลี",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60230",
+    "officeName": "เก้าเลี้ยว",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60240",
+    "officeName": "หนองเบน",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60240",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60250",
+    "officeName": "ทับกฤช",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60250",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60260",
+    "officeName": "จันเสน",
+    "province": "นครสวรรค์",
+    "officeType": "ปณภ.",
+    "regionalCode": "60260",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61000",
+    "officeName": "อุทัยธานี",
+    "province": "อุทัยธานี",
+    "officeType": "ปจ.",
+    "regionalCode": "61000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61110",
+    "officeName": "หนองฉาง",
+    "province": "อุทัยธานี",
+    "officeType": "ปณภ.",
+    "regionalCode": "61110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61120",
+    "officeName": "ทัพทัน",
+    "province": "อุทัยธานี",
+    "officeType": "ปณภ.",
+    "regionalCode": "61120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61130",
+    "officeName": "หนองขาหย่าง",
+    "province": "อุทัยธานี",
+    "officeType": "ปณภ.",
+    "regionalCode": "61130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61140",
+    "officeName": "บ้านไร่",
+    "province": "อุทัยธานี",
+    "officeType": "ปณภ.",
+    "regionalCode": "61140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61150",
+    "officeName": "สว่างอารมณ์",
+    "province": "อุทัยธานี",
+    "officeType": "ปณภ.",
+    "regionalCode": "61150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61160",
+    "officeName": "ลานสัก",
+    "province": "อุทัยธานี",
+    "officeType": "ปณภ.",
+    "regionalCode": "61160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61170",
+    "officeName": "เขาบางแกรก",
+    "province": "อุทัยธานี",
+    "officeType": "ปณภ.",
+    "regionalCode": "61170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61180",
+    "officeName": "เมืองการุ้ง",
+    "province": "อุทัยธานี",
+    "officeType": "ปณภ.",
+    "regionalCode": "61180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62000",
+    "officeName": "กำแพงเพชร",
+    "province": "กำแพงเพชร",
+    "officeType": "ปจ.",
+    "regionalCode": "62000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "89",
+    "officeName": "คปณ.ชากังราว",
+    "province": "กำแพงเพชร",
+    "officeType": "คปณ.",
+    "regionalCode": "62000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "94",
+    "officeName": "คปณ.เจริญสุข",
+    "province": "กำแพงเพชร",
+    "officeType": "คปณ.",
+    "regionalCode": "62000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62110",
+    "officeName": "พรานกระต่าย",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62120",
+    "officeName": "คลองขลุง",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62130",
+    "officeName": "ขาณุวรลักษบุรี",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62140",
+    "officeName": "สลกบาตร",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62150",
+    "officeName": "ไทรงาม",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62160",
+    "officeName": "ปากดง",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62170",
+    "officeName": "ลานกระบือ",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62180",
+    "officeName": "คลองลาน",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62190",
+    "officeName": "ทุ่งทราย",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "62210",
+    "officeName": "ระหาน",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณภ.",
+    "regionalCode": "62210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63000",
+    "officeName": "ตาก",
+    "province": "ตาก",
+    "officeType": "ปจ.",
+    "regionalCode": "63000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "154",
+    "officeName": "ปณย.ตาก",
+    "province": "ตาก",
+    "officeType": "ปณย.",
+    "regionalCode": "63000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63110",
+    "officeName": "แม่สอด",
+    "province": "ตาก",
+    "officeType": "ปณภ.",
+    "regionalCode": "63110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "58",
+    "officeName": "คปณ.ตลาดริมเมย",
+    "province": "ตาก",
+    "officeType": "คปณ.",
+    "regionalCode": "63110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63111",
+    "officeName": "อินทรคีรี",
+    "province": "ตาก",
+    "officeType": "ปณฝ.",
+    "regionalCode": "63111",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63120",
+    "officeName": "บ้านตาก",
+    "province": "ตาก",
+    "officeType": "ปณภ.",
+    "regionalCode": "63120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63130",
+    "officeName": "สามเงา",
+    "province": "ตาก",
+    "officeType": "ปณภ.",
+    "regionalCode": "63130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63140",
+    "officeName": "แม่ระมาด",
+    "province": "ตาก",
+    "officeType": "ปณภ.",
+    "regionalCode": "63140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63150",
+    "officeName": "ท่าสองยาง",
+    "province": "ตาก",
+    "officeType": "ปณภ.",
+    "regionalCode": "63150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63160",
+    "officeName": "พบพระ",
+    "province": "ตาก",
+    "officeType": "ปณภ.",
+    "regionalCode": "63160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63170",
+    "officeName": "อุ้มผาง",
+    "province": "ตาก",
+    "officeType": "ปณภ.",
+    "regionalCode": "63170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "63180",
+    "officeName": "วังเจ้า",
+    "province": "ตาก",
+    "officeType": "ปณภ.",
+    "regionalCode": "63180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64000",
+    "officeName": "สุโขทัย",
+    "province": "สุโขทัย",
+    "officeType": "ปจ.",
+    "regionalCode": "64000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64110",
+    "officeName": "สวรรคโลก",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64120",
+    "officeName": "ศรีสำโรง",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64130",
+    "officeName": "ศรีสัชนาลัย",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64140",
+    "officeName": "บ้านด่านลานหอย",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64150",
+    "officeName": "ทุ่งเสลี่ยม",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64160",
+    "officeName": "คีรีมาศ",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64170",
+    "officeName": "กงไกรลาศ",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64180",
+    "officeName": "ศรีนคร",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64190",
+    "officeName": "ท่าชัย",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64210",
+    "officeName": "เมืองเก่า",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64220",
+    "officeName": "บ้านสวน",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "64230",
+    "officeName": "บ้านใหม่ไชยมงคล",
+    "province": "สุโขทัย",
+    "officeType": "ปณภ.",
+    "regionalCode": "64230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65000",
+    "officeName": "พิษณุโลก",
+    "province": "พิษณุโลก",
+    "officeType": "ปจ.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "36",
+    "officeName": "คปณ.มหาวิทยาลัยนเรศวร",
+    "province": "พิษณุโลก",
+    "officeType": "คปณ.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "61",
+    "officeName": "คปณ.บรมไตรโลกนารถ",
+    "province": "พิษณุโลก",
+    "officeType": "คปณ.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "112",
+    "officeName": "คปณ.สี่แยกอินโดจีน",
+    "province": "พิษณุโลก",
+    "officeType": "คปณ.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "287",
+    "officeName": "คปณ.ท่าโพธิ์",
+    "province": "พิษณุโลก",
+    "officeType": "คปณ.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "303",
+    "officeName": "คปณ.พลายชุมพล",
+    "province": "พิษณุโลก",
+    "officeType": "คปณ.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65001",
+    "officeName": "อรัญญิก",
+    "province": "พิษณุโลก",
+    "officeType": "ปณฝ.",
+    "regionalCode": "65001",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65010",
+    "officeName": "ศป.พิษณุโลก",
+    "province": "ศป.พิษณุโลก",
+    "officeType": "ศป.",
+    "regionalCode": "65010",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65110",
+    "officeName": "บางกระทุ่ม",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65120",
+    "officeName": "นครไทย",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65130",
+    "officeName": "วังทอง",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65140",
+    "officeName": "บางระกำ",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65150",
+    "officeName": "พรหมพิราม",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65160",
+    "officeName": "วัดโบสถ์",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65170",
+    "officeName": "ชาติตระการ",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65180",
+    "officeName": "หนองตม",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65190",
+    "officeName": "เนินมะปราง",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65210",
+    "officeName": "เนินกุ่ม",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65220",
+    "officeName": "แก่งโสภา",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65230",
+    "officeName": "วัดพริก",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "65240",
+    "officeName": "ชุมแสงสงคราม",
+    "province": "พิษณุโลก",
+    "officeType": "ปณภ.",
+    "regionalCode": "65240",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66000",
+    "officeName": "พิจิตร",
+    "province": "พิจิตร",
+    "officeType": "ปจ.",
+    "regionalCode": "66000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66110",
+    "officeName": "ตะพานหิน",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66120",
+    "officeName": "บางมูลนาก",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66130",
+    "officeName": "โพทะเล",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66140",
+    "officeName": "สามง่าม",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "153",
+    "officeName": "ปณย.สามง่าม",
+    "province": "พิจิตร",
+    "officeType": "ปณย.",
+    "regionalCode": "66000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66150",
+    "officeName": "ทับคล้อ",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66160",
+    "officeName": "สากเหล็ก",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66170",
+    "officeName": "หัวดง",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66180",
+    "officeName": "วังทรายพูน",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66190",
+    "officeName": "โพธิ์ประทับช้าง",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66210",
+    "officeName": "วังตะกู",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66220",
+    "officeName": "กำแพงดิน",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "66230",
+    "officeName": "เขาทราย",
+    "province": "พิจิตร",
+    "officeType": "ปณภ.",
+    "regionalCode": "66230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67000",
+    "officeName": "เพชรบูรณ์",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปจ.",
+    "regionalCode": "67000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "20",
+    "officeName": "คปณ.มหาวิทยาลัยราชภัฎเพชรบูรณ์",
+    "province": "เพชรบูรณ์",
+    "officeType": "คปณ.",
+    "regionalCode": "67000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67110",
+    "officeName": "หล่มสัก",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67120",
+    "officeName": "หล่มเก่า",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67130",
+    "officeName": "วิเชียรบุรี",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67140",
+    "officeName": "หนองไผ่",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67150",
+    "officeName": "ชนแดน",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67160",
+    "officeName": "บึงสามพัน",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67170",
+    "officeName": "ศรีเทพ",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67180",
+    "officeName": "พุเตย",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67190",
+    "officeName": "ดงขุย",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67210",
+    "officeName": "วังชมภู",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67220",
+    "officeName": "นาเฉลียง",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67230",
+    "officeName": "วังพิกุล",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67240",
+    "officeName": "วังโป่ง",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67240",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67250",
+    "officeName": "ท่าพล",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67250",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67260",
+    "officeName": "น้ำหนาว",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67260",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67270",
+    "officeName": "เขาค้อ",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67270",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "67280",
+    "officeName": "แคมป์สน",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณภ.",
+    "regionalCode": "67280",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "60000-00",
+    "officeName": "สำนักงานไปรษณีย์เขต 6",
+    "province": "นครสวรรค์",
+    "officeType": "REGIONAL_HQ",
+    "regionalCode": "60000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "6837",
+    "officeName": "นครสวรรค์ Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7527",
+    "officeName": "จิรประวัติ Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60002",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7528",
+    "officeName": "หนองบัว Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7530",
+    "officeName": "พยุหะคีรี Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7531",
+    "officeName": "ตาคลี Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7532",
+    "officeName": "ลาดยาว Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7533",
+    "officeName": "ท่าตะโก Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7538",
+    "officeName": "ไพศาลี Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7539",
+    "officeName": "เก้าเลี้ยว Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7540",
+    "officeName": "หนองเบน Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60240",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "6838",
+    "officeName": "อุทัยธานี Pick Up Service",
+    "province": "อุทัยธานี",
+    "officeType": "Pick Up Service",
+    "regionalCode": "61000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7544",
+    "officeName": "ทัพทัน Pick Up Service",
+    "province": "อุทัยธานี",
+    "officeType": "Pick Up Service",
+    "regionalCode": "61120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7547",
+    "officeName": "สว่างอารมณ์ Pick Up Service",
+    "province": "อุทัยธานี",
+    "officeType": "Pick Up Service",
+    "regionalCode": "61150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7550",
+    "officeName": "เมืองการุ้ง Pick Up Service",
+    "province": "อุทัยธานี",
+    "officeType": "Pick Up Service",
+    "regionalCode": "61180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "6839",
+    "officeName": "กำแพงเพชร Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7551",
+    "officeName": "พรานกระต่าย Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7552",
+    "officeName": "คลองขลุง Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7553",
+    "officeName": "ขาณุวรลักษบุรี Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7554",
+    "officeName": "สลกบาตร Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7555",
+    "officeName": "ไทรงาม Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7556",
+    "officeName": "ปากดง Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7557",
+    "officeName": "ลานกระบือ Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7558",
+    "officeName": "คลองลาน Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7559",
+    "officeName": "ทุ่งทราย Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7560",
+    "officeName": "ระหาน Pick Up Service",
+    "province": "กำแพงเพชร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "62210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "6840",
+    "officeName": "ตาก Pick Up Service",
+    "province": "ตาก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "63000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7561",
+    "officeName": "แม่สอด Pick Up Service",
+    "province": "ตาก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "63110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7563",
+    "officeName": "บ้านตาก Pick Up Service",
+    "province": "ตาก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "63120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7565",
+    "officeName": "แม่ระมาด Pick Up Service",
+    "province": "ตาก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "63140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7566",
+    "officeName": "ท่าสองยาง Pick Up Service",
+    "province": "ตาก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "63150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7568",
+    "officeName": "อุ้มผาง Pick Up Service",
+    "province": "ตาก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "63170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7569",
+    "officeName": "วังเจ้า Pick Up Service",
+    "province": "ตาก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "63180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "6841",
+    "officeName": "สุโขทัย Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7570",
+    "officeName": "สวรรคโลก Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7571",
+    "officeName": "ศรีสำโรง Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7572",
+    "officeName": "ศรีสัชนาลัย Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7573",
+    "officeName": "บ้านด่านลานหอย Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7575",
+    "officeName": "คีรีมาศ Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7576",
+    "officeName": "กงไกรลาศ Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7577",
+    "officeName": "ศรีนคร Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7578",
+    "officeName": "ท่าชัย Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7579",
+    "officeName": "เมืองเก่า Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7580",
+    "officeName": "บ้านสวน Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7581",
+    "officeName": "บ้านใหม่ไชยมงคล Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "6842",
+    "officeName": "พิษณุโลก Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7583",
+    "officeName": "บางกระทุ่ม Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7584",
+    "officeName": "นครไทย Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7585",
+    "officeName": "วังทอง Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7586",
+    "officeName": "บางระกำ Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7587",
+    "officeName": "พรหมพิราม Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7588",
+    "officeName": "วัดโบสถ์ Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7589",
+    "officeName": "ชาติตระการ Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7590",
+    "officeName": "หนองตม Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7591",
+    "officeName": "เนินมะปราง Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7592",
+    "officeName": "เนินกุ่ม Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7593",
+    "officeName": "แก่งโสภา Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7594",
+    "officeName": "วัดพริก Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7595",
+    "officeName": "ชุมแสงสงคราม Pick Up Service",
+    "province": "พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65240",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "6843",
+    "officeName": "พิจิตร Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7596",
+    "officeName": "ตะพานหิน Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7597",
+    "officeName": "บางมูลนาก Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7598",
+    "officeName": "โพทะเล Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7599",
+    "officeName": "สามง่าม Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7600",
+    "officeName": "ทับคล้อ Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7601",
+    "officeName": "สากเหล็ก Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7602",
+    "officeName": "หัวดง Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66170",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7603",
+    "officeName": "วังทรายพูน Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7604",
+    "officeName": "โพธิ์ประทับช้าง Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7605",
+    "officeName": "วังตะกู Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66210",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7606",
+    "officeName": "กำแพงดิน Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66220",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7607",
+    "officeName": "เขาทราย Pick Up Service",
+    "province": "พิจิตร",
+    "officeType": "Pick Up Service",
+    "regionalCode": "66230",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "6844",
+    "officeName": "เพชรบูรณ์ Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7608",
+    "officeName": "หล่มสัก Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7610",
+    "officeName": "วิเชียรบุรี Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7611",
+    "officeName": "หนองไผ่ Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7612",
+    "officeName": "ชนแดน Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7613",
+    "officeName": "บึงสามพัน Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7620",
+    "officeName": "วังโป่ง Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67240",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7621",
+    "officeName": "ท่าพล Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67250",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7622",
+    "officeName": "น้ำหนาว Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67260",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7623",
+    "officeName": "เขาค้อ Pick Up Service",
+    "province": "เพชรบูรณ์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "67270",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "8024",
+    "officeName": "ปณอ.พบพระ 102 (คีรีราษฎร์)",
+    "province": "ตาก",
+    "officeType": "ปณอ.",
+    "regionalCode": "63160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "8018",
+    "officeName": "ปณอ.พิษณุโลก 103 (บ้านกร่าง)",
+    "province": "พิษณุโลก",
+    "officeType": "ปณอ.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "8013",
+    "officeName": "ปณอ.คลองขลุง 102 (โพธิ์ทอง)",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณอ.",
+    "regionalCode": "62120",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "8014",
+    "officeName": "ปณอ.พิษณุโลก 110 (กองพันซ่อมบำรุงที่ 23)",
+    "province": "พิษณุโลก",
+    "officeType": "ปณอ.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7858",
+    "officeName": "ศป.พล. Pick Up Service",
+    "province": "ศป.พิษณุโลก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "65010",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7574",
+    "officeName": "ทุ่งเสลี่ยม Pick Up Service",
+    "province": "สุโขทัย",
+    "officeType": "Pick Up Service",
+    "regionalCode": "64150",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "8023",
+    "officeName": "ปณอ.พบพระ 101 (ช่องแคบ)",
+    "province": "ตาก",
+    "officeType": "ปณอ.",
+    "regionalCode": "63160",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7526",
+    "officeName": "สวรรค์วิถี Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60001",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7535",
+    "officeName": "บรรพตพิสัย Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60180",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7536",
+    "officeName": "ตากฟ้า Pick Up Service",
+    "province": "นครสวรรค์",
+    "officeType": "Pick Up Service",
+    "regionalCode": "60190",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "8074",
+    "officeName": "ปณอ.หล่มสัก 102 (บ้านกลาง)",
+    "province": "เพชรบูรณ์",
+    "officeType": "ปณอ.",
+    "regionalCode": "67110",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "450",
+    "officeName": "ปณย.พิจิตร",
+    "province": "พิจิตร",
+    "officeType": "ปณย.",
+    "regionalCode": "66000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "9117",
+    "officeName": "กำแพงเพชร 201 (ปตท.หนองปลิง)",
+    "province": "กำแพงเพชร",
+    "officeType": "ปณร.",
+    "regionalCode": "62000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "9134",
+    "officeName": "พิษณุโลก 202 (ธรรมบูชา)",
+    "province": "พิษณุโลก",
+    "officeType": "ปณร.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "9164",
+    "officeName": "ปณร.พิษณุโลก 203 (มิตรภาพ)",
+    "province": "พิษณุโลก",
+    "officeType": "ปณร.",
+    "regionalCode": "65000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "9279",
+    "officeName": "ปณร.ตาก 201 (น้ำรึม)",
+    "province": "ตาก",
+    "officeType": "ปณร.",
+    "regionalCode": "63000",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7546",
+    "officeName": "บ้านไร่ Pick Up Service",
+    "province": "อุทัยธานี",
+    "officeType": "Pick Up Service",
+    "regionalCode": "61140",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "7564",
+    "officeName": "สามเงา Pick Up Service",
+    "province": "ตาก",
+    "officeType": "Pick Up Service",
+    "regionalCode": "63130",
+    "coordinates": null,
+    "geoStatus": "NOT_PROVIDED",
+    "isVirtual": false
+  },
+  {
+    "officeCode": "SYSTEM_OTHER_REVENUE",
+    "officeName": "รายได้อื่น",
+    "province": null,
+    "officeType": "SYSTEM_AGGREGATE",
+    "regionalCode": null,
+    "coordinates": null,
+    "geoStatus": "NOT_APPLICABLE",
+    "isVirtual": true
+  }
+]

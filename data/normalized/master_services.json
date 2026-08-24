@@ -1,0 +1,3178 @@
+[
+  {
+    "sapAccountCode": "40101001",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์ (ในประเทศ)",
+    "serviceItem": "รายได้ค่าจำหน่ายรอยประทับไปรษณียากร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40101002",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์ (ในประเทศ)",
+    "serviceItem": "รายได้ค่าจำหน่ายตราไปรษณียากร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40101003",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์ (ในประเทศ)",
+    "serviceItem": "รายได้ค่าส่งไปรษณียภัณฑ์ในประเทศ - ธรรมดา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40101004",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์ (ในประเทศ)",
+    "serviceItem": "รายได้ค่าส่งไปรษณียภัณฑ์ในประเทศ - ไม่มีจ่าหน้า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40101005",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์ (ในประเทศ)",
+    "serviceItem": "รายได้ค่าส่งไปรษณียภัณฑ์ในประเทศ - ยกเว้นรับประกัน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40101006",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์ (ในประเทศ)",
+    "serviceItem": "รายได้ค่าจำหน่ายซอง Prepaid",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40102001",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการไปรษณียภัณฑ์ลงทะเบียน-ในประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณียภัณฑ์ในประเทศ - ลงทะเบียน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40102002",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการไปรษณียภัณฑ์ลงทะเบียน-ในประเทศ",
+    "serviceItem": "รายได้เงินรางวัลจากการใช้ระบบ Track & Trace -ไปรษณียภัณฑ์ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40102003",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการไปรษณียภัณฑ์ลงทะเบียน-ในประเทศ",
+    "serviceItem": "รายได้บริการไปรษณีย์ลงทะเบียน - ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40103001",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการพิเศษ (นำจ่ายด่วน,รับรอง,รับประกัน,ตอบรับ)",
+    "serviceItem": "รายได้บริการนำจ่ายด่วน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40103002",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการพิเศษ (นำจ่ายด่วน,รับรอง,รับประกัน,ตอบรับ)",
+    "serviceItem": "รายได้ค่าบริการไปรษณียภัณฑ์ในประเทศ - รับรอง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40103003",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการพิเศษ (นำจ่ายด่วน,รับรอง,รับประกัน,ตอบรับ)",
+    "serviceItem": "รายได้บริการไปรษณีย์รับรอง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40103004",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการพิเศษ (นำจ่ายด่วน,รับรอง,รับประกัน,ตอบรับ)",
+    "serviceItem": "รายได้ค่าบริการไปรษณียภัณฑ์ในประเทศ - รับประกัน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40103005",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการพิเศษ (นำจ่ายด่วน,รับรอง,รับประกัน,ตอบรับ)",
+    "serviceItem": "รายได้บริการไปรษณีย์รับประกัน - ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40103006",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการพิเศษ (นำจ่ายด่วน,รับรอง,รับประกัน,ตอบรับ)",
+    "serviceItem": "รายได้บริการตอบรับ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40103007",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการพิเศษ (นำจ่ายด่วน,รับรอง,รับประกัน,ตอบรับ)",
+    "serviceItem": "รายได้บริการธุรกิจตอบรับ - ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40103008",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้บริการพิเศษ (นำจ่ายด่วน,รับรอง,รับประกัน,ตอบรับ)",
+    "serviceItem": "รายได้ค่าธรรมเนียมบริการธุรกิจตอบรับ - ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104001",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้ค่าขนส่งไปรษณีย์ภัณฑ์ - ลูกค้าธุรกิจ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104002",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้อื่น - บริการขนส่งไปรษณีย์ภัณฑ์ - ลูกค้าธุรกิจ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104003",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการ Messenger Post -Document",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104004",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้ค่าธรรมเนียมบริการฝากส่งเป็นเงินเชื่อ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104005",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้จำหน่ายวิมัยบัตร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104006",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้นำจ่ายพัสดุย่อย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104007",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการประทับตราเพื่อการเผยแพร่และโฆษณา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104008",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการฝากส่งหนังสือพิมพ์ตราสิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104009",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้ค่าธรรมเนียมหนังสือพิมพ์ตราสิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104010",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการฝากส่งงบการเงินทางไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104011",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้ค่าปฎิบัติการไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104012",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการสร้างเส้นทางเอกสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104013",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการประทับลายมือชื่อดิจิทัล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104014",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการประทับตรานิติบุคคล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104015",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการประทับตราเวลา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104016",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการจัดเก็บข้อมูลธุรกรรม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104017",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการกล่องจดหมายดิจิทัล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104018",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการจัดพิมพ์และส่งเอกสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40104019",
+    "category": "REVENUE",
+    "businessGroup": "1.1 รายได้กลุ่มบริการไปรษณียภัณฑ์",
+    "evmService": "รายได้ธุรกิจสื่อสารอื่นๆ",
+    "serviceItem": "รายได้บริการระบบพร้อมโพสต์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40201001",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้พัสดุไปรษณีย์ในประเทศ",
+    "serviceItem": "รายได้ค่าส่งพัสดุไปรษณีย์ในประเทศ - ธรรมดา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40201002",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้พัสดุไปรษณีย์ในประเทศ",
+    "serviceItem": "รายได้ค่าส่งพัสดุไปรษณีย์ในประเทศ - รับประกัน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40202001",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณีย์ด่วนพิเศษในประเทศ-ซอง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40202002",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณีย์ด่วนพิเศษในประเทศ-กล่อง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40202003",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "รายได้ค่าขนส่งพัสดุไปรษณีย์ - ลูกค้าธุรกิจ(ย้ายจากขนส่งอื่นๆ)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40202004",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "รายได้เงินรางวัลจากการใช้ระบบ Track & Trace -พัสดุในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40202005",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "รายได้ค่าขนส่ง D-Packet ในประเทศ (ย้ายจากขนส่งอื่นๆ)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40202006",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "รายได้ค่าปฏิบัติการ D-Packet ในประเทศ (ย้ายจากขนส่งอื่นๆ)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40203001",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์โลจิสติกส์",
+    "serviceItem": "รายได้ค่าขนส่ง EMS Jumbo (เดิมโลจีสโพสต์LOGISPOST)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40203002",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์โลจิสติกส์",
+    "serviceItem": "รายได้บริการขนส่งโลจิสติกส์ (THP Logistics)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40203003",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์โลจิสติกส์",
+    "serviceItem": "รายได้บริการคลังสินค้าโลจิสติกส์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40203004",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์โลจิสติกส์",
+    "serviceItem": "รายได้อื่น - บริการขนส่งโลจิสติกส์ (THP Logistics)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40202007",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้บริการไปรษณีย์ eCO -Post",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204001",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้อื่น-บริการขนส่ง EMS Jumbo (เดิมโลจีสโพสต์ LOGISPOST)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204002",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้อื่น-บริการขนส่งพัสดุไปรษณีย์ - ลูกค้าธุรกิจ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204003",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าธรรมเนียมรับฝากนอกที่ทำการ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204004",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้บริการ Messenger Post - Package",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204005",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าจัดส่งหนังสือเดินทาง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204006",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าส่งไปรษณีย์ Same -Day Post",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204007",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าส่งคืนพัสดุในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204008",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าเก็บรักษาพัสดุ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204009",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าปฏิบัติการศุลกากร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204010",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าดำเนินพิธีการศุลกากร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204011",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าบริการเก็บรักษาสิ่งของ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204012",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้บริการ Flexible Delivery",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40204013",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้ธุรกิจขนส่งอื่นๆ (รวม eCo Post)",
+    "serviceItem": "รายได้ค่าตอบแทนบริการโลจิสติกส์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301001",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณียภัณฑ์ระหว่างประเทศ - ธรรมดา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301002",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณียภัณฑ์ระหว่างประเทศ - ไม่มีจ่าหน้า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301003",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณียภัณฑ์ระหว่างประเทศ - รับประกัน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301004",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณียภัณฑ์ระหว่างประเทศ e-packet",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301005",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณีภัณฑ์ระหว่างประเทศ Direct Entry-ธรรมดา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301006",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณีภัณฑ์ระหว่างประเทศ Transit - ธรรมดา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301007",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ปรับปิดตราไปรษณียากรไม่พออัตรา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301008",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ปรับจดหมายนอกทางไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301009",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้บริการไปรษณีย์รับประกัน - ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301010",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าบริการธุรกิจตอบรับ - ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40301011",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "จดหมาย/ไปรษณียบัตร/ของตีพิมพ์-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าธรรมเนียมบริการธุรกิจตอบรับ - ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302001",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณียภัณฑ์ลงทะเบียน-ระหว่างประเทศ",
+    "serviceItem": "รายได้บริการไปรษณียภัณฑ์ระหว่างประเทศ - ลงทะเบียน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302002",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณียภัณฑ์ลงทะเบียน-ระหว่างประเทศ",
+    "serviceItem": "รายได้บริการไปรษณีภัณฑ์ระหว่างประเทศ Direct Entry - ลงทะเบียน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302003",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณียภัณฑ์ลงทะเบียน-ระหว่างประเทศ",
+    "serviceItem": "รายได้บริการไปรษณีภัณฑ์ระหว่างประเทศ Transit - ลงทะเบียน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302004",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณียภัณฑ์ลงทะเบียน-ระหว่างประเทศ",
+    "serviceItem": "รายได้เงินรางวัลจากการใช้ระบบ Track & Trace -ไปรษณียภัณฑ์ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302005",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณียภัณฑ์ลงทะเบียน-ระหว่างประเทศ",
+    "serviceItem": "รายได้บริการไปรษณีย์ลงทะเบียน - ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302006",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้พัสดุไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งพัสดุไปรษณีย์ระหว่างประเทศ - ธรรมดา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302007",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้พัสดุไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งพัสดุไปรษณีย์ระหว่างประเทศ - รับประกัน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302008",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้พัสดุไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "รายได้บริการรับส่งสินค้าระหว่างประเทศ(Logispost world)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302009",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้พัสดุไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "รายได้ส่งคืนพัสดุระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302010",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้พัสดุไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ Direct Entry-พัสดุไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302011",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้พัสดุไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ Transit-พัสดุไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302012",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้พัสดุไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "รายได้บริการโลจิสติกส์ครบวงจร-ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40302013",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้พัสดุไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "รายได้ไปรษณ๊ย์ รปท. Direct Entry-ePacket",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40303001",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปษณีย์ด่วนพิเศษระหว่างประเทศ-กล่อง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40303002",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปษณีย์ด่วนพิเศษระหว่างประเทศ-ซอง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40303003",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าส่งไปรษณีย์ด่วนพิเศษระหว่างประเทศ - One Price Box",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40303004",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ระหว่างประเทศ",
+    "serviceItem": "รายได้บริการ Courier Post",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40303005",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ระหว่างประเทศ",
+    "serviceItem": "รายได้เงินรางวัลจากการใช้ระบบ Track & Trace -พัสดุระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40303006",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ระหว่างประเทศ",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ Direct Entry-ems",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40303007",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ระหว่างประเทศ",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ transit-Ems world",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40304001",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการธนาณัติระหว่างประเทศ",
+    "serviceItem": "รายได้ค่าธรรมเนียมธนาณัติอิเล็กทรอนิกส์-ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40304002",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการธนาณัติระหว่างประเทศ",
+    "serviceItem": "รายได้บริการการเงินอื่น - ธนาณัติระหว่างประเทศสิ้นสภาพ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40305001",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้บริการธนาณัติเวสเทิร์นยูเนี่ยน",
+    "serviceItem": "รายได้ค่าธรรมเนียมธนาณัติระหว่างประเทศ - เวสเทิร์นยูเนี่ยน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306001",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - ค่าขนส่งผ่าน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306002",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - ค่านำจ่ายในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306003",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - บริการธุรกิจตอบรับ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306004",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - วิมัยบัตร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306005",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ -บริการไปรษณียภัณฑ์ไม่จ่าหน้า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306006",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้งไปรษณีย์ระหว่างประเทศ - ค่านำจ่าย e- packet ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306007",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - อื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306008",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - พัสดุไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306009",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - ค่าขนส่งภายใน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306010",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - ค่านำจ่ายไปรษณีย์ด่วนพิเศษ (Package)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306011",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ไปรษณีย์ระหว่างประเทศ - ค่านำจ่ายในประเทศด่วนพิเศษ (Document)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306012",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ค่าตอบแทน-บริการระหว่างประเทศอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40306013",
+    "category": "REVENUE",
+    "businessGroup": "1.3 รายได้กลุ่มบริการระหว่างประเทศ",
+    "evmService": "รายได้ค่าส่วนแบ่งไปรษณีย์",
+    "serviceItem": "รายได้ค่าส่วนแบ่งบริการธนาณัติอิเล็กทรอนิกส์ระหว่างประเทศ -ค่าทำการธนาณัติ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40401001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้จำหน่ายตราไปรษณียากรเพื่อการสะสม",
+    "serviceItem": "รายได้ค่าจำหน่ายตราไปรษณียากรเพื่อการสะสม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40401002",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้จำหน่ายตราไปรษณียากรเพื่อการสะสม",
+    "serviceItem": "รายได้ค่าจำหน่ายหนังสือตราไปรษณียากร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40402001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้จำหน่ายสิ่งสะสมและอุปกรณ์สะสม",
+    "serviceItem": "รายได้จำหน่ายสิ่งสะสม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40403001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้ค่าพิมพ์ภาพบนแผ่นตราไปรษณียากรส่วนตัว",
+    "serviceItem": "รายได้ค่าพิมพ์ภาพบนแผ่นตราไปรษณียากรส่วนตัว",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40404001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้ค่าจำหน่ายสินค้าไปรษณีย์",
+    "serviceItem": "รายได้จำหน่ายสินค้าไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40404002",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้ค่าจำหน่ายสินค้าไปรษณีย์",
+    "serviceItem": "รายได้จำหน่ายสินค้าไปรษณีย์ OEM",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40404003",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้ค่าจำหน่ายสินค้าไปรษณีย์",
+    "serviceItem": "รายได้จากการจำหน่ายสินค้า - NFT Stamp",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40405001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้จากการจำหน่ายสินค้าเบ็ดเตล็ด",
+    "serviceItem": "รายได้ค่าธรรมเนียมการจัดจำหน่าย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40405002",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้จากการจำหน่ายสินค้าเบ็ดเตล็ด",
+    "serviceItem": "รายได้จากการจำหน่ายสินค้าเบ็ดเตล็ด",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้บริการตัวแทน - สำนักงานสลากกินแบ่งรัฐบาล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406002",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้บริการตัวแทน - การจำหน่ายสินค้าชุมชน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406003",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้บริการตัวแทน - โครงการของรัฐ / เอกชน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406004",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้บริการตัวแทนอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406005",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้ค่าธรรมเนียมตู้ไปรษณีย์เช่า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406006",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้ค่าตอบแทนจากการไปรษณีย์ต่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406007",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้บริการหุ้มห่อ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406008",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้ตอบแทนจากการรับฝากขาย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406009",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้บริการไปรษณีย์เบ็ดเตล็ด",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40406010",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "รายได้ Retail & Solutions",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "47901001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "ส่วนลดบริการไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "47901002",
+    "category": "REVENUE",
+    "businessGroup": "1.4.1 รายได้กลุ่มธุรกิจค้าปลีก",
+    "evmService": "รายได้กลุ่มธุรกิจค้าปลีกอื่น",
+    "serviceItem": "ส่วนลดจ่ายค่าไปราณียากรด้วยเครืองประทับ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40501001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้บริการธนาณัติในประเทศ",
+    "serviceItem": "รายได้ค่าธรรมเนียมธนาณัติ - ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40502001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้บริการธนาณัติออนไลน์",
+    "serviceItem": "รายได้ค่าธรรมเนียมธนาณัติ - ออนไลน์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40503001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้บริการ Pay at Post",
+    "serviceItem": "รายได้ค่าธรรมเนียมธนาณัติ - เก็บเงินปลายทาง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40503002",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้บริการ Pay at Post",
+    "serviceItem": "รายได้ค่าธรรมเนียมธนาณัติพิเศษ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40503003",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้บริการ Pay at Post",
+    "serviceItem": "รายได้ค่าตอบแทนบริการตัวแทนรับชำระเงิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40504001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "บริการตัวแทน(Agency Banking)",
+    "serviceItem": "รายได้ค่าตอบแทนบริการ Agency Banking",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40503004",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้ธุรกิจการเงินอื่นๆ",
+    "serviceItem": "รายได้ค่าตอบแทนตัวแทนรับชำระ -ธนาณัติ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40506001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้ธุรกิจการเงินอื่นๆ",
+    "serviceItem": "รายได้ค่าตอบแทนบริการประกันภัย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40506002",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้ธุรกิจการเงินอื่นๆ",
+    "serviceItem": "รายได้ค่านายหน้าประกันวินาศภัย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40506003",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้ธุรกิจการเงินอื่นๆ",
+    "serviceItem": "รายได้ค่านายหน้าประกันชีวิต",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40506004",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้ธุรกิจการเงินอื่นๆ",
+    "serviceItem": "รายได้อื่น - นายหน้าประกัน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40505001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้ธุรกิจการเงินอื่นๆ",
+    "serviceItem": "รายได้ค่าธรรมเนียมบริการกระเป๋าเงินไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40507001",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "บริการ COD",
+    "serviceItem": "รายได้ค่าบริการเก็บเงินที่อย่ผูรับ (COD)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40507002",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "รายได้ธุรกิจการเงินอื่นๆ",
+    "serviceItem": "รายได้บริการการเงินอื่น - อื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40601001",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "รายได้ค่าใช้สถานที่และอุปกรณ์",
+    "serviceItem": "รายได้ค่าใช้สถานที่และอุปกรณ์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40602001",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "รายได้ค่าธรรมเนียมการจ้างดำเนินการไปรษณีย์",
+    "serviceItem": "รายได้ค่าธรรมเนียมจากการจ้างดำเนินงานไปรษณีย์ ปณร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40602002",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "รายได้ค่าธรรมเนียมการจ้างดำเนินการไปรษณีย์",
+    "serviceItem": "รายได้จากการจัดการธุรกิจ ปณร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40602003",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "รายได้ค่าธรรมเนียมการจ้างดำเนินการไปรษณีย์",
+    "serviceItem": "รายได้จากการขนส่งเมล์ ปณร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40602004",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "รายได้ค่าธรรมเนียมการจ้างดำเนินการไปรษณีย์",
+    "serviceItem": "รายได้จากการซ่อม/แก้ไขเครื่องคอมพิวเตอร์ ปณร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40602005",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "รายได้ค่าธรรมเนียมการจ้างดำเนินการไปรษณีย์",
+    "serviceItem": "รายได้จากการดำเนินการไปรษณีย์อื่นๆ ปณร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40603001",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "รายได้จากการจำหน่ายวารสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40603002",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "รายได้ค่าโฆษณาในวารสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40603003",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "รายได้อื่นวารสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40604001",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "รายได้ค่าใช้สถานที่และอุปกรณ์อื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40604002",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "รายได้ค่าสาธารณูปโภค",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40604003",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "รายได้จากการรับดำเนินงานอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40604004",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "หนี้สูญรับคืน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40605001",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "รายได้ลิขสิทธิ์ สิทธิบัตรและเครื่องหมายการค้า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40605002",
+    "category": "REVENUE",
+    "businessGroup": "1.5 ธุรกิจอื่นๆ",
+    "evmService": "อื่นๆ",
+    "serviceItem": "รายได้จากร้าน POST CAFE",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48001001",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "ดอกเบี้ยรับ-สถาบันการเงิน(เงินฝากธนาคาร)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48001002",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "ดอกเบี้ยรับอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48002001",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "เงินปันผลรับจากเงินลงทุน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003001",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "กำไรจากการจำหน่ายสินทรัพย์ถาวร (net กับ ขาดทุนฯ แล้ว)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40501002",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "รายได้บริการการเงินอื่น - ธนาณัติในประเทศสิ้นสภาพ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "40502002",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "รายได้บริการการเงินอื่น - ธนาณัติออนไลน์สิ้นสภาพ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003008",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "รายได้จากการขายเศษซาก",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003009",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "รายได้ค่าปรับผิดสัญญา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003010",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "เงินอุดหนุนจากรัฐบาล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003011",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "รายได้อื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003013",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "รายได้อื่น HRIS",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48099001",
+    "category": "REVENUE",
+    "businessGroup": "1.6 รายได้อื่น",
+    "evmService": "รายได้อื่น",
+    "serviceItem": "บัญชีพักรายรับจากการจำหน่ายสินทรัพย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101001",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "เงินเดือน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101002",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าจ้างลูกจ้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101003",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าจ้างบุคคลภายนอกเป็นกรณีพิเศษ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101004",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าล่วงเวลาจากการทำงาน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101005",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าปฏิบัติงานในวันหยุดพักผ่อน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101006",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าล่วงเวลา-ลูกจ้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101007",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าปฏิบัติงานในวันหยุดพักผ่อน-ลูกจ้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101008",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "เงินเพิ่มปกติ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101009",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "เงินเพิ่มพิเศษ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101010",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "เงินเพิ่มพิเศษ-ลูกจ้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101011",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "เงินเพิ่มพิเศษเต็มขั้นสูง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101012",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "เงินผลประโยชน์ตอบแทนคณะกรรมการ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101013",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าครองชีพ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101014",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "โบนัส",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101015",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าจ้างเหมาช่วยงานด้านไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101016",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าจ้างเหมาช่วยงานด้านไปรษณีย์- EMS Jumbo (เดิม Logispost)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101017",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าจ้างช่วยงาน THP Logistics",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101018",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าจ้างช่วยงานทั่วไป",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50101019",
+    "category": "EXPENSE",
+    "businessGroup": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "evmService": "2.1 ค่าใช้จ่ายตอบแทนแรงงาน",
+    "serviceItem": "ค่าปฏิบัติงานพิเศษ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201001",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "เงินสมทบกองทุนบำเหน็จ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201002",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "ค่ารักษาพยาบาล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201003",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "ค่ายาและเวชภัณฑ์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201004",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "เงินช่วยเหลือเกี่ยวกับบุตร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201005",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "เงินช่วยเหลือในเหตุการณ์พิเศษ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201006",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "เงินชดเชยทดแทนฯ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201007",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "เงินชดเชยทดแทนฯ -ลูกจ้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201008",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "เงินสมทบกองทุนสำรองเลี้ยงชีพ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201009",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "ค่าเครื่องแบบ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201010",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "ค่าส่งเสริมกีฬาและบันเทิง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201011",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "ค่าเช่าบ้านพัก",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201012",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "ภาษีเงินได้ที่ออกให้ผู้ปฏิบัติงาน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201013",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "เงินสมทบกองทุนประกันสังคม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201098",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "ค่าสวัสดิการอื่น-ลูกจ้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50201099",
+    "category": "EXPENSE",
+    "businessGroup": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "evmService": "2.2 ค่าใช้จ่ายสวัสดิการ",
+    "serviceItem": "ค่าสวัสดิการอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50301001",
+    "category": "EXPENSE",
+    "businessGroup": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "evmService": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "serviceItem": "ค่าพัฒนาและฝึกอบรมบุคลากร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50301002",
+    "category": "EXPENSE",
+    "businessGroup": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "evmService": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "serviceItem": "ค่าพัฒนาและฝึกอบรมบุคลากร-สิทธิประโยชน์เพิ่มทางภาษี",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50301003",
+    "category": "EXPENSE",
+    "businessGroup": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "evmService": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "serviceItem": "ค่าใช้จ่ายนักเรียนทุนในประเทศ-สิทธิประโยชน์เพิ่มทางภาษี",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50301005",
+    "category": "EXPENSE",
+    "businessGroup": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "evmService": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "serviceItem": "ค่าใช้จ่ายนักเรียนทุนต่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50301099",
+    "category": "EXPENSE",
+    "businessGroup": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "evmService": "2.3 ค่าใช้จ่ายในการพัฒนาและฝึกอบรมบุคลากร",
+    "serviceItem": "ค่าใช้จ่ายนักเรียนทุนในประเทศอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50401001",
+    "category": "EXPENSE",
+    "businessGroup": "2.4 ค่าสาธารณูปโภค",
+    "evmService": "2.4 ค่าสาธารณูปโภค",
+    "serviceItem": "ค่าน้ำประปา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50401002",
+    "category": "EXPENSE",
+    "businessGroup": "2.4 ค่าสาธารณูปโภค",
+    "evmService": "2.4 ค่าสาธารณูปโภค",
+    "serviceItem": "ค่าไฟฟ้า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50401003",
+    "category": "EXPENSE",
+    "businessGroup": "2.4 ค่าสาธารณูปโภค",
+    "evmService": "2.4 ค่าสาธารณูปโภค",
+    "serviceItem": "ค่าโทรศัพท์และโทรสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50401099",
+    "category": "EXPENSE",
+    "businessGroup": "2.4 ค่าสาธารณูปโภค",
+    "evmService": "2.4 ค่าสาธารณูปโภค",
+    "serviceItem": "ค่าสาธารณูปโภคอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501001",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่าที่ดิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501002",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่าที่ราชพัสดุ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501003",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่าอาคารสถานที่",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501004",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่าเครื่องใช้สำนักงาน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501005",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่ายานพาหนะ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501006",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่ารถยนต์-ส่วนที่เป็นรายจ่ายต้องห้าม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501007",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่า/ค่าใช้บริการดิจิทัล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501008",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่าใช้ระบบ Track and Trace",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501009",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่าเครือข่าย – ปณร.",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501010",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่าอุปกรณ์ระบบปฏิบัติการ (TND)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50501099",
+    "category": "EXPENSE",
+    "businessGroup": "2.5 ค่าเช่า",
+    "evmService": "2.5 ค่าเช่า",
+    "serviceItem": "ค่าเช่าอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50601001",
+    "category": "EXPENSE",
+    "businessGroup": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "evmService": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "serviceItem": "ค่าใช้จ่ายเผยแพร่และประชาสัมพันธ์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50601002",
+    "category": "EXPENSE",
+    "businessGroup": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "evmService": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "serviceItem": "ค่าโฆษณา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50601003",
+    "category": "EXPENSE",
+    "businessGroup": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "evmService": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "serviceItem": "ค่าส่งเสริมการตลาดและการขาย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50601004",
+    "category": "EXPENSE",
+    "businessGroup": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "evmService": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "serviceItem": "ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาดร้านไปรษณีย์ไทย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50601005",
+    "category": "EXPENSE",
+    "businessGroup": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "evmService": "2.6 ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาด",
+    "serviceItem": "ค่าใช้จ่ายเผยแพร่และส่งเสริมการตลาดอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701001",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าปรับปรุงพื้นที่",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701002",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าติดตั้ง ซ่อมแซมและบำรุงรักษาอาคารและสิ่งปลูกสร้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701003",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าซ่อมแซมและบำรุงรักษาเครื่องจักรและอุปกรณ์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701004",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าซ่อมแซมและบำรุงรักษาเครื่องมือและเครื่องใช้ทั่วไป",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701005",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าซ่อมแซมและบำรุงรักษาเครื่องใช้สำนักงาน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701006",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าซ่อมแซมและบำรุงรักษาระบบเคาน์เตอร์ไปรษณีย์อัตโนมัติ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701007",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าซ่อมแซมและบำรุงรักษาระบบสารสนเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701008",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าซ่อมแซมและบำรุงรักษาอุปกรณ์สาธารณูปโภค",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50701009",
+    "category": "EXPENSE",
+    "businessGroup": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "evmService": "2.7 ค่าซ่อมแซมและบำรุงรักษา",
+    "serviceItem": "ค่าซ่อมแซมและบำรุงรักษายานพาหนะ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801001",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ค่าเสื่อมราคา - ส่วนปรับปรุงที่ดิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801002",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ค่าเสื่อมราคา - อาคารและสิ่งปลูกสร้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801003",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ค่าเสื่อมราคา - ส่วนปรับปรุงอาคารและสิ่งปลูกสร้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801004",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ค่าเสื่อมราคา - เครื่องจักรและอุปกรณ์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801005",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ค่าเสื่อมราคา - เครื่องมือและเครื่องใช้ทั่วไป",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801006",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ค่าเสื่อมราคา - เครื่องใช้สำนักงาน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801007",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ค่าเสื่อมราคา - ยานพาหนะ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801008",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สิทธิการใช้อาคารและสิ่งปลูกสร้างตัดบัญชี",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801009",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ค่าเสื่อมราคา - ส่วนปรับปรุงสิทธิการใช้อาคารและสิ่งปลูกสร้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801010",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "ลิขสิทธิ์ สิทธิบัตรและเครื่องหมายการค้าตัดบัญชี",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801011",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801012",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย-ที่ราชพัสดุ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801013",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย - อาคารและสิ่งปลูกสร้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801014",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย - อุปกรณ์ไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801015",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย - เครื่องใช้สำนักงาน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801016",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย - ยานพาหนะ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801017",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย - ขนส่งถุงฯ ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801018",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย - ขนส่งถุงไปรษณีย์ EMS",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801019",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "สัญญาเช่าตัดจ่าย - ที่ดิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50801099",
+    "category": "EXPENSE",
+    "businessGroup": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "evmService": "2.8 ค่าเสื่อมราคาและรายจ่ายตัดบัญชี",
+    "serviceItem": "รายจ่ายตัดบัญชีอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50901001",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งถุงไปรษณีย์ในประเทศ - มีสัญญา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50901002",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งถุงไปรษณีย์ในประเทศ - ไม่มีสัญญา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50901003",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งสิ่งของ/สินค้า-Post Logistic",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50902001",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งถุงไปรษณีย์ระหว่างประเทศ - ทางอากาศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50902002",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งถุงไปรษณีย์ระหว่างประเทศ - ทางอากาศ (ems)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50902003",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งถุงไปรษณีย์ระหว่างประเทศ - ทางภาคพื้น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50902004",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งถุงไปรษณีย์ EMS - มีสัญญา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50902005",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งถุงไปรษณีย์ EMS - ไม่มีสัญญา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50902006",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งสิ่งของ/สินค้า Logispost ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50902007",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งสิ่งของสินค้า THP Logispost",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50902008",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งของบริการ Courier Post",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50999098",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "คชจ.เกี่ยวเนื่อง ขส.",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "50999099",
+    "category": "EXPENSE",
+    "businessGroup": "2.10 ค่าขนส่งไปรษณีย์",
+    "evmService": "2.10 ค่าขนส่งไปรษณีย์",
+    "serviceItem": "ค่าขนส่งไปรษณีย์อื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51001001",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนไปรษณีย์อนุญาต",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51001002",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนไปรษณีย์อนุญาต - อื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51002001",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "เงินชดใช้ค่าเสียหายบริการไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51002002",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "เงินชดใช้ค่าเสียหายบริการการเงิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51002003",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "เงินชดใช้ค่าเสียหายบริการ EMS Jumbo (เดิม Logispost).",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51002004",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "เงินชดใช้ค่าเสียหายบริการ THP Logistics",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003004",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าจ้างองค์กรช่วยงานปฎิบัติการ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51001003",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนการจ้างดำเนินการร้านไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51001004",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าดำเนินงานบริการกระเป๋าเงินไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51001005",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนการไปรษณีย์ต่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51001006",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนดำเนินงานไปรษณีย์อื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003001",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าใช้จ่ายในการจัดจำหน่าย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003002",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าธรรมเนียมร่วมใช้ระบบและอุปกรณ์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003003",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าใช้จ่ายไปรษณีย์เบ็ดเตล็ด",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003005",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนสร้างเส้นทางเอกสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003006",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนการประทับลายมือดิจิทัล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003007",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนการประทับตรานิติบุคคล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003008",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนการประทับรับรองเวลา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003009",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนการจัดเก็บเอกสารอิเล็กทรอนิกส์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003010",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนกล่องจดหมายดิจิทัล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51003011",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "evmService": "2.11 ค่าใช้จ่ายไปรษณีย์อื่น",
+    "serviceItem": "ค่าตอบแทนการจัดพิมพ์และส่งเอกสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101001",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - ค่าทำการผ่าน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101002",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - ค่าทำการปลายทาง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101003",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - พัสดุไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101004",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - ค่าขนส่งภายใน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101005",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - ค่าทำการไปรษณีย์ด่วนพิเศษ (Document)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101006",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - ค่าทำการไปรษณีย์ด่วนพิเศษ (Package)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101007",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - บริการธุรกิจตอบรับ IBRS",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101008",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - วิมัยบัตร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101009",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งไปรษณีย์ระหว่างประเทศ - ไม่มีจ่าหน้า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101010",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งธนาณัติระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101011",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "ค่าส่วนแบ่งธนาณัติอิเล็กทรอนิกส์-ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51101012",
+    "category": "EXPENSE",
+    "businessGroup": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "evmService": "2.11 ค่าส่วนแบ่งไปรษณีย์และบริการการเงิน",
+    "serviceItem": "รายจ่ายค่าส่วนแบ่งพร้อมโพสต์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51201001",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนขายสินค้าไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51201002",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนขายตราไปรษณียากรทั่วไป",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51201003",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนขายตราไปรษณียากรเพื่อการสะสม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51201004",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนขายสิ่งสะสม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51201005",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนขายสินค้าเบ็ดเตล็ด",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51201006",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนค่าพิมพ์ภาพบนแผ่นตราไปรษณียากรส่วนตัว",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51201007",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนขายสินค้าไปรษณีย์ OEM",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51201008",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนขายสินค้า Retail & Solutions",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51202001",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนบริการขนส่ง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "51203001",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ต้นทุนบัตรให้บริการ Prepaid",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001026",
+    "category": "EXPENSE",
+    "businessGroup": "2.13 ต้นทุนขาย",
+    "evmService": "2.13 ต้นทุนขาย",
+    "serviceItem": "ค่าสินค้าชำรุดล้าสมัยตัดบัญชี",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001001",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าย้ายเจ้าหน้าที่",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001002",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าพาหนะ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001003",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าหนังสือและวารสาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001004",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าเอกสารและแบบฟอร์ม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001005",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าวัสดุสิ้นเปลือง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001006",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าเครื่องใช้สำนักงานและเครื่องมือขนาดเล็ก",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001007",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าธรรมเนียมธนาคาร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001008",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าธรรมเนียมวิชาชีพ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001009",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าธรรมเนียมอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001010",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายเกี่ยวกับคดีความ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001011",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่ารับรอง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001012",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าของขวัญ ของที่ระลึก",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001013",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "เงินรางวัล",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001014",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "เงินสมนาคุณ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001015",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าภาษีบำรุงท้องที่และค่าภาษีโรงเรือน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001016",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าภาษีป้าย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001017",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าอากรแสตมป์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001018",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าภาษีรถยนต์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001019",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าภาษีธุรกิจเฉพาะ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001020",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายเดินทางเพื่อปฏิบัติงาน - ในประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001021",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายเดินทางเพื่อปฏิบัติงาน - ต่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001022",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่ารักษาความปลอดภัย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001023",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าทำความสะอาด",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001024",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าน้ำมันเชื้อเพลิง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001025",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าเบี้ยประกัน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001027",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "หนี้สงสัยจะสูญ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001028",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "หนี้สูญ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001029",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายบริจาคเพื่อสาธารณกุศลและเพื่อการสาธารณประโยชน์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001030",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายบริจาคเพื่อการศึกษา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001031",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายบริจาคเพื่อการกีฬา",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001032",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายบริจาคอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001033",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายนักศึกษาฝึกงาน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001034",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าอาหารและเครื่องดื่ม",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001035",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าตอบแทนในการบริหารจัดการอาคาร/สถานที่",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001036",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าจัดทำบริหารคุณภาพ ISO",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001037",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายต้องห้ามทางภาษีอากร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001038",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายเบ็ดเตล็ด",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001039",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าจ้างองค์กรช่วยงานทั่วไป",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001040",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าจ้างทำงานอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "57001099",
+    "category": "EXPENSE",
+    "businessGroup": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "evmService": "2.14 ค่าใช้จ่ายดำเนินงานอื่น",
+    "serviceItem": "ค่าใช้จ่ายดำเนินงานอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001004",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายอื่นตามสัญญเช่า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001005",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่าย",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001012",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายตามสัญญาเช่า - ที่ราชพัสดุ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001013",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายตามสัญญาเช่า - อาคารและสิ่งปลูกสร้าง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001014",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายตามสัญญาเช่า - อุปกรณ์ไปรษณีย์",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001015",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายตามสัญญาเช่า - เครื่องใช้ สนง.",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001016",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายตามสัญญาเช่า - ยานพาหนะ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001017",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายตามสัญญาเช่า - ขนถุง นปท.",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001018",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายตามสัญญาเช่า - ขนถุง EMS",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001019",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ดอกเบี้ยจ่ายตามสัญญาเช่า - ที่ดิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002001",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ขาดทุนจากการจำหน่ายสินทรัพย์ถาวร (net กับ กำไรฯ แล้ว)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002008",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "เงินสมทบองค์การระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002009",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "เบี้ยปรับเงินเพิ่มทางภาษีอากร",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002010",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "เงินชดเชยทดแทนตามโครงการลาออกก่อนเกษียณอายุ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002011",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ผลต่างจากการประมาณการสัญญาเช่า",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002012",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ค่าเสียหายจากการประกอบกิจการ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002013",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "เงินสมทบกองทุนส่งเสริมและพัฒนาคุณภาพชีวิตคนพิการ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002099",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "ค่าใช้จ่ายอื่น",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58099999",
+    "category": "EXPENSE",
+    "businessGroup": "2.15 ค่าใช้จ่ายอื่น",
+    "evmService": "2.15 ค่าใช้จ่ายอื่น",
+    "serviceItem": "รายได้-ค่าใช้จ่าย ปณ. รอโอน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001001",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ดอกเบี้ยจ่ายธนาคาร - สถาบันการเงิน",
+    "serviceItem": "ดอกเบี้ยจ่ายธนาคาร - สถาบันการเงิน",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001002",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ดอกเบี้ยเงินกู้",
+    "serviceItem": "ดอกเบี้ยเงินกู้",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58001003",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ดอกเบี้ยจ่ายที่ยังไม่เกิดจริง",
+    "serviceItem": "ดอกเบี้ยจ่ายที่ยังไม่เกิดจริง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "59001001",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ภาษีเงินได้นิติบุคคล (CIT)",
+    "serviceItem": "ภาษีเงินได้นิติบุคคล (CIT)",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "59001002",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ค่าใช้จ่าย(รายได้)ภาษีเงินได้รอการตัดบัญชี",
+    "serviceItem": "ค่าใช้จ่าย(รายได้)ภาษีเงินได้รอการตัดบัญชี",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003002",
+    "category": "REVENUE",
+    "businessGroup": "รายได้อื่น",
+    "evmService": "กำไรจากอัตราแลกเปลี่ยนเกิดขึ้นจริง",
+    "serviceItem": "กำไรจากอัตราแลกเปลี่ยนเกิดขึ้นจริง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003003",
+    "category": "REVENUE",
+    "businessGroup": "รายได้อื่น",
+    "evmService": "กำไรจากการอัตราแลกเปลี่ยนเกิดขึ้นจริง - ส่วนแบ่งไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "กำไรจากการอัตราแลกเปลี่ยนเกิดขึ้นจริง - ส่วนแบ่งไปรษณีย์ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003004",
+    "category": "REVENUE",
+    "businessGroup": "รายได้อื่น",
+    "evmService": "กำไรจากการอัตราแลกเปลี่ยนเกิดขึ้นจริง - ธนาณัติระหว่างประเทศ",
+    "serviceItem": "กำไรจากการอัตราแลกเปลี่ยนเกิดขึ้นจริง - ธนาณัติระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003005",
+    "category": "REVENUE",
+    "businessGroup": "รายได้อื่น",
+    "evmService": "กำไรจากอัตราแลกเปลี่ยนไม่เกิดจริง",
+    "serviceItem": "กำไรจากอัตราแลกเปลี่ยนไม่เกิดจริง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003006",
+    "category": "REVENUE",
+    "businessGroup": "รายได้อื่น",
+    "evmService": "กำไรจากอัตราแลกเปลี่ยนไม่เกิดจริง - ส่วนแบ่งไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "กำไรจากอัตราแลกเปลี่ยนไม่เกิดจริง - ส่วนแบ่งไปรษณีย์ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "48003007",
+    "category": "REVENUE",
+    "businessGroup": "รายได้อื่น",
+    "evmService": "กำไรจากอัตราแลกเปลี่ยนไม่เกิดจริง - ธนาณัติระหว่างประเทศ",
+    "serviceItem": "กำไรจากอัตราแลกเปลี่ยนไม่เกิดจริง - ธนาณัติระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002002",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ขาดทุนจากอัตราแลกเปลี่ยนเกิดขึ้นจริง",
+    "serviceItem": "ขาดทุนจากอัตราแลกเปลี่ยนเกิดขึ้นจริง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002003",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ขาดทุนจากอัตราแลกเปลี่ยนเกิดขึ้นจริง - ส่วนแบ่งไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "ขาดทุนจากอัตราแลกเปลี่ยนเกิดขึ้นจริง - ส่วนแบ่งไปรษณีย์ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002004",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ขาดทุนจากอัตราแลกเปลี่ยนเกิดขึ้นจริง - ธนาณัติระหว่างประเทศ",
+    "serviceItem": "ขาดทุนจากอัตราแลกเปลี่ยนเกิดขึ้นจริง - ธนาณัติระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002005",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ขาดทุนจากอัตราแลกเปลี่ยนไม่เกิดจริง",
+    "serviceItem": "ขาดทุนจากอัตราแลกเปลี่ยนไม่เกิดจริง",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002006",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ขาดทุนจากอัตราแลกเปลี่ยนไม่เกิดจริง - ส่วนแบ่งไปรษณีย์ระหว่างประเทศ",
+    "serviceItem": "ขาดทุนจากอัตราแลกเปลี่ยนไม่เกิดจริง - ส่วนแบ่งไปรษณีย์ระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "58002007",
+    "category": "EXPENSE",
+    "businessGroup": "ค่าใช้จ่ายอื่น",
+    "evmService": "ขาดทุนจากอัตราแลกเปลี่ยนไม่เกิดจริง - ธนาณัติระหว่างประเทศ",
+    "serviceItem": "ขาดทุนจากอัตราแลกเปลี่ยนไม่เกิดจริง - ธนาณัติระหว่างประเทศ",
+    "accountCodeType": "SAP"
+  },
+  {
+    "sapAccountCode": "COD_FEE",
+    "category": "REVENUE",
+    "businessGroup": "1.4.2 รายได้กลุ่มธุรกิจการเงิน",
+    "evmService": "บริการ COD",
+    "serviceItem": "ค่าธรรมเนียม COD",
+    "accountCodeType": "TEXT"
+  },
+  {
+    "sapAccountCode": "DIT",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "บริการรับฝากกล่องผลไม้ DIT",
+    "accountCodeType": "TEXT"
+  },
+  {
+    "sapAccountCode": "e-Commerce",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "ปันส่วนรายได้ e-Commerce",
+    "accountCodeType": "TEXT"
+  },
+  {
+    "sapAccountCode": "Fuze",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์โลจิสติกส์",
+    "serviceItem": "รายได้ค่าบริการ FUZE Post",
+    "accountCodeType": "TEXT"
+  },
+  {
+    "sapAccountCode": "สลาก",
+    "category": "REVENUE",
+    "businessGroup": "1.2 รายได้กลุ่มบริการขนส่งและโลจิสติกส์",
+    "evmService": "รายได้บริการไปรษณีย์ด่วนพิเศษ-ในประเทศ",
+    "serviceItem": "ค่าบริการจัดส่งสลากฯ",
+    "accountCodeType": "TEXT"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-08-20T09:23:53.994Z",
+  "sourceFiles": {
+    "sap_2024.json": 81586,
+    "sap_2025.json": 926,
+    "sap_2026.json": 456,
+    "bi_2025.json": 2652,
+    "bi_2026.json": 1326,
+    "cod_2024.json": 1883,
+    "cod_2025.json": 7719,
+    "cod_2026.json": 2736,
+    "dit_2025.json": 56,
+    "ecommerce_2024.json": 1416,
+    "ecommerce_2025.json": 1428,
+    "ecommerce_2026.json": 721,
+    "fuze_2026.json": 178,
+    "lotto_2025.json": 721,
+    "lotto_2026.json": 618,
+    "target_2025.json": 257520,
+    "target_2026.json": 257520,
+    "รส.201.json": 201040,
+    "pickup.json": 20585
+  },
+  "unknownOfficeCodes": [],
+  "unknownServiceCodes": [],
+  "duplicateOfficeRowsRemoved": 2,
+  "serviceRowsExcluded": 14,
+  "unknownOfficeCodeCount": 0,
+  "unknownServiceCodeCount": 0,
+  "coordinateCoverage": {
+    "provided": 0,
+    "requiredForSpatialMap": 222
+  },
+  "weeklyRule": "Friday through Thursday; records are grouped by calendar month and custom week start."
+}

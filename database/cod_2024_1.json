@@ -1,0 +1,737 @@
+[
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60000",
+    "accountcode": "COD_FEE",
+    "actual": 562611.36
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60001",
+    "accountcode": "COD_FEE",
+    "actual": 3541.23
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60002",
+    "accountcode": "COD_FEE",
+    "actual": 34672.89
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60010",
+    "accountcode": "COD_FEE",
+    "actual": 173.13
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60110",
+    "accountcode": "COD_FEE",
+    "actual": 1360.71
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60120",
+    "accountcode": "COD_FEE",
+    "actual": 1372.92
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60130",
+    "accountcode": "COD_FEE",
+    "actual": 30060.25
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60140",
+    "accountcode": "COD_FEE",
+    "actual": 7651.74
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60150",
+    "accountcode": "COD_FEE",
+    "actual": 14157.460000000001
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60160",
+    "accountcode": "COD_FEE",
+    "actual": 5871.03
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60170",
+    "accountcode": "COD_FEE",
+    "actual": 25037.12
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60180",
+    "accountcode": "COD_FEE",
+    "actual": 2818.26
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60190",
+    "accountcode": "COD_FEE",
+    "actual": 13905.12
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60210",
+    "accountcode": "COD_FEE",
+    "actual": 4292.7
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60220",
+    "accountcode": "COD_FEE",
+    "actual": 2264.61
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60230",
+    "accountcode": "COD_FEE",
+    "actual": 3111.35
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60240",
+    "accountcode": "COD_FEE",
+    "actual": 296.52
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60250",
+    "accountcode": "COD_FEE",
+    "actual": 51
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "60260",
+    "accountcode": "COD_FEE",
+    "actual": 286.05
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "61000",
+    "accountcode": "COD_FEE",
+    "actual": 10833.63
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "61110",
+    "accountcode": "COD_FEE",
+    "actual": 1157.1
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "61120",
+    "accountcode": "COD_FEE",
+    "actual": 521.64
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "61130",
+    "accountcode": "COD_FEE",
+    "actual": 387
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "61140",
+    "accountcode": "COD_FEE",
+    "actual": 3648.33
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "61150",
+    "accountcode": "COD_FEE",
+    "actual": 1583.1
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "61160",
+    "accountcode": "COD_FEE",
+    "actual": 40.8
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "61180",
+    "accountcode": "COD_FEE",
+    "actual": 4418.01
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62000",
+    "accountcode": "COD_FEE",
+    "actual": 104705.48000000001
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62110",
+    "accountcode": "COD_FEE",
+    "actual": 18816.36
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62120",
+    "accountcode": "COD_FEE",
+    "actual": 6292.11
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62130",
+    "accountcode": "COD_FEE",
+    "actual": 181.65
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62140",
+    "accountcode": "COD_FEE",
+    "actual": 1173.57
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62150",
+    "accountcode": "COD_FEE",
+    "actual": 2039.8700000000001
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62160",
+    "accountcode": "COD_FEE",
+    "actual": 1602.87
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62170",
+    "accountcode": "COD_FEE",
+    "actual": 6342.27
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62180",
+    "accountcode": "COD_FEE",
+    "actual": 197.7
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62190",
+    "accountcode": "COD_FEE",
+    "actual": 36.9
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "62210",
+    "accountcode": "COD_FEE",
+    "actual": 1447.47
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63000",
+    "accountcode": "COD_FEE",
+    "actual": 285187.89
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63110",
+    "accountcode": "COD_FEE",
+    "actual": 77341.75
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63111",
+    "accountcode": "COD_FEE",
+    "actual": 10709.31
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63120",
+    "accountcode": "COD_FEE",
+    "actual": 40756.74
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63130",
+    "accountcode": "COD_FEE",
+    "actual": 12.6
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63140",
+    "accountcode": "COD_FEE",
+    "actual": 720.12
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63150",
+    "accountcode": "COD_FEE",
+    "actual": 204.3
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63160",
+    "accountcode": "COD_FEE",
+    "actual": 5984.97
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "63180",
+    "accountcode": "COD_FEE",
+    "actual": 4692.36
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64000",
+    "accountcode": "COD_FEE",
+    "actual": 183371.45
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64110",
+    "accountcode": "COD_FEE",
+    "actual": 23571.3
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64120",
+    "accountcode": "COD_FEE",
+    "actual": 3878.73
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64130",
+    "accountcode": "COD_FEE",
+    "actual": 7323.870000000001
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64140",
+    "accountcode": "COD_FEE",
+    "actual": 58217.7
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64150",
+    "accountcode": "COD_FEE",
+    "actual": 371.49
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64160",
+    "accountcode": "COD_FEE",
+    "actual": 1738.8
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64170",
+    "accountcode": "COD_FEE",
+    "actual": 8565.54
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64180",
+    "accountcode": "COD_FEE",
+    "actual": 18850.77
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64190",
+    "accountcode": "COD_FEE",
+    "actual": 4000.82
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64210",
+    "accountcode": "COD_FEE",
+    "actual": 956.88
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64220",
+    "accountcode": "COD_FEE",
+    "actual": 1760.67
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "64230",
+    "accountcode": "COD_FEE",
+    "actual": 10628.1
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65000",
+    "accountcode": "COD_FEE",
+    "actual": 596152.4299999999
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65001",
+    "accountcode": "COD_FEE",
+    "actual": 1981.32
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65010",
+    "accountcode": "COD_FEE",
+    "actual": 94046.56
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65110",
+    "accountcode": "COD_FEE",
+    "actual": 2732.76
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65120",
+    "accountcode": "COD_FEE",
+    "actual": 22262.4
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65130",
+    "accountcode": "COD_FEE",
+    "actual": 60777.84
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65140",
+    "accountcode": "COD_FEE",
+    "actual": 20450.19
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65150",
+    "accountcode": "COD_FEE",
+    "actual": 173.1
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65160",
+    "accountcode": "COD_FEE",
+    "actual": 13644.54
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65170",
+    "accountcode": "COD_FEE",
+    "actual": 1460.88
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65180",
+    "accountcode": "COD_FEE",
+    "actual": 12343.29
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65190",
+    "accountcode": "COD_FEE",
+    "actual": 32880.12
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65210",
+    "accountcode": "COD_FEE",
+    "actual": 37.8
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65220",
+    "accountcode": "COD_FEE",
+    "actual": 10138.5
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65230",
+    "accountcode": "COD_FEE",
+    "actual": 10460.85
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "65240",
+    "accountcode": "COD_FEE",
+    "actual": 70.77
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66000",
+    "accountcode": "COD_FEE",
+    "actual": 87272.10999999999
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66110",
+    "accountcode": "COD_FEE",
+    "actual": 16324.25
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66120",
+    "accountcode": "COD_FEE",
+    "actual": 11234.220000000001
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66130",
+    "accountcode": "COD_FEE",
+    "actual": 106.71
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66140",
+    "accountcode": "COD_FEE",
+    "actual": 39429.09
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66150",
+    "accountcode": "COD_FEE",
+    "actual": 11673.96
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66160",
+    "accountcode": "COD_FEE",
+    "actual": 116463.54000000001
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66170",
+    "accountcode": "COD_FEE",
+    "actual": 2789.19
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66180",
+    "accountcode": "COD_FEE",
+    "actual": 20156.61
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66190",
+    "accountcode": "COD_FEE",
+    "actual": 268.77
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66210",
+    "accountcode": "COD_FEE",
+    "actual": 26474.940000000002
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66220",
+    "accountcode": "COD_FEE",
+    "actual": 8776.5
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "66230",
+    "accountcode": "COD_FEE",
+    "actual": 94365.39
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67000",
+    "accountcode": "COD_FEE",
+    "actual": 82764.83
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67110",
+    "accountcode": "COD_FEE",
+    "actual": 29148.23
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67120",
+    "accountcode": "COD_FEE",
+    "actual": 229.8
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67130",
+    "accountcode": "COD_FEE",
+    "actual": 267.6
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67140",
+    "accountcode": "COD_FEE",
+    "actual": 1769.34
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67150",
+    "accountcode": "COD_FEE",
+    "actual": 8480.46
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67160",
+    "accountcode": "COD_FEE",
+    "actual": 22047.36
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67170",
+    "accountcode": "COD_FEE",
+    "actual": 3348.9
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67180",
+    "accountcode": "COD_FEE",
+    "actual": 29.1
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67190",
+    "accountcode": "COD_FEE",
+    "actual": 12443.52
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67210",
+    "accountcode": "COD_FEE",
+    "actual": 2761.47
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67220",
+    "accountcode": "COD_FEE",
+    "actual": 1327.2
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67250",
+    "accountcode": "COD_FEE",
+    "actual": 14836.22
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67260",
+    "accountcode": "COD_FEE",
+    "actual": 4032.6
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67270",
+    "accountcode": "COD_FEE",
+    "actual": 3401.0699999999997
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "postcode": "67280",
+    "accountcode": "COD_FEE",
+    "actual": 495.45
+  }
+]

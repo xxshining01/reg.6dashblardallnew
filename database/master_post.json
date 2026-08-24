@@ -1,0 +1,552 @@
+[
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60000",
+    "postname": "นครสวรรค์"
+  },
+  {
+    "province": "ปข.6",
+    "postcode": "60000-00",
+    "postname": "สำนักงานไปรษณีย์เขต 6"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60001",
+    "postname": "สวรรค์วิถี"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60002",
+    "postname": "จิรประวัติ"
+  },
+  {
+    "province": "ศป.นครสวรรค์",
+    "postcode": "60010",
+    "postname": "ศป.นครสวรรค์"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60110",
+    "postname": "หนองบัว"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60120",
+    "postname": "ชุมแสง"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60130",
+    "postname": "พยุหะคีรี"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60140",
+    "postname": "ตาคลี"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60150",
+    "postname": "ลาดยาว"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60160",
+    "postname": "ท่าตะโก"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60170",
+    "postname": "โกรกพระ"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60180",
+    "postname": "บรรพตพิสัย"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60190",
+    "postname": "ตากฟ้า"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60210",
+    "postname": "ช่องแค"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60220",
+    "postname": "ไพศาลี"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60230",
+    "postname": "เก้าเลี้ยว"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60240",
+    "postname": "หนองเบน"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60250",
+    "postname": "ทับกฤช"
+  },
+  {
+    "province": "นครสวรรค์",
+    "postcode": "60260",
+    "postname": "จันเสน"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61000",
+    "postname": "อุทัยธานี"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61110",
+    "postname": "หนองฉาง"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61120",
+    "postname": "ทัพทัน"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61130",
+    "postname": "หนองขาหย่าง"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61140",
+    "postname": "บ้านไร่"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61150",
+    "postname": "สว่างอารมณ์"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61160",
+    "postname": "ลานสัก"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61170",
+    "postname": "เขาบางแกรก"
+  },
+  {
+    "province": "อุทัยธานี",
+    "postcode": "61180",
+    "postname": "เมืองการุ้ง"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62000",
+    "postname": "กำแพงเพชร"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62110",
+    "postname": "พรานกระต่าย"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62120",
+    "postname": "คลองขลุง"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62130",
+    "postname": "ขาณุวรลักษบุรี"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62140",
+    "postname": "สลกบาตร"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62150",
+    "postname": "ไทรงาม"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62160",
+    "postname": "ปากดง"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62170",
+    "postname": "ลานกระบือ"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62180",
+    "postname": "คลองลาน"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62190",
+    "postname": "ทุ่งทราย"
+  },
+  {
+    "province": "กำแพงเพชร",
+    "postcode": "62210",
+    "postname": "ระหาน"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63000",
+    "postname": "ตาก"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63110",
+    "postname": "แม่สอด"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63111",
+    "postname": "อินทรคีรี"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63120",
+    "postname": "บ้านตาก"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63130",
+    "postname": "สามเงา"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63140",
+    "postname": "แม่ระมาด"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63150",
+    "postname": "ท่าสองยาง"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63160",
+    "postname": "พบพระ"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63170",
+    "postname": "อุ้มผาง"
+  },
+  {
+    "province": "ตาก",
+    "postcode": "63180",
+    "postname": "วังเจ้า"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64000",
+    "postname": "สุโขทัย"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64110",
+    "postname": "สวรรคโลก"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64120",
+    "postname": "ศรีสำโรง"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64130",
+    "postname": "ศรีสัชนาลัย"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64140",
+    "postname": "บ้านด่านลานหอย"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64150",
+    "postname": "ทุ่งเสลี่ยม"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64160",
+    "postname": "คีรีมาศ"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64170",
+    "postname": "กงไกรลาศ"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64180",
+    "postname": "ศรีนคร"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64190",
+    "postname": "ท่าชัย"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64210",
+    "postname": "เมืองเก่า"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64220",
+    "postname": "บ้านสวน"
+  },
+  {
+    "province": "สุโขทัย",
+    "postcode": "64230",
+    "postname": "บ้านใหม่ไชยมงคล"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65000",
+    "postname": "พิษณุโลก"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65001",
+    "postname": "อรัญญิก"
+  },
+  {
+    "province": "ศป.พิษณุโลก",
+    "postcode": "65010",
+    "postname": "ศป.พิษณุโลก"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65110",
+    "postname": "บางกระทุ่ม"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65120",
+    "postname": "นครไทย"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65130",
+    "postname": "วังทอง"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65140",
+    "postname": "บางระกำ"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65150",
+    "postname": "พรหมพิราม"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65160",
+    "postname": "วัดโบสถ์"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65170",
+    "postname": "ชาติตระการ"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65180",
+    "postname": "หนองตม"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65190",
+    "postname": "เนินมะปราง"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65210",
+    "postname": "เนินกุ่ม"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65220",
+    "postname": "แก่งโสภา"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65230",
+    "postname": "วัดพริก"
+  },
+  {
+    "province": "พิษณุโลก",
+    "postcode": "65240",
+    "postname": "ชุมแสงสงคราม"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66000",
+    "postname": "พิจิตร"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66110",
+    "postname": "ตะพานหิน"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66120",
+    "postname": "บางมูลนาก"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66130",
+    "postname": "โพทะเล"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66140",
+    "postname": "สามง่าม"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66150",
+    "postname": "ทับคล้อ"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66160",
+    "postname": "สากเหล็ก"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66170",
+    "postname": "หัวดง"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66180",
+    "postname": "วังทรายพูน"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66190",
+    "postname": "โพธิ์ประทับช้าง"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66210",
+    "postname": "วังตะกู"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66220",
+    "postname": "กำแพงดิน"
+  },
+  {
+    "province": "พิจิตร",
+    "postcode": "66230",
+    "postname": "เขาทราย"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67000",
+    "postname": "เพชรบูรณ์"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67110",
+    "postname": "หล่มสัก"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67120",
+    "postname": "หล่มเก่า"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67130",
+    "postname": "วิเชียรบุรี"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67140",
+    "postname": "หนองไผ่"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67150",
+    "postname": "ชนแดน"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67160",
+    "postname": "บึงสามพัน"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67170",
+    "postname": "ศรีเทพ"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67180",
+    "postname": "พุเตย"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67190",
+    "postname": "ดงขุย"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67210",
+    "postname": "วังชมภู"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67220",
+    "postname": "นาเฉลียง"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67230",
+    "postname": "วังพิกุล"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67240",
+    "postname": "วังโป่ง"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67250",
+    "postname": "ท่าพล"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67260",
+    "postname": "น้ำหนาว"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67270",
+    "postname": "เขาค้อ"
+  },
+  {
+    "province": "เพชรบูรณ์",
+    "postcode": "67280",
+    "postname": "แคมป์สน"
+  }
+]
