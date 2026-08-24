@@ -4,13 +4,16 @@ import { resolve } from 'node:path';
 import { readdir, readFile } from 'node:fs/promises';
 import dns from 'node:dns';
 
-dns.setServers(['8.8.8.8', '1.1.1.1']);
+if (process.platform === 'win32' && !process.env.VERCEL) {
+  try {
+    dns.setServers(['8.8.8.8', '1.1.1.1']);
+  } catch (e) {}
+}
+
 dotenv.config({ path: resolve(import.meta.dirname, '../.env') });
 
 const root = resolve(import.meta.dirname, '../..');
 const databaseDir = resolve(root, 'database');
-const uri = process.env.MONGODB_URI;
-const dbName = process.env.MONGODB_DB_NAME || 'reg6_revenue';
 
 const categoryByThai = { 'รายได้': 'REVENUE', 'ค่าใช้จ่าย': 'EXPENSE' };
 const sourcesMap = {
@@ -23,13 +26,32 @@ const sourcesMap = {
   dit: 'DIT',
 };
 
+let cachedData = null;
+let loadPromise = null;
+
 export async function loadData() {
+  if (cachedData) return cachedData;
+  if (!loadPromise) {
+    loadPromise = doLoadData().then((data) => {
+      cachedData = data;
+      return data;
+    });
+  }
+  return loadPromise;
+}
+
+async function doLoadData() {
   let client = null;
+  const uri = process.env.MONGODB_URI;
+  const dbName = process.env.MONGODB_DB_NAME || 'reg6_revenue';
 
   if (uri) {
     try {
-      console.log(`[Database] Attempting connection to MongoDB Atlas (${dbName})...`);
-      client = new MongoClient(uri, { serverSelectionTimeoutMS: 4000 });
+      console.log(`[Database] Connecting to MongoDB Atlas (${dbName})...`);
+      client = new MongoClient(uri, {
+        serverSelectionTimeoutMS: 8000,
+        connectTimeoutMS: 8000,
+      });
       await client.connect();
       const db = client.db(dbName);
 

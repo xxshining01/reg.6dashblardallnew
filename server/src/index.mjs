@@ -321,6 +321,21 @@ function areaBreakdown(rows, targetRows, lyRows, drillLevel, provinceFilter) {
 /* ── Express API ───────────────────────────────────────────────── */
 const app = express(); app.use(cors()); app.use(express.json());
 
+app.get(['/api/health', '/api/v1/health'], (req, res) => {
+  res.json({
+    status: 'ok',
+    dataSource: source,
+    hasMongoUri: !!process.env.MONGODB_URI,
+    mongoDbName: process.env.MONGODB_DB_NAME || 'reg6_revenue',
+    counts: {
+      offices: offices.length,
+      services: services.length,
+      actuals: actuals.length,
+      targets: targets.length,
+    },
+  });
+});
+
 app.get('/api/v1/meta/filters', (req, res) => {
   // Postcodes grouped by province for cascading filter
   const postcodesByProvince = {};
