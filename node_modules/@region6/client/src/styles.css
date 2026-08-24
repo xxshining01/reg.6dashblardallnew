@@ -253,15 +253,40 @@ header p {
 }
 
 .filters-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 14px;
+  align-items: flex-end;
 }
 
 .filter-field {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.filter-field.field-category {
+  flex: 0 0 160px;
+}
+
+.filter-field.field-year {
+  flex: 0 0 110px;
+  max-width: 120px;
+}
+
+.filter-field.field-months {
+  flex: 1.6;
+  min-width: 280px;
+}
+
+.filter-field.field-province {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-field.field-postcode {
+  flex: 1.2;
+  min-width: 170px;
 }
 
 .filter-field label {
@@ -598,23 +623,60 @@ header p {
   margin-bottom: 16px;
 }
 
-.gauge-panel {
+/* ── Dual Gauge Bars (Target & YoY with Dynamic Solid Color) ───── */
+.dual-gauge-grid {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 24px;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
 }
 
-.gauge-viz-side {
+.single-gauge-card {
+  background: #F8FAFC;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.single-gauge-card:hover {
+  background: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+}
+
+.single-gauge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #E2E8F0;
+  padding-bottom: 8px;
+}
+
+.sgh-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: #0F172A;
+}
+
+.sgh-icon {
+  font-size: 16px;
+}
+
+.single-gauge-body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
   align-items: center;
 }
 
 .gauge-svg-wrap {
   position: relative;
   width: 220px;
-  height: 125px;
+  height: 130px;
 }
 
 .gauge-svg {
@@ -624,7 +686,7 @@ header p {
 
 .gauge-center-info {
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   left: 0;
   right: 0;
   text-align: center;
@@ -639,49 +701,44 @@ header p {
   line-height: 1.1;
 }
 
-.gauge-badge {
-  margin-top: 3px;
+.gauge-sub-caption {
   font-size: 11px;
+  color: #64748B;
+  font-weight: 500;
+  margin-top: 2px;
 }
 
-.gauge-metrics-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 12px;
-}
-
-.gauge-metric-box {
-  background: #F8FAFC;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 12px 14px;
+.single-gauge-metrics {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
-.gmb-label {
+.sg-metric-item {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sg-lbl {
   font-size: 12px;
   color: var(--text-muted);
   font-weight: 500;
-  margin-bottom: 4px;
 }
 
-.gmb-val {
-  font-size: 18px;
+.sg-val {
+  font-size: 13.5px;
   font-weight: 700;
   color: var(--text-main);
 }
 
-.gmb-val.primary { color: #1E3A8A; }
-.gmb-val.good { color: #059669; }
-.gmb-val.down { color: #DC2626; }
-.gmb-val.muted { color: #64748B; }
-
-.gmb-sub {
-  font-size: 11px;
-  color: #94A3B8;
-  margin-top: 3px;
-}
+.sg-val.primary { color: #1E3A8A; }
+.sg-val.good { color: #059669; }
+.sg-val.down { color: #DC2626; }
 
 /* ── Region 6 Map Component (Matching User Reference Image) ────── */
 .r6-map-card {
@@ -1101,16 +1158,13 @@ td {
 
 .pct-badge {
   display: inline-block;
-  padding: 2px 8px;
+  padding: 3px 9px;
   border-radius: 12px;
   font-size: 12px;
-  font-weight: 600;
-  background: #FEE2E2;
-  color: #991B1B;
-}
-.pct-badge.good {
-  background: #DCFCE7;
-  color: #166534;
+  font-weight: 700;
+  background: #F1F5F9;
+  color: #334155;
+  white-space: nowrap;
 }
 
 .empty-row {
@@ -1368,10 +1422,12 @@ tfoot td {
   border-radius: 50%;
 }
 
-.badge-excellent { background: #D1FAE5; color: #065F46; }
-.badge-very-good { background: #ECFDF5; color: #047857; }
-.badge-boost { background: #FEF3C7; color: #92400E; }
-.badge-watch { background: #FFEDD5; color: #9A3412; }
+.badge-excellent, .pct-badge.badge-excellent { background: #D1FAE5; color: #065F46; }
+.badge-very-good, .pct-badge.badge-very-good { background: #ECFDF5; color: #047857; }
+.badge-boost, .pct-badge.badge-boost { background: #FEF3C7; color: #92400E; }
+.badge-watch, .pct-badge.badge-watch { background: #FFEDD5; color: #9A3412; }
+.badge-urgent, .pct-badge.badge-urgent { background: #FEE2E2; color: #991B1B; }
+.badge-neutral, .pct-badge.badge-neutral { background: #F1F5F9; color: #64748B; }
 /* ── Table Header Controls & Mini Toggle Group ─────────────────── */
 .table-header-controls {
   display: flex;

@@ -107,103 +107,146 @@ function Breadcrumb({ items, onNavigate }) {
   );
 }
 
-/* ── GaugeBar Component (Semi-circle 180° Radial Gauge) ────────── */
-function GaugeBar({ actual, target, lastYear, yoyGrowthPct, category }) {
-  const pctVal = target > 0 ? (actual / target) * 100 : null;
+/* ── Single Gauge Item Component (Tube Progress Bar with 100% Target Mark) ── */
+function SingleGaugeItem({
+  title,
+  icon,
+  actual,
+  compareVal,
+  compareLabel,
+  pctVal,
+  category,
+}) {
   const status = getEvaluationStatus(pctVal, category);
-
-  // Map pct to -90 deg (0%) through +90 deg (150%+)
-  const clampedPct = Math.min(Math.max(pctVal || 0, 0), 150);
-  const angle = -90 + (clampedPct / 150) * 180;
-
-  const needleLen = 65;
-  const rad = (angle * Math.PI) / 180;
-  const needleX = 110 + needleLen * Math.cos(rad);
-  const needleY = 100 + needleLen * Math.sin(rad);
+  const MAX_SCALE = 120; // 0% to 120%
+  const clampedPct = Math.min(Math.max(pctVal || 0, 0), MAX_SCALE);
+  const fillRatio = clampedPct / MAX_SCALE;
+  const arcLength = Math.PI * 75; // ~235.62
+  const fillLength = arcLength * fillRatio;
+  const diff = (actual || 0) - (compareVal || 0);
 
   return (
-    <div className="gauge-panel">
-      <div className="gauge-viz-side">
+    <div className="single-gauge-card">
+      <div className="single-gauge-header">
+        <div className="sgh-title">
+          <span className="sgh-icon">{icon}</span>
+          <strong>{title}</strong>
+        </div>
+        <span className={`eval-badge ${status.badgeClass}`}>
+          <span className="eval-dot" style={{ backgroundColor: status.dotColor }}></span>
+          {status.label.split(' (')[0]}
+        </span>
+      </div>
+
+      <div className="single-gauge-body">
         <div className="gauge-svg-wrap">
-          <svg viewBox="0 0 220 125" className="gauge-svg">
-            <defs>
-              <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#EF4444" />
-                <stop offset="35%" stopColor="#FB923C" />
-                <stop offset="55%" stopColor="#FBBF24" />
-                <stop offset="75%" stopColor="#34D399" />
-                <stop offset="100%" stopColor="#10B981" />
-              </linearGradient>
-            </defs>
-            {/* Background Track */}
+          <svg viewBox="0 0 220 130" className="gauge-svg">
+            {/* Background Empty Tube (หลอดเป้าหมาย / ปีก่อนหน้า) */}
             <path
-              d="M 25 100 A 85 85 0 0 1 195 100"
+              d="M 35 105 A 75 75 0 0 1 185 105"
               fill="none"
               stroke="#E2E8F0"
-              strokeWidth="20"
+              strokeWidth="16"
               strokeLinecap="round"
             />
-            {/* Colored Gradient Track */}
-            <path
-              d="M 25 100 A 85 85 0 0 1 195 100"
-              fill="none"
-              stroke="url(#gaugeGradient)"
-              strokeWidth="18"
-              strokeLinecap="round"
-              opacity="0.9"
-            />
-            {/* Needle */}
+
+            {/* Filled Progress Tube (ผลการดำเนินงานจริง - สีเดียวตามเกณฑ์) */}
+            {fillLength > 0 && (
+              <path
+                d="M 35 105 A 75 75 0 0 1 185 105"
+                fill="none"
+                stroke={status.dotColor}
+                strokeWidth="16"
+                strokeLinecap="round"
+                strokeDasharray={`${fillLength} ${arcLength}`}
+                style={{ transition: 'stroke-dasharray 0.6s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s ease' }}
+              />
+            )}
+
+            {/* 100% Target Marker Tick (ขีดบอกตำแหน่ง 100% บนหลอด) */}
             <line
-              x1="110"
-              y1="100"
-              x2={needleX}
-              y2={needleY}
-              stroke="#1E293B"
-              strokeWidth="3.5"
-              strokeLinecap="round"
+              x1="164.5"
+              y1="73.5"
+              x2="185.5"
+              y2="61.5"
+              stroke="#334155"
+              strokeWidth="2.2"
             />
-            <circle cx="110" cy="100" r="7" fill="#1E293B" />
-            <circle cx="110" cy="100" r="3" fill="#FFFFFF" />
+            <text
+              x="180"
+              y="54"
+              fill="#475569"
+              fontSize="9.5"
+              fontWeight="700"
+              textAnchor="middle"
+            >
+              100%
+            </text>
+
+            {/* Scale Endpoints Labels */}
+            <text x="35" y="124" fill="#94A3B8" fontSize="9" fontWeight="600" textAnchor="middle">
+              0%
+            </text>
+            <text x="185" y="124" fill="#94A3B8" fontSize="9" fontWeight="600" textAnchor="middle">
+              120%
+            </text>
           </svg>
+
           <div className="gauge-center-info">
             <span className="gauge-pct-val" style={{ color: status.dotColor }}>
               {pct(pctVal)}
             </span>
-            <span className={`eval-badge ${status.badgeClass} gauge-badge`}>
-              <span className="eval-dot" style={{ backgroundColor: status.dotColor }}></span>
-              {status.label.split(' (')[0]}
+            <span className="gauge-sub-caption">
+              {pctVal >= 100 ? '✓ บรรลุตามเป้าหมาย' : 'ต่ำกว่าเป้าหมาย'}
             </span>
           </div>
         </div>
-      </div>
 
-      {/* Numerical Metrics Strip */}
-      <div className="gauge-metrics-strip">
-        <div className="gauge-metric-box">
-          <span className="gmb-label">ผลงานจริง (Actual)</span>
-          <strong className="gmb-val primary">{money(actual)} <small>บาท</small></strong>
-          <span className="gmb-sub">ยอดสะสมช่วงที่เลือก</span>
-        </div>
-        <div className="gauge-metric-box">
-          <span className="gmb-label">เป้าหมาย (Target)</span>
-          <strong className="gmb-val">{money(target)} <small>บาท</small></strong>
-          <span className="gmb-sub">บรรลุเป้า {pct(pctVal)}</span>
-        </div>
-        <div className="gauge-metric-box">
-          <span className="gmb-label">ปีก่อนหน้า (Last Year)</span>
-          <strong className="gmb-val muted">{money(lastYear)} <small>บาท</small></strong>
-          <span className="gmb-sub">เปรียบเทียบ YoY</span>
-        </div>
-        <div className="gauge-metric-box">
-          <span className="gmb-label">การเติบโต (YoY)</span>
-          <strong className={`gmb-val ${(yoyGrowthPct || 0) >= 100 ? 'good' : 'down'}`}>
-            {pct(yoyGrowthPct)}
-          </strong>
-          <span className="gmb-sub">
-            {actual >= lastYear ? 'เพิ่มขึ้นจากปีก่อน' : 'ชะลอตัวลงจากปีก่อน'}
-          </span>
+        <div className="single-gauge-metrics">
+          <div className="sg-metric-item">
+            <span className="sg-lbl">ผลงานจริง (Actual)</span>
+            <strong className="sg-val primary">{money(actual)} <small>บาท</small></strong>
+          </div>
+          <div className="sg-metric-item">
+            <span className="sg-lbl">{compareLabel}</span>
+            <strong className="sg-val">{money(compareVal)} <small>บาท</small></strong>
+          </div>
+          <div className="sg-metric-item">
+            <span className="sg-lbl">ผลต่าง ({actual >= compareVal ? '+' : ''})</span>
+            <strong className={`sg-val ${diff >= 0 ? 'good' : 'down'}`}>
+              {diff >= 0 ? `+${money(diff)}` : money(diff)} <small>บาท</small>
+            </strong>
+          </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+/* ── Dual Gauge Bars Component (Target + YoY) ──────────────────── */
+function DualGaugeBar({ actual, target, lastYear, yoyGrowthPct, category }) {
+  const targetPct = target > 0 ? (actual / target) * 100 : null;
+
+  return (
+    <div className="dual-gauge-grid">
+      <SingleGaugeItem
+        title="ผลการดำเนินงานเทียบเป้าหมาย"
+        icon="🎯"
+        actual={actual}
+        compareVal={target}
+        compareLabel="เป้าหมาย (Target)"
+        pctVal={targetPct}
+        category={category}
+      />
+      <SingleGaugeItem
+        title="ผลการดำเนินงานเทียบปีก่อนหน้า (YoY)"
+        icon="📅"
+        actual={actual}
+        compareVal={lastYear}
+        compareLabel="ปีก่อนหน้า (Last Year)"
+        pctVal={yoyGrowthPct}
+        category={category}
+      />
     </div>
   );
 }
@@ -825,7 +868,7 @@ function App() {
 
         {/* Row 1: Category, Year, Month Range, Province, Postcode */}
         <div className="filters-grid">
-          <div className="filter-field">
+          <div className="filter-field field-category">
             <label>ประเภท</label>
             <div className="toggle">
               <button className={category === 'REVENUE' ? 'active' : ''} onClick={() => handleCategoryChange('REVENUE')}>
@@ -837,14 +880,14 @@ function App() {
             </div>
           </div>
 
-          <div className="filter-field">
+          <div className="filter-field field-year">
             <label>ปี พ.ศ.</label>
             <select value={yearBE} onChange={(e) => handleYearChange(e.target.value)}>
               {meta?.yearsBE?.map((x) => <option key={x} value={x}>{x}</option>)}
             </select>
           </div>
 
-          <div className="filter-field month-range-field">
+          <div className="filter-field field-months">
             <label>ช่วงเดือน (จาก - ถึง)</label>
             <div className="month-range-selects">
               <select value={monthFrom} onChange={(e) => setMonthFrom(e.target.value)}>
@@ -861,7 +904,7 @@ function App() {
             </div>
           </div>
 
-          <div className="filter-field">
+          <div className="filter-field field-province">
             <label>จังหวัด</label>
             <select value={province} onChange={(e) => handleProvinceChange(e.target.value)}>
               <option value="">ทุกจังหวัด (ทั้งหมด)</option>
@@ -869,7 +912,7 @@ function App() {
             </select>
           </div>
 
-          <div className="filter-field">
+          <div className="filter-field field-postcode">
             <label>ที่ทำการ {province ? `(${province})` : ''}</label>
             <select value={postcode} onChange={(e) => setPostcode(e.target.value)}>
               <option value="">ทุกที่ทำการ (ทั้งหมด)</option>
@@ -1030,7 +1073,7 @@ function App() {
             </h2>
             <p className="hint-text">มาตรวัดความสำเร็จของผลงานจริงเทียบเป้าหมายและปีก่อนหน้าตามตัวกรองที่เลือก</p>
           </div>
-          <GaugeBar
+          <DualGaugeBar
             actual={detail.actual}
             target={detail.targetAmount}
             lastYear={detail.lastYearAmount}
@@ -1063,70 +1106,67 @@ function App() {
                     </tr>
                   </thead>
                   <tbody>
-                    {detail.sourceSummary.map((item) => (
-                      <tr key={item.source} className={!item.enabled ? 'disabled-row' : ''}>
-                        <td>
-                          <strong className="source-name-badge">📁 {item.label}</strong>
-                        </td>
-                        <td>
-                          <span className={`status-pill ${item.enabled ? 'active' : 'inactive'}`}>
-                            {item.enabled ? '✓ รวมในการคำนวณ' : '✕ ไม่รวม'}
-                          </span>
-                        </td>
-                        <td className="num">{money(item.actual)}</td>
-                        <td className="num">{money(item.target)}</td>
-                        <td className="num">
-                          <span className={`pct-badge ${item.achievementPct >= 100 ? 'good' : ''}`}>
-                            {pct(item.achievementPct)}
-                          </span>
-                        </td>
-                        <td className="num">{money(item.lastYearAmount)}</td>
-                        <td className="num">{pct(item.yoyGrowthPct)}</td>
-                      </tr>
-                    ))}
+                    {detail.sourceSummary.map((item) => {
+                      const achStatus = getEvaluationStatus(item.achievementPct, category);
+                      const yoyStatus = getEvaluationStatus(item.yoyGrowthPct, category);
+                      return (
+                        <tr key={item.source} className={!item.enabled ? 'disabled-row' : ''}>
+                          <td>
+                            <strong className="source-name-badge">📁 {item.label}</strong>
+                          </td>
+                          <td>
+                            <span className={`status-pill ${item.enabled ? 'active' : 'inactive'}`}>
+                              {item.enabled ? '✓ รวมในการคำนวณ' : '✕ ไม่รวม'}
+                            </span>
+                          </td>
+                          <td className="num">{money(item.actual)}</td>
+                          <td className="num">{money(item.target)}</td>
+                          <td className="num">
+                            <span className={`pct-badge ${achStatus.badgeClass}`}>
+                              {pct(item.achievementPct)}
+                            </span>
+                          </td>
+                          <td className="num">{money(item.lastYearAmount)}</td>
+                          <td className="num">
+                            <span className={`pct-badge ${yoyStatus.badgeClass}`}>
+                              {pct(item.yoyGrowthPct)}
+                            </span>
+                          </td>
+                        </tr>
+                      );
+                    })}
                   </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colSpan={2}><strong>รวมแหล่งข้อมูลที่เลือก</strong></td>
-                      <td className="num">
-                        <strong>
-                          {money(detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.actual || 0), 0))}
-                        </strong>
-                      </td>
-                      <td className="num">
-                        <strong>
-                          {money(detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.target || 0), 0))}
-                        </strong>
-                      </td>
-                      <td className="num">
-                        <strong className="pct-badge">
-                          {pct(
-                            detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.target || 0), 0)
-                              ? (detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.actual || 0), 0) /
-                                  detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.target || 0), 0)) *
-                                  100
-                              : null
-                          )}
-                        </strong>
-                      </td>
-                      <td className="num">
-                        <strong>
-                          {money(detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.lastYearAmount || 0), 0))}
-                        </strong>
-                      </td>
-                      <td className="num">
-                        <strong className="pct-badge">
-                          {pct(
-                            detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.lastYearAmount || 0), 0)
-                              ? (detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.actual || 0), 0) /
-                                  detail.sourceSummary.filter((s) => s.enabled).reduce((acc, s) => acc + (s.lastYearAmount || 0), 0)) *
-                                  100
-                              : null
-                          )}
-                        </strong>
-                      </td>
-                    </tr>
-                  </tfoot>
+                  {(() => {
+                    const enabledItems = detail.sourceSummary.filter((s) => s.enabled);
+                    const totAct = enabledItems.reduce((acc, s) => acc + (s.actual || 0), 0);
+                    const totTar = enabledItems.reduce((acc, s) => acc + (s.target || 0), 0);
+                    const totLy = enabledItems.reduce((acc, s) => acc + (s.lastYearAmount || 0), 0);
+                    const totAchPct = totTar > 0 ? (totAct / totTar) * 100 : null;
+                    const totYoyPct = totLy > 0 ? (totAct / totLy) * 100 : null;
+                    const totAchStatus = getEvaluationStatus(totAchPct, category);
+                    const totYoyStatus = getEvaluationStatus(totYoyPct, category);
+
+                    return (
+                      <tfoot>
+                        <tr>
+                          <td colSpan={2}><strong>รวมแหล่งข้อมูลที่เลือก</strong></td>
+                          <td className="num"><strong>{money(totAct)}</strong></td>
+                          <td className="num"><strong>{money(totTar)}</strong></td>
+                          <td className="num">
+                            <strong className={`pct-badge ${totAchStatus.badgeClass}`}>
+                              {pct(totAchPct)}
+                            </strong>
+                          </td>
+                          <td className="num"><strong>{money(totLy)}</strong></td>
+                          <td className="num">
+                            <strong className={`pct-badge ${totYoyStatus.badgeClass}`}>
+                              {pct(totYoyPct)}
+                            </strong>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    );
+                  })()}
                 </table>
               </div>
             </section>
@@ -1260,16 +1300,20 @@ function App() {
                     </strong>
                   </td>
                   <td className="num">
-                    <strong className="pct-badge">
-                      {(() => {
-                        const totalAct = detail.breakdown.reduce((s, r) => s + (r.actual || 0), 0);
-                        const totalCmp = detail.breakdown.reduce(
-                          (s, r) => s + (tableCompareMode === 'target' ? (r.target || 0) : (r.lastYearAmount || 0)),
-                          0
-                        );
-                        return pct(totalCmp > 0 ? (totalAct / totalCmp) * 100 : null);
-                      })()}
-                    </strong>
+                    {(() => {
+                      const totalAct = detail.breakdown.reduce((s, r) => s + (r.actual || 0), 0);
+                      const totalCmp = detail.breakdown.reduce(
+                        (s, r) => s + (tableCompareMode === 'target' ? (r.target || 0) : (r.lastYearAmount || 0)),
+                        0
+                      );
+                      const totalPct = totalCmp > 0 ? (totalAct / totalCmp) * 100 : null;
+                      const totalStatus = getEvaluationStatus(totalPct, category);
+                      return (
+                        <strong className={`pct-badge ${totalStatus.badgeClass}`}>
+                          {pct(totalPct)}
+                        </strong>
+                      );
+                    })()}
                   </td>
                   {canDrill && <td></td>}
                 </tr>
