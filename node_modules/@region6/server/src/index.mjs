@@ -1,29 +1,19 @@
 import cors from 'cors';
 import express from 'express';
-import { readdir, readFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { loadData } from './db.mjs';
 
-const root = resolve(import.meta.dirname, '../..');
-const database = resolve(root, 'database');
 const monthNames = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
 const categoryByThai = { 'รายได้': 'REVENUE', 'ค่าใช้จ่าย': 'EXPENSE' };
 const total = (rows, field = 'amount') => rows.reduce((sum, row) => sum + (Number(row[field]) || 0), 0);
 const ratio = (numerator, denominator) => denominator ? numerator / denominator * 100 : null;
 const asNumber = (value, fallback) => Number.isFinite(Number(value)) ? Number(value) : fallback;
 
-/* ── Load data ─────────────────────────────────────────────────── */
-const readJson = (name) => readFile(resolve(database, name), 'utf8').then(JSON.parse);
-const files = await readdir(database);
-const actualFiles = files.filter((name) => /^(sap|bi|cod|e-Commerce|fuze|lotto|dit)_\d{4}_\d+\.json$/.test(name));
-const targetFiles = files.filter((name) => /^target_\d{4}_\d+\.json$/.test(name));
-const [offices, services, actualRaw, targetRaw] = await Promise.all([
-  readJson('master_post.json'), readJson('master_service.json'),
-  Promise.all(actualFiles.map(readJson)), Promise.all(targetFiles.map(readJson)),
-]);
+/* ── Load data (MongoDB Atlas / Fallback) ───────────────────────── */
+const { offices, services, actuals, targets, source } = await loadData();
+console.log(`[Server] Ready! Active Data Source: ${source}`);
+
 const officeByPostcode = new Map(offices.map((row) => [String(row.postcode), row]));
 const serviceByAccount = new Map(services.map((row) => [String(row.accountcode), row]));
-const sourcesMap = { sap: 'SAP', bi: 'BI', cod: 'COD', 'e-Commerce': 'ECOMMERCE', fuze: 'FUZE', lotto: 'LOTTO', dit: 'DIT' };
-const sourceFromFile = (name) => sourcesMap[name.match(/^(.+?)_\d{4}_\d+\.json$/)?.[1]];
 const allSapSources = new Set(['SAP', 'COD', 'FUZE', 'LOTTO', 'ECOMMERCE', 'DIT']);
 
 // Map source → accountcodes for target filtering
@@ -46,19 +36,6 @@ function accountcodeMatchesSources(accountcode, enabledSources) {
   return enabledSources.has('SAP');
 }
 
-const actuals = actualRaw.flatMap((rows, index) => rows.map((row) => {
-  const accountcode = String(row.accountcode ?? row.code ?? '');
-  const service = serviceByAccount.get(accountcode);
-  return {
-    year: Number(row.year), month: Number(row.month), postcode: String(row.postcode ?? ''),
-    accountcode, amount: Number(row.actual) || 0, source: sourceFromFile(actualFiles[index]),
-    category: categoryByThai[service?.category] ?? categoryByThai[accountcode],
-  };
-}));
-const targets = targetRaw.flatMap((rows) => rows.map((row) => ({
-  year: Number(row.year), month: Number(row.month), postcode: String(row.postcode ?? ''),
-  accountcode: String(row.accountcode), amount: Number(row.target) || 0,
-})));
 const latestActualYear = actuals.reduce((latest, row) => Math.max(latest, row.year), 0);
 
 // Build service hierarchy for meta endpoint
@@ -368,7 +345,8 @@ app.get('/api/v1/meta/filters', (req, res) => {
     sapSources: ['SAP', 'COD', 'FUZE', 'LOTTO', 'ECOMMERCE', 'DIT'],
     sapSourceLabels: { SAP: 'SAP', COD: 'COD', FUZE: 'FUZE', LOTTO: 'LOTTO', ECOMMERCE: 'e-Commerce', DIT: 'DIT' },
     serviceHierarchy,
-    filesLoaded: actualFiles.length + targetFiles.length + 2,
+    recordsLoaded: actuals.length + targets.length,
+    source,
   } });
 });
 
@@ -524,4 +502,4 @@ app.get('/api/v1/dashboard/watchlist', (req, res) => {
   res.json({ success: true, data: list });
 });
 
-app.listen(process.env.PORT || 5000, () => console.log(`API ready: ${actualFiles.length} actual files, ${targetFiles.length} target files`));
+app.listen(process.env.PORT || 5000, () => console.log(`API ready on port ${process.env.PORT || 5000} (Source: ${source})`));
