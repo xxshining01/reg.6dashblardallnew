@@ -1,8 +1,12 @@
 import { MongoClient } from 'mongodb';
 import dotenv from 'dotenv';
-import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
 import { readdir, readFile } from 'node:fs/promises';
 import dns from 'node:dns';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 if (process.platform === 'win32' && !process.env.VERCEL) {
   try {
@@ -10,9 +14,9 @@ if (process.platform === 'win32' && !process.env.VERCEL) {
   } catch (e) {}
 }
 
-dotenv.config({ path: resolve(import.meta.dirname, '../.env') });
+dotenv.config({ path: resolve(__dirname, '../.env') });
 
-const root = resolve(import.meta.dirname, '../..');
+const root = resolve(__dirname, '../..');
 const databaseDir = resolve(root, 'database');
 
 const categoryByThai = { 'รายได้': 'REVENUE', 'ค่าใช้จ่าย': 'EXPENSE' };
