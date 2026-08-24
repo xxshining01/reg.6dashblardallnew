@@ -8,12 +8,66 @@ const total = (rows, field = 'amount') => rows.reduce((sum, row) => sum + (Numbe
 const ratio = (numerator, denominator) => denominator ? numerator / denominator * 100 : null;
 const asNumber = (value, fallback) => Number.isFinite(Number(value)) ? Number(value) : fallback;
 
-/* ── Load data (MongoDB Atlas / Fallback) ───────────────────────── */
-const { offices, services, actuals, targets, source } = await loadData();
-console.log(`[Server] Ready! Active Data Source: ${source}`);
+/* ── Dataset State & Dynamic Loader ───────────────────────── */
+let dataset = null;
+let datasetPromise = null;
+let offices = [];
+let services = [];
+let actuals = [];
+let targets = [];
+let source = 'Initializing...';
+let officeByPostcode = new Map();
+let serviceByAccount = new Map();
+let serviceHierarchy = {};
+let latestActualYear = 2026;
 
-const officeByPostcode = new Map(offices.map((row) => [String(row.postcode), row]));
-const serviceByAccount = new Map(services.map((row) => [String(row.accountcode), row]));
+export async function getDataset() {
+  if (dataset) return dataset;
+  if (!datasetPromise) {
+    datasetPromise = loadData().then((data) => {
+      offices = data.offices || [];
+      services = data.services || [];
+      actuals = data.actuals || [];
+      targets = data.targets || [];
+      source = data.source || 'MongoDB Atlas';
+
+      officeByPostcode = new Map(offices.map((row) => [String(row.postcode), row]));
+      serviceByAccount = new Map(services.map((row) => [String(row.accountcode), row]));
+      latestActualYear = actuals.reduce((latest, row) => Math.max(latest, row.year), 2026);
+
+      serviceHierarchy = {};
+      for (const svc of services) {
+        const cat = categoryByThai[svc.category];
+        if (!cat) continue;
+        if (!serviceHierarchy[cat]) serviceHierarchy[cat] = {};
+        const bg = svc['bussiness group'];
+        if (!serviceHierarchy[cat][bg]) serviceHierarchy[cat][bg] = {};
+        const evm = svc['evm service'];
+        if (!serviceHierarchy[cat][bg][evm]) serviceHierarchy[cat][bg][evm] = [];
+        serviceHierarchy[cat][bg][evm].push({ accountcode: svc.accountcode, accountname: svc.accountname });
+      }
+
+      dataset = {
+        offices,
+        services,
+        actuals,
+        targets,
+        source,
+        officeByPostcode,
+        serviceByAccount,
+        serviceHierarchy,
+        latestActualYear,
+      };
+      return dataset;
+    });
+  }
+  return datasetPromise;
+}
+
+if (!process.env.VERCEL) {
+  getDataset().then((d) => console.log(`[Server] Ready! Active Data Source: ${d.source}`));
+}
+
 const allSapSources = new Set(['SAP', 'COD', 'FUZE', 'LOTTO', 'ECOMMERCE', 'DIT']);
 
 // Map source → accountcodes for target filtering
@@ -325,20 +379,30 @@ app.use(express.json());
 
 const api = express.Router();
 
-api.get(['/health', '/status'], (req, res) => {
+api.get(['/health', '/status'], async (req, res) => {
   res.json({
     status: 'ok',
-    dataSource: source,
-    diagnostics: dbDiagnostics,
     hasMongoUri: !!process.env.MONGODB_URI,
     mongoDbName: process.env.MONGODB_DB_NAME || 'reg6_revenue',
-    counts: {
-      offices: offices.length,
-      services: services.length,
-      actuals: actuals.length,
-      targets: targets.length,
-    },
+    diagnostics: dbDiagnostics,
+    isLoaded: !!dataset,
+    source: dataset?.source || source,
+    counts: dataset ? {
+      offices: dataset.offices.length,
+      services: dataset.services.length,
+      actuals: dataset.actuals.length,
+      targets: dataset.targets.length,
+    } : 'Loading in progress or on-demand',
   });
+});
+
+api.use(async (req, res, next) => {
+  try {
+    await getDataset();
+    next();
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message, diagnostics: dbDiagnostics });
+  }
 });
 
 api.get('/meta/filters', (req, res) => {
