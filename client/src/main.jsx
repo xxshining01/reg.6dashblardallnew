@@ -240,18 +240,11 @@ function SapDonutChart({
       <div className="donut-header">
         <div>
           <h2>🍩 สัดส่วนผลการดำเนินงาน ({levelLabel})</h2>
-          <p className="hint-text">คลิกที่ชิ้นส่วนโดนัทเพื่อเจาะลึกดูรายละเอียดระดับย่อย</p>
+          <p className="hint-text">คลิกที่ชิ้นส่วนโดนัทเพื่อเจาะลึก | เลือกกลุ่มด้านล่างเพื่อดูภาพกว้างขึ้น</p>
         </div>
-        <div className="donut-header-actions">
-          {canGoBack && (
-            <button className="donut-back-btn" onClick={onBack} title="ย้อนกลับระดับก่อนหน้า">
-              ← ย้อนกลับ
-            </button>
-          )}
-          <div className="donut-total-badge">
-            <span>ยอดรวม:</span>
-            <strong>{compactMoney(totalActual)} บาท</strong>
-          </div>
+        <div className="donut-total-badge">
+          <span>ยอดรวม:</span>
+          <strong>{compactMoney(totalActual)} บาท</strong>
         </div>
       </div>
 
@@ -335,6 +328,7 @@ function App() {
 
   // Watchlist Component States
   const [watchCompareMode, setWatchCompareMode] = useState('target'); // 'target' vs 'yoy'
+  const [tableCompareMode, setTableCompareMode] = useState('target'); // 'target' vs 'yoy'
   const [watchSearch, setWatchSearch] = useState('');
   const [showIndicators, setShowIndicators] = useState(true);
   const [isWatchlistOpen, setIsWatchlistOpen] = useState(false);
@@ -1160,7 +1154,7 @@ function App() {
         <div className="drill-header">
           <div>
             <div className="table-title-row">
-              <h2>📋 รายละเอียดตาม{drillLevelLabel()}</h2>
+              <h2>📋 รายละเอียดตาม{drillLevelLabel()} ({category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย'})</h2>
               {mode === 'SAP' && (
                 <div className="dimension-toggle">
                   <button
@@ -1182,7 +1176,25 @@ function App() {
               {canDrill ? '💡 สามารถคลิกที่แถวเพื่อเจาะลึกดูรายละเอียดระดับถัดไป' : 'ระดับรายการละเอียดสุดแล้ว'}
             </p>
           </div>
-          <Breadcrumb items={breadcrumbItems} onNavigate={handleBreadcrumbNav} />
+          <div className="table-header-controls">
+            <div className="mini-toggle-group">
+              <button
+                className={tableCompareMode === 'target' ? 'active' : ''}
+                onClick={() => setTableCompareMode('target')}
+                title="เปรียบเทียบผลงานจริงเทียบเป้าหมาย"
+              >
+                🎯 เทียบเป้าหมาย
+              </button>
+              <button
+                className={tableCompareMode === 'yoy' ? 'active' : ''}
+                onClick={() => setTableCompareMode('yoy')}
+                title="เปรียบเทียบผลงานจริงเทียบปีก่อนหน้า (YoY)"
+              >
+                📅 เทียบปีก่อน (YoY)
+              </button>
+            </div>
+            <Breadcrumb items={breadcrumbItems} onNavigate={handleBreadcrumbNav} />
+          </div>
         </div>
         <div className="table-responsive">
           <table>
@@ -1190,8 +1202,8 @@ function App() {
               <tr>
                 <th>{drillLevelLabel()}</th>
                 <th className="num">ผลงานจริง (บาท)</th>
-                <th className="num">เป้าหมาย (บาท)</th>
-                <th className="num">% บรรลุเป้า</th>
+                <th className="num">{tableCompareMode === 'target' ? 'เป้าหมาย (บาท)' : 'ปีก่อนหน้า (บาท)'}</th>
+                <th className="num">{tableCompareMode === 'target' ? '% บรรลุเป้า' : '% YoY'}</th>
                 {canDrill && <th className="center">เจาะลึก</th>}
               </tr>
             </thead>
@@ -1203,25 +1215,31 @@ function App() {
                   </td>
                 </tr>
               ) : (
-                detail?.breakdown?.map((row) => (
-                  <tr
-                    key={row.name}
-                    className={canDrill ? 'drill-row' : ''}
-                    onClick={() => canDrill && handleDrill(row)}
-                  >
-                    <td>
-                      <span className="row-name">{row.name}</span>
-                    </td>
-                    <td className="num">{money(row.actual)}</td>
-                    <td className="num">{money(row.target)}</td>
-                    <td className="num">
-                      <span className={`pct-badge ${row.achievementPct >= 100 ? 'good' : ''}`}>
-                        {pct(row.achievementPct)}
-                      </span>
-                    </td>
-                    {canDrill && <td className="drill-arrow center">▶</td>}
-                  </tr>
-                ))
+                detail?.breakdown?.map((row) => {
+                  const compVal = tableCompareMode === 'target' ? row.target : row.lastYearAmount;
+                  const compPct = tableCompareMode === 'target' ? row.achievementPct : row.yoyGrowthPct;
+                  const evalStatus = getEvaluationStatus(compPct, category);
+
+                  return (
+                    <tr
+                      key={row.name}
+                      className={canDrill ? 'drill-row' : ''}
+                      onClick={() => canDrill && handleDrill(row)}
+                    >
+                      <td>
+                        <span className="row-name">{row.name}</span>
+                      </td>
+                      <td className="num">{money(row.actual)}</td>
+                      <td className="num">{money(compVal)}</td>
+                      <td className="num">
+                        <span className={`pct-badge ${evalStatus.badgeClass}`}>
+                          {pct(compPct)}
+                        </span>
+                      </td>
+                      {canDrill && <td className="drill-arrow center">▶</td>}
+                    </tr>
+                  );
+                })
               )}
             </tbody>
             {detail?.breakdown && detail.breakdown.length > 0 && (
@@ -1232,17 +1250,25 @@ function App() {
                     <strong>{money(detail.breakdown.reduce((s, r) => s + (r.actual || 0), 0))}</strong>
                   </td>
                   <td className="num">
-                    <strong>{money(detail.breakdown.reduce((s, r) => s + (r.target || 0), 0))}</strong>
+                    <strong>
+                      {money(
+                        detail.breakdown.reduce(
+                          (s, r) => s + (tableCompareMode === 'target' ? (r.target || 0) : (r.lastYearAmount || 0)),
+                          0
+                        )
+                      )}
+                    </strong>
                   </td>
                   <td className="num">
                     <strong className="pct-badge">
-                      {pct(
-                        detail.breakdown.reduce((s, r) => s + (r.target || 0), 0)
-                          ? (detail.breakdown.reduce((s, r) => s + (r.actual || 0), 0) /
-                              detail.breakdown.reduce((s, r) => s + (r.target || 0), 0)) *
-                              100
-                          : null
-                      )}
+                      {(() => {
+                        const totalAct = detail.breakdown.reduce((s, r) => s + (r.actual || 0), 0);
+                        const totalCmp = detail.breakdown.reduce(
+                          (s, r) => s + (tableCompareMode === 'target' ? (r.target || 0) : (r.lastYearAmount || 0)),
+                          0
+                        );
+                        return pct(totalCmp > 0 ? (totalAct / totalCmp) * 100 : null);
+                      })()}
                     </strong>
                   </td>
                   {canDrill && <td></td>}

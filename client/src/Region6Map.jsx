@@ -54,12 +54,21 @@ function getMapColor(val, category) {
 function matchDistrictOffice(distName, provName, watchlistData) {
   if (!watchlistData || watchlistData.length === 0) return null;
   const provOffices = watchlistData.filter((o) => o.province === provName);
-  const cleanDist = distName.replace(/^เมือง/, '');
-  let found = provOffices.find((o) => o.postname === distName || o.postname === cleanDist || o.postname === provName);
-  if (!found) {
-    found = provOffices.find((o) => o.postname.includes(cleanDist) || cleanDist.includes(o.postname));
-  }
-  return found || null;
+  if (provOffices.length === 0) return null;
+
+  const cleanDist = (distName || '').replace(/^เมือง/, '').trim();
+
+  // 1. Exact match on postname === distName or cleanDist
+  let found = provOffices.find((o) => o.postname === distName || o.postname === cleanDist);
+  if (found) return found;
+
+  // 2. Substring match
+  found = provOffices.find((o) => o.postname.includes(cleanDist) || (cleanDist.length >= 3 && cleanDist.includes(o.postname)));
+  if (found) return found;
+
+  // 3. Fallback to main post office of the province
+  found = provOffices.find((o) => o.postname === provName);
+  return found || provOffices[0] || null;
 }
 
 export default function Region6Map({
@@ -156,9 +165,11 @@ export default function Region6Map({
       zoomControl: true,
       attributionControl: false,
       scrollWheelZoom: false,
-      maxBounds: [[13.5, 96.5], [19.5, 103.5]],
+      zoomSnap: 0.1,
+      zoomDelta: 0.25,
+      maxBounds: [[13.5, 96.0], [19.5, 104.0]],
       minZoom: 6,
-      maxZoom: 12,
+      maxZoom: 14,
     });
 
     // Clean, minimalist Positron / CartoDB Light Tile
@@ -170,8 +181,6 @@ export default function Region6Map({
     geojsonLayerRef.current = L.layerGroup().addTo(map);
     labelsLayerRef.current = L.layerGroup().addTo(map);
     mapInstanceRef.current = map;
-
-    map.fitBounds(REGION6_BOUNDS, { padding: [20, 20] });
 
     return () => {
       map.remove();
@@ -191,10 +200,8 @@ export default function Region6Map({
 
     if (!internalDrillProv) {
       // ═══════════════════════════════════════════════════════════════
-      // 1. OVERVIEW LEVEL: 8 PROVINCES CHOROPLETH
+      // 1. OVERVIEW LEVEL: 8 PROVINCES CHOROPLETH (ZOOMED TO FILL)
       // ═══════════════════════════════════════════════════════════════
-      map.fitBounds(REGION6_BOUNDS, { padding: [15, 15] });
-
       const provGeoJson = L.geoJSON(r6Boundaries.provinces, {
         style: (feature) => {
           const provName = feature.properties.prov_name;
@@ -273,6 +280,7 @@ export default function Region6Map({
       });
 
       geoLayer.addLayer(provGeoJson);
+      map.setView([16.35, 100.1], 7.3);
     } else {
       // ═══════════════════════════════════════════════════════════════
       // 2. DRILLED-DOWN LEVEL: DISTRICT / AMPHUR CHOROPLETH
@@ -280,9 +288,6 @@ export default function Region6Map({
       const filteredDistFeatures = r6Boundaries.districts.features.filter(
         (f) => f.properties.prov_name === internalDrillProv
       );
-
-      const targetBounds = PROV_BOUNDS[internalDrillProv] || REGION6_BOUNDS;
-      map.fitBounds(targetBounds, { padding: [25, 25] });
 
       const distGeoJson = L.geoJSON(
         { type: 'FeatureCollection', features: filteredDistFeatures },
@@ -363,6 +368,7 @@ export default function Region6Map({
       );
 
       geoLayer.addLayer(distGeoJson);
+      map.fitBounds(distGeoJson.getBounds(), { padding: [10, 10] });
     }
   }, [internalDrillProv, provinceAggregates, watchlistData, mapCompareMode, category, selectedPostcode, onSelectLocation]);
 

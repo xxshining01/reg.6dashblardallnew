@@ -157,7 +157,7 @@ function matchTarget(row, f, category) {
 }
 
 /* ── SAP mode: drill-down breakdown ────────────────────────────── */
-function sapBreakdown(rows, targetRows, drillLevel, groupFilter, evmFilter) {
+function sapBreakdown(rows, targetRows, lyRows, drillLevel, groupFilter, evmFilter) {
   if (drillLevel === 'account') {
     const groups = new Map();
     for (const row of rows) {
@@ -171,10 +171,24 @@ function sapBreakdown(rows, targetRows, drillLevel, groupFilter, evmFilter) {
       if (!svc || svc['bussiness group'] !== groupFilter || svc['evm service'] !== evmFilter) continue;
       tGroups.set(row.accountcode, (tGroups.get(row.accountcode) || 0) + row.amount);
     }
+    const lyGroups = new Map();
+    for (const row of (lyRows || [])) {
+      const svc = serviceByAccount.get(row.accountcode);
+      if (!svc || svc['bussiness group'] !== groupFilter || svc['evm service'] !== evmFilter) continue;
+      lyGroups.set(row.accountcode, (lyGroups.get(row.accountcode) || 0) + row.amount);
+    }
     return [...groups].map(([code, actual]) => {
       const svc = serviceByAccount.get(code);
       const target = tGroups.get(code) || 0;
-      return { name: `${code} — ${svc?.accountname || 'ไม่ทราบชื่อ'}`, actual, target, achievementPct: ratio(actual, target) };
+      const lastYearAmount = lyGroups.get(code) || 0;
+      return {
+        name: `${code} — ${svc?.accountname || 'ไม่ทราบชื่อ'}`,
+        actual,
+        target,
+        achievementPct: ratio(actual, target),
+        lastYearAmount,
+        yoyGrowthPct: ratio(actual, lastYearAmount),
+      };
     }).sort((a, b) => b.actual - a.actual);
   }
 
@@ -193,9 +207,24 @@ function sapBreakdown(rows, targetRows, drillLevel, groupFilter, evmFilter) {
       const key = svc['evm service'];
       tGroups.set(key, (tGroups.get(key) || 0) + row.amount);
     }
+    const lyGroups = new Map();
+    for (const row of (lyRows || [])) {
+      const svc = serviceByAccount.get(row.accountcode);
+      if (!svc || svc['bussiness group'] !== groupFilter) continue;
+      const key = svc['evm service'];
+      lyGroups.set(key, (lyGroups.get(key) || 0) + row.amount);
+    }
     return [...groups].map(([name, actual]) => {
       const target = tGroups.get(name) || 0;
-      return { name, actual, target, achievementPct: ratio(actual, target) };
+      const lastYearAmount = lyGroups.get(name) || 0;
+      return {
+        name,
+        actual,
+        target,
+        achievementPct: ratio(actual, target),
+        lastYearAmount,
+        yoyGrowthPct: ratio(actual, lastYearAmount),
+      };
     }).sort((a, b) => b.actual - a.actual);
   }
 
@@ -212,14 +241,28 @@ function sapBreakdown(rows, targetRows, drillLevel, groupFilter, evmFilter) {
     const name = svc?.['bussiness group'] || 'ไม่พบใน Master Service';
     tGroups.set(name, (tGroups.get(name) || 0) + row.amount);
   }
+  const lyGroups = new Map();
+  for (const row of (lyRows || [])) {
+    const svc = serviceByAccount.get(row.accountcode);
+    const name = svc?.['bussiness group'] || 'ไม่พบใน Master Service';
+    lyGroups.set(name, (lyGroups.get(name) || 0) + row.amount);
+  }
   return [...groups].map(([name, actual]) => {
     const target = tGroups.get(name) || 0;
-    return { name, actual, target, achievementPct: ratio(actual, target) };
+    const lastYearAmount = lyGroups.get(name) || 0;
+    return {
+      name,
+      actual,
+      target,
+      achievementPct: ratio(actual, target),
+      lastYearAmount,
+      yoyGrowthPct: ratio(actual, lastYearAmount),
+    };
   }).sort((a, b) => b.actual - a.actual);
 }
 
 /* ── Area / Province / Postcode breakdown (used in BI and SAP mode) ── */
-function areaBreakdown(rows, targetRows, drillLevel, provinceFilter) {
+function areaBreakdown(rows, targetRows, lyRows, drillLevel, provinceFilter) {
   if (drillLevel === 'postcode') {
     const filtered = rows.filter((row) => {
       const office = officeByPostcode.get(row.postcode);
@@ -241,9 +284,27 @@ function areaBreakdown(rows, targetRows, drillLevel, provinceFilter) {
       const label = office ? `${row.postcode} ${office.postname}` : (row.postcode || 'ไม่ระบุที่ทำการ');
       tGroups.set(label, (tGroups.get(label) || 0) + row.amount);
     }
+    const lyFiltered = (lyRows || []).filter((row) => {
+      const office = officeByPostcode.get(row.postcode);
+      return office?.province === provinceFilter;
+    });
+    const lyGroups = new Map();
+    for (const row of lyFiltered) {
+      const office = officeByPostcode.get(row.postcode);
+      const label = office ? `${row.postcode} ${office.postname}` : (row.postcode || 'ไม่ระบุที่ทำการ');
+      lyGroups.set(label, (lyGroups.get(label) || 0) + row.amount);
+    }
     return [...groups].map(([name, actual]) => {
       const target = tGroups.get(name) || 0;
-      return { name, actual, target, achievementPct: ratio(actual, target) };
+      const lastYearAmount = lyGroups.get(name) || 0;
+      return {
+        name,
+        actual,
+        target,
+        achievementPct: ratio(actual, target),
+        lastYearAmount,
+        yoyGrowthPct: ratio(actual, lastYearAmount),
+      };
     }).sort((a, b) => b.actual - a.actual);
   }
 
@@ -260,9 +321,23 @@ function areaBreakdown(rows, targetRows, drillLevel, provinceFilter) {
     const name = office?.province || (row.postcode ? `ไม่ทราบจังหวัด (${row.postcode})` : 'ไม่ระบุที่ทำการ');
     tGroups.set(name, (tGroups.get(name) || 0) + row.amount);
   }
+  const lyGroups = new Map();
+  for (const row of (lyRows || [])) {
+    const office = officeByPostcode.get(row.postcode);
+    const name = office?.province || (row.postcode ? `ไม่ทราบจังหวัด (${row.postcode})` : 'ไม่ระบุที่ทำการ');
+    lyGroups.set(name, (lyGroups.get(name) || 0) + row.amount);
+  }
   return [...groups].map(([name, actual]) => {
     const target = tGroups.get(name) || 0;
-    return { name, actual, target, achievementPct: ratio(actual, target) };
+    const lastYearAmount = lyGroups.get(name) || 0;
+    return {
+      name,
+      actual,
+      target,
+      achievementPct: ratio(actual, target),
+      lastYearAmount,
+      yoyGrowthPct: ratio(actual, lastYearAmount),
+    };
   }).sort((a, b) => b.actual - a.actual);
 }
 
@@ -351,7 +426,8 @@ app.get('/api/v1/dashboard/detail', (req, res) => {
   const f = filters(req.query);
   const rows = actuals.filter((row) => matchActual(row, f));
   const actual = total(rows);
-  const lastYear = total(actuals.filter((row) => matchActual(row, { ...f, year: f.year - 1 })));
+  const lyRows = actuals.filter((row) => matchActual(row, { ...f, year: f.year - 1 }));
+  const lastYear = total(lyRows);
   const tRows = targets.filter((row) => matchTarget(row, f, f.category));
   const target = total(tRows);
 
@@ -361,7 +437,7 @@ app.get('/api/v1/dashboard/detail', (req, res) => {
   if (f.mode === 'BI' || dimension === 'area') {
     const drillLevel = req.query.drillLevel || 'province';
     const provinceFilter = req.query.drillProvince || null;
-    const breakdown = areaBreakdown(rows, tRows, drillLevel, provinceFilter);
+    const breakdown = areaBreakdown(rows, tRows, lyRows, drillLevel, provinceFilter);
     return res.json({ success: true, filtersApplied: f, data: {
       actual, targetAmount: target, targetAchievementPct: ratio(actual, target),
       lastYearAmount: lastYear, yoyGrowthPct: ratio(actual, lastYear),
@@ -373,7 +449,7 @@ app.get('/api/v1/dashboard/detail', (req, res) => {
   const drillLevel = req.query.drillLevel || 'group';
   const groupFilter = req.query.drillGroup || null;
   const evmFilter = req.query.drillEvm || null;
-  const breakdown = sapBreakdown(rows, tRows, drillLevel, groupFilter, evmFilter);
+  const breakdown = sapBreakdown(rows, tRows, lyRows, drillLevel, groupFilter, evmFilter);
   res.json({ success: true, filtersApplied: f, data: {
     actual, targetAmount: target, targetAchievementPct: ratio(actual, target),
     lastYearAmount: lastYear, yoyGrowthPct: ratio(actual, lastYear),

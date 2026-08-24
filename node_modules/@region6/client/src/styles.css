@@ -817,7 +817,7 @@ header p {
   font-size: 13px;
 }
 
-/* Bottom-Right Legend Box (matching user image) */
+/* Bottom-Right Legend Box (matching Dashboard Color Indicators) */
 .r6-map-legend-box {
   position: absolute;
   bottom: 14px;
@@ -932,7 +932,7 @@ header p {
 
 .bottom-visuals-grid .r6-map-viewport-wrapper {
   flex: 1;
-  min-height: 480px;
+  min-height: 520px;
 }
 
 .bottom-visuals-grid .donut-chart-container {
@@ -952,28 +952,6 @@ header p {
   margin-bottom: 10px;
   flex-wrap: wrap;
   gap: 10px;
-}
-
-.donut-title-wrap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.donut-back-btn {
-  background: #EFF6FF;
-  border: 1px solid #BFDBFE;
-  color: #1E40AF;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-family: inherit;
-  transition: all 0.15s;
-}
-.donut-back-btn:hover {
-  background: #DBEAFE;
 }
 
 .donut-total-badge {
@@ -1394,8 +1372,43 @@ tfoot td {
 .badge-very-good { background: #ECFDF5; color: #047857; }
 .badge-boost { background: #FEF3C7; color: #92400E; }
 .badge-watch { background: #FFEDD5; color: #9A3412; }
-.badge-urgent { background: #FEE2E2; color: #991B1B; }
-.badge-neutral { background: #F1F5F9; color: #64748B; }
+/* ── Table Header Controls & Mini Toggle Group ─────────────────── */
+.table-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mini-toggle-group {
+  display: inline-flex;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #F8FAFC;
+}
+
+.mini-toggle-group button {
+  border: none;
+  background: transparent;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.mini-toggle-group button.active {
+  background: #1E3A8A;
+  color: #FFFFFF;
+}
+
+.mini-toggle-group button:not(.active):hover {
+  background: #E2E8F0;
+  color: var(--text-main);
+}
 
 /* ── Responsive ────────────────────────────────────────────────── */
 @media (max-width: 900px) {
