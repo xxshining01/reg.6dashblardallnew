@@ -1,6 +1,6 @@
 import cors from 'cors';
 import express from 'express';
-import { loadData } from './db.mjs';
+import { loadData, dbDiagnostics } from './db.mjs';
 
 const monthNames = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
 const categoryByThai = { 'รายได้': 'REVENUE', 'ค่าใช้จ่าย': 'EXPENSE' };
@@ -329,6 +329,7 @@ api.get(['/health', '/status'], (req, res) => {
   res.json({
     status: 'ok',
     dataSource: source,
+    diagnostics: dbDiagnostics,
     hasMongoUri: !!process.env.MONGODB_URI,
     mongoDbName: process.env.MONGODB_DB_NAME || 'reg6_revenue',
     counts: {

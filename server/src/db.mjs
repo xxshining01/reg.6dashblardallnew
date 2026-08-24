@@ -26,6 +26,15 @@ const sourcesMap = {
   dit: 'DIT',
 };
 
+export let dbDiagnostics = {
+  status: 'initializing',
+  hasMongoUri: false,
+  uriSnippet: null,
+  dbName: null,
+  error: null,
+  source: null,
+};
+
 let cachedData = null;
 let loadPromise = null;
 
@@ -34,6 +43,8 @@ export async function loadData() {
   if (!loadPromise) {
     loadPromise = doLoadData().then((data) => {
       cachedData = data;
+      dbDiagnostics.source = data.source;
+      dbDiagnostics.status = 'ready';
       return data;
     });
   }
@@ -42,8 +53,13 @@ export async function loadData() {
 
 async function doLoadData() {
   let client = null;
-  const uri = process.env.MONGODB_URI;
-  const dbName = process.env.MONGODB_DB_NAME || 'reg6_revenue';
+  const rawUri = process.env.MONGODB_URI || '';
+  const uri = rawUri.replace(/^["']|["']$/g, '').trim();
+  const dbName = (process.env.MONGODB_DB_NAME || 'reg6_revenue').replace(/^["']|["']$/g, '').trim();
+
+  dbDiagnostics.hasMongoUri = !!uri;
+  dbDiagnostics.uriSnippet = uri ? uri.substring(0, 28) + '...' : 'NONE';
+  dbDiagnostics.dbName = dbName;
 
   if (uri) {
     try {
@@ -106,59 +122,79 @@ async function doLoadData() {
         console.log(`[Database] ✓ Loaded ${actuals.length} transactions and ${targets.length} targets from MongoDB Atlas.`);
         return { offices, services, actuals, targets, source: 'MongoDB Atlas' };
       } else {
-        console.log('[Database] MongoDB Atlas is connected but collections are empty. Loading local files...');
+        console.log('[Database] MongoDB Atlas is connected but collections are empty.');
+        dbDiagnostics.notice = 'MongoDB Atlas connected but collections are empty';
       }
     } catch (err) {
-      console.warn(`[Database] MongoDB Atlas connection notice: ${err.message}. Loading from local JSON files.`);
+      console.error(`[Database Error] MongoDB Atlas connection error: ${err.message}`);
+      dbDiagnostics.error = {
+        message: err.message,
+        name: err.name,
+        code: err.code,
+      };
     } finally {
       if (client) await client.close().catch(() => {});
     }
+  } else {
+    dbDiagnostics.error = { message: 'MONGODB_URI is not set in environment variables' };
   }
 
-  // Local fallback
-  console.log('[Database] Loading data from local /database/*.json files...');
-  const readJson = (name) => readFile(resolve(databaseDir, name), 'utf8').then(JSON.parse);
-  const files = await readdir(databaseDir);
-  const actualFiles = files.filter((name) =>
-    /^(sap|bi|cod|e-Commerce|fuze|lotto|dit)_\d{4}_\d+\.json$/.test(name)
-  );
-  const targetFiles = files.filter((name) => /^target_\d{4}_\d+\.json$/.test(name));
+  // Fallback to local files if available
+  try {
+    console.log('[Database] Checking local /database/*.json files...');
+    const readJson = (name) => readFile(resolve(databaseDir, name), 'utf8').then(JSON.parse);
+    const files = await readdir(databaseDir);
+    const actualFiles = files.filter((name) =>
+      /^(sap|bi|cod|e-Commerce|fuze|lotto|dit)_\d{4}_\d+\.json$/.test(name)
+    );
+    const targetFiles = files.filter((name) => /^target_\d{4}_\d+\.json$/.test(name));
 
-  const [offices, services, actualRaw, targetRaw] = await Promise.all([
-    readJson('master_post.json'),
-    readJson('master_service.json'),
-    Promise.all(actualFiles.map(readJson)),
-    Promise.all(targetFiles.map(readJson)),
-  ]);
+    const [offices, services, actualRaw, targetRaw] = await Promise.all([
+      readJson('master_post.json'),
+      readJson('master_service.json'),
+      Promise.all(actualFiles.map(readJson)),
+      Promise.all(targetFiles.map(readJson)),
+    ]);
 
-  const serviceByAccount = new Map(services.map((row) => [String(row.accountcode), row]));
-  const sourceFromFile = (name) => sourcesMap[name.match(/^(.+?)_\d{4}_\d+\.json$/)?.[1]];
+    const serviceByAccount = new Map(services.map((row) => [String(row.accountcode), row]));
+    const sourceFromFile = (name) => sourcesMap[name.match(/^(.+?)_\d{4}_\d+\.json$/)?.[1]];
 
-  const actuals = actualRaw.flatMap((rows, index) =>
-    rows.map((row) => {
-      const accountcode = String(row.accountcode ?? row.code ?? '');
-      const service = serviceByAccount.get(accountcode);
-      return {
+    const actuals = actualRaw.flatMap((rows, index) =>
+      rows.map((row) => {
+        const accountcode = String(row.accountcode ?? row.code ?? '');
+        const service = serviceByAccount.get(accountcode);
+        return {
+          year: Number(row.year),
+          month: Number(row.month),
+          postcode: String(row.postcode ?? ''),
+          accountcode,
+          amount: Number(row.actual) || 0,
+          source: sourceFromFile(actualFiles[index]),
+          category: categoryByThai[service?.category] ?? categoryByThai[accountcode],
+        };
+      })
+    );
+
+    const targets = targetRaw.flatMap((rows) =>
+      rows.map((row) => ({
         year: Number(row.year),
         month: Number(row.month),
         postcode: String(row.postcode ?? ''),
-        accountcode,
-        amount: Number(row.actual) || 0,
-        source: sourceFromFile(actualFiles[index]),
-        category: categoryByThai[service?.category] ?? categoryByThai[accountcode],
-      };
-    })
-  );
+        accountcode: String(row.accountcode),
+        amount: Number(row.target) || 0,
+      }))
+    );
 
-  const targets = targetRaw.flatMap((rows) =>
-    rows.map((row) => ({
-      year: Number(row.year),
-      month: Number(row.month),
-      postcode: String(row.postcode ?? ''),
-      accountcode: String(row.accountcode),
-      amount: Number(row.target) || 0,
-    }))
-  );
-
-  return { offices, services, actuals, targets, source: 'Local JSON Files' };
+    return { offices, services, actuals, targets, source: 'Local JSON Files' };
+  } catch (fsErr) {
+    console.warn(`[Database] Local files not available (${fsErr.message})`);
+    dbDiagnostics.fsError = fsErr.message;
+    return {
+      offices: [],
+      services: [],
+      actuals: [],
+      targets: [],
+      source: 'Empty (Database Connection Failed)',
+    };
+  }
 }
