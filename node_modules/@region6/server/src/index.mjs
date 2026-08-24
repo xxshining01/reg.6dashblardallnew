@@ -318,10 +318,14 @@ function areaBreakdown(rows, targetRows, lyRows, drillLevel, provinceFilter) {
   }).sort((a, b) => b.actual - a.actual);
 }
 
-/* ── Express API ───────────────────────────────────────────────── */
-const app = express(); app.use(cors()); app.use(express.json());
+/* ── Express API Router ────────────────────────────────────────── */
+const app = express();
+app.use(cors());
+app.use(express.json());
 
-app.get(['/api/health', '/api/v1/health'], (req, res) => {
+const api = express.Router();
+
+api.get(['/health', '/status'], (req, res) => {
   res.json({
     status: 'ok',
     dataSource: source,
@@ -336,8 +340,7 @@ app.get(['/api/health', '/api/v1/health'], (req, res) => {
   });
 });
 
-app.get('/api/v1/meta/filters', (req, res) => {
-  // Postcodes grouped by province for cascading filter
+api.get('/meta/filters', (req, res) => {
   const postcodesByProvince = {};
   for (const office of offices) {
     const prov = office.province || 'อื่นๆ';
@@ -351,21 +354,24 @@ app.get('/api/v1/meta/filters', (req, res) => {
     latestMonthByYearBE[yBE] = Math.max(latestMonthByYearBE[yBE] || 0, row.month);
   }
 
-  res.json({ success: true, data: {
-    modes: ['BI', 'SAP'],
-    yearsBE: [...new Set(actuals.map((row) => row.year + 543))].sort((a, b) => a - b),
-    latestMonthByYearBE,
-    provinces: [...new Set(offices.map((row) => row.province).filter(Boolean))].sort(),
-    postcodesByProvince,
-    sapSources: ['SAP', 'COD', 'FUZE', 'LOTTO', 'ECOMMERCE', 'DIT'],
-    sapSourceLabels: { SAP: 'SAP', COD: 'COD', FUZE: 'FUZE', LOTTO: 'LOTTO', ECOMMERCE: 'e-Commerce', DIT: 'DIT' },
-    serviceHierarchy,
-    recordsLoaded: actuals.length + targets.length,
-    source,
-  } });
+  res.json({
+    success: true,
+    data: {
+      modes: ['BI', 'SAP'],
+      yearsBE: [...new Set(actuals.map((row) => row.year + 543))].sort((a, b) => a - b),
+      latestMonthByYearBE,
+      provinces: [...new Set(offices.map((row) => row.province).filter(Boolean))].sort(),
+      postcodesByProvince,
+      sapSources: ['SAP', 'COD', 'FUZE', 'LOTTO', 'ECOMMERCE', 'DIT'],
+      sapSourceLabels: { SAP: 'SAP', COD: 'COD', FUZE: 'FUZE', LOTTO: 'LOTTO', ECOMMERCE: 'e-Commerce', DIT: 'DIT' },
+      serviceHierarchy,
+      recordsLoaded: actuals.length + targets.length,
+      source,
+    },
+  });
 });
 
-app.get('/api/v1/dashboard/summary', (req, res) => {
+api.get('/dashboard/summary', (req, res) => {
   const f = filters(req.query);
   const rows = actuals.filter((row) => matchActual(row, f, null));
   const revenue = total(rows.filter((row) => row.category === 'REVENUE'));
@@ -374,12 +380,18 @@ app.get('/api/v1/dashboard/summary', (req, res) => {
   const fExp = { ...f, category: 'EXPENSE' };
   const revenueTarget = total(targets.filter((row) => matchTarget(row, fRev, 'REVENUE')));
   const expenseTarget = total(targets.filter((row) => matchTarget(row, fExp, 'EXPENSE')));
-  res.json({ success: true, data: {
-    totalRevenue: revenue, totalExpense: expense, netProfit: revenue - expense,
-    revenueTargetAmount: revenueTarget, expenseTargetAmount: expenseTarget,
-    revenueAchievementPct: ratio(revenue, revenueTarget),
-    expenseAchievementPct: ratio(expense, expenseTarget),
-  } });
+  res.json({
+    success: true,
+    data: {
+      totalRevenue: revenue,
+      totalExpense: expense,
+      netProfit: revenue - expense,
+      revenueTargetAmount: revenueTarget,
+      expenseTargetAmount: expenseTarget,
+      revenueAchievementPct: ratio(revenue, revenueTarget),
+      expenseAchievementPct: ratio(expense, expenseTarget),
+    },
+  });
 });
 
 const sapSourcesList = ['SAP', 'COD', 'FUZE', 'LOTTO', 'ECOMMERCE', 'DIT'];
@@ -415,7 +427,7 @@ function calculateSourceSummary(f) {
   });
 }
 
-app.get('/api/v1/dashboard/detail', (req, res) => {
+api.get('/dashboard/detail', (req, res) => {
   const f = filters(req.query);
   const rows = actuals.filter((row) => matchActual(row, f));
   const actual = total(rows);
@@ -431,26 +443,45 @@ app.get('/api/v1/dashboard/detail', (req, res) => {
     const drillLevel = req.query.drillLevel || 'province';
     const provinceFilter = req.query.drillProvince || null;
     const breakdown = areaBreakdown(rows, tRows, lyRows, drillLevel, provinceFilter);
-    return res.json({ success: true, filtersApplied: f, data: {
-      actual, targetAmount: target, targetAchievementPct: ratio(actual, target),
-      lastYearAmount: lastYear, yoyGrowthPct: ratio(actual, lastYear),
-      dimension: 'area', drillLevel, breakdown, sourceSummary,
-    } });
+    return res.json({
+      success: true,
+      filtersApplied: f,
+      data: {
+        actual,
+        targetAmount: target,
+        targetAchievementPct: ratio(actual, target),
+        lastYearAmount: lastYear,
+        yoyGrowthPct: ratio(actual, lastYear),
+        dimension: 'area',
+        drillLevel,
+        breakdown,
+        sourceSummary,
+      },
+    });
   }
 
-  // SAP mode (service hierarchy dimension)
   const drillLevel = req.query.drillLevel || 'group';
   const groupFilter = req.query.drillGroup || null;
   const evmFilter = req.query.drillEvm || null;
   const breakdown = sapBreakdown(rows, tRows, lyRows, drillLevel, groupFilter, evmFilter);
-  res.json({ success: true, filtersApplied: f, data: {
-    actual, targetAmount: target, targetAchievementPct: ratio(actual, target),
-    lastYearAmount: lastYear, yoyGrowthPct: ratio(actual, lastYear),
-    dimension: 'service', drillLevel, breakdown, sourceSummary,
-  } });
+  res.json({
+    success: true,
+    filtersApplied: f,
+    data: {
+      actual,
+      targetAmount: target,
+      targetAchievementPct: ratio(actual, target),
+      lastYearAmount: lastYear,
+      yoyGrowthPct: ratio(actual, lastYear),
+      dimension: 'service',
+      drillLevel,
+      breakdown,
+      sourceSummary,
+    },
+  });
 });
 
-app.get('/api/v1/dashboard/trend', (req, res) => {
+api.get('/dashboard/trend', (req, res) => {
   const f = filters(req.query);
   const from = f.monthFrom || 1;
   const to = f.monthTo || 12;
@@ -470,7 +501,7 @@ app.get('/api/v1/dashboard/trend', (req, res) => {
   res.json({ success: true, data });
 });
 
-app.get('/api/v1/dashboard/watchlist', (req, res) => {
+api.get('/dashboard/watchlist', (req, res) => {
   const f = filters(req.query);
   const rows = actuals.filter((row) => matchActual(row, f));
   const lastYearRows = actuals.filter((row) => matchActual(row, { ...f, year: f.year - 1 }));
@@ -513,6 +544,15 @@ app.get('/api/v1/dashboard/watchlist', (req, res) => {
       yoyGrowthPct: ratio(actual, lastYear),
     };
   });
+
+  res.json({ success: true, data: list });
+});
+
+// Mount router under all possible path variants for local, express, and Vercel serverless
+app.use('/api/v1', api);
+app.use('/v1', api);
+app.use('/api', api);
+app.use('/', api);
 
 export default app;
 
