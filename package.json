@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
-    "build": "cd client && npm run build",
+    "build": "node scripts/build.mjs",
     "start": "npm run start --workspace server"
   },
   "workspaces": ["client", "server"],
