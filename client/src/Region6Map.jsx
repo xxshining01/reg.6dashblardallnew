@@ -147,7 +147,7 @@ export default function Region6Map({
       : (totalLast > 0 ? (totalAct / totalLast) * 100 : null);
 
     return {
-      title: 'ภาพรวม 8 จังหวัด ปณข.6',
+      title: 'ภาพรวม 8 จังหวัด ปข.6',
       targetOrLastYearLabel: mapCompareMode === 'target' ? 'เป้าหมาย' : 'ปีก่อนหน้า',
       targetOrLastYearValue: mapCompareMode === 'target' ? totalTar : totalLast,
       actualLabel: category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย',
@@ -392,7 +392,7 @@ export default function Region6Map({
               <h2>[ปข.6] ปจ.{internalDrillProv}</h2>
             </div>
           ) : (
-            <h2>🗺️ แผนที่ผลการดำเนินงาน 8 จังหวัด (สังกัด ปณข.6)</h2>
+            <h2>🗺️ แผนที่ผลการดำเนินงาน 8 จังหวัด (สังกัด ปข.6)</h2>
           )}
         </div>
 

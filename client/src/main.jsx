@@ -715,7 +715,7 @@ function App() {
       const link = document.createElement('a');
       const timeStr = `${yearBE}_${monthFrom}-${monthTo}`;
       const locStr = postcode ? `_ที่ทำการ${postcode}` : province ? `_จังหวัด${province}` : '';
-      link.download = `Dashboard_ปณข6_${mode}_${category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย'}_${timeStr}${locStr}.png`;
+      link.download = `Dashboard_ปข6_${mode}_${category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย'}_${timeStr}${locStr}.png`;
       link.href = dataUrl;
       link.click();
     } catch (err) {
@@ -740,7 +740,7 @@ function App() {
         ['ประเภท', category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย'],
         ['ปี พ.ศ.', yearBE],
         ['ช่วงเดือน', `${THAI_MONTHS.find((m) => m.value === Number(monthFrom))?.name || monthFrom} ถึง ${THAI_MONTHS.find((m) => m.value === Number(monthTo))?.name || monthTo}`],
-        ['พื้นที่', postcode ? `ที่ทำการ ${postcode} (${availablePostcodes.find((p) => p.postcode === postcode)?.postname || ''})` : province ? `จังหวัด ${province}` : 'ทุกจังหวัด (ปณข.6)'],
+        ['พื้นที่', postcode ? `ที่ทำการ ${postcode} (${availablePostcodes.find((p) => p.postcode === postcode)?.postname || ''})` : province ? `จังหวัด ${province}` : 'ทุกจังหวัด (ปข.6)'],
         [],
         ['รายการภาพรวมทั้งระบบ', 'จำนวนเงิน (บาท)', 'เป้าหมาย (บาท)', 'คิดเป็น (% เทียบเป้า)'],
         ['รายได้รวมทั้งระบบ', summary?.totalRevenue || 0, summary?.revenueTargetAmount || 0, summary?.revenueAchievementPct ? `${summary.revenueAchievementPct.toFixed(2)}%` : '—'],
@@ -833,7 +833,7 @@ function App() {
       }
 
       const timeStr = `${yearBE}_${monthFrom}-${monthTo}`;
-      XLSX.writeFile(wb, `รายงานผลการดำเนินงาน_ปณข6_${mode}_${timeStr}.xlsx`);
+      XLSX.writeFile(wb, `รายงานผลการดำเนินงาน_ปข6_${mode}_${timeStr}.xlsx`);
     } catch (err) {
       console.error('Export Excel failed:', err);
       alert('เกิดข้อผิดพลาดในการส่งออกไฟล์ Excel: ' + err.message);
@@ -878,7 +878,7 @@ function App() {
     }
 
     // Location text
-    let locText = 'สังกัด ปณข.6';
+    let locText = 'สังกัด ปข.6';
     if (postcode) {
       const off = availablePostcodes.find((p) => p.postcode === postcode);
       locText = `ที่ทำการ ${postcode} (${off?.postname || ''})`;
@@ -976,7 +976,7 @@ function App() {
     <main>
       <header>
         <div className="header-left">
-          <h1>{modeIcon} Dashboard ผลการดำเนินงาน ปณข.6 <span className="mode-badge">{modeLabel}</span></h1>
+          <h1>{modeIcon} Dashboard ผลการดำเนินงาน ปข.6 <span className="mode-badge">{modeLabel}</span></h1>
           <p>
             {mode === 'BI' ? 'ข้อมูล BI รายได้และค่าใช้จ่ายระดับภาพรวมและที่ทำการ' : 'ข้อมูลรวม SAP + COD + FUZE + LOTTO + e-Commerce + DIT พร้อมเจาะลึกหลายมิติ'}
             <span className="data-note">{meta?.filesLoaded || 0} ไฟล์</span>
@@ -1670,7 +1670,7 @@ function App() {
             <span>จัดทำโดย: <strong>ส่วนการตลาดและบริการลูกค้า สำนักงานไปรษณีย์เขต 6</strong> | ทีมสร้าง: <strong>ฮ.ฮูก ทีม</strong></span>
           </div>
           <div className="footer-meta">
-            <span>Dashboard ผลการดำเนินงาน ปณข.6 • ข้อมูลเชื่อมต่อ MongoDB Atlas</span>
+            <span>Dashboard ผลการดำเนินงาน ปข.6 • ข้อมูลเชื่อมต่อ MongoDB Atlas</span>
           </div>
         </div>
       </footer>
