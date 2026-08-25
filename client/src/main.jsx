@@ -342,6 +342,34 @@ function SapDonutChart({
   );
 }
 
+/* ── Microsoft Excel App Icon ─────────────────────────────────── */
+function ExcelIcon({ size = 20 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+      {/* Back Green Sheet with Grid */}
+      <rect x="8" y="3" width="19" height="26" rx="3" fill="#107C41" />
+      {/* Table grid pattern */}
+      <path d="M13 8.5H23.5M13 13.5H23.5M13 18.5H23.5M13 23.5H23.5" stroke="#68D391" strokeWidth="1.2" strokeLinecap="round" />
+      <path d="M18 8.5V23.5" stroke="#68D391" strokeWidth="1.2" strokeLinecap="round" />
+      {/* Front 3D Excel Badge */}
+      <rect x="3" y="7" width="16" height="18" rx="3.5" fill="#185C37" />
+      <rect x="3" y="7" width="16" height="18" rx="3.5" stroke="#23864F" strokeWidth="1" />
+      {/* Crisp White X */}
+      <path d="M7 11.5L15 20.5M15 11.5L7 20.5" stroke="#FFFFFF" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/* ── Screenshot Camera Icon ───────────────────────────────────── */
+function CameraIcon({ size = 19 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+      <circle cx="12" cy="13" r="4" />
+    </svg>
+  );
+}
+
 /* ── Main App ─────────────────────────────────────────────────── */
 function App() {
   const [portalTab, setPortalTab] = useState('monthly'); // 'monthly' | 'weekly' | 'customer'
@@ -1007,17 +1035,17 @@ function App() {
               className="icon-action-btn btn-capture"
               onClick={handleCaptureScreenshot}
               disabled={isCapturing}
-              title="บันทึกภาพหน้าจอ Dashboard (Capture PNG)"
+              title="บันทึกภาพหน้าจอ Dashboard ทั้งหมด (Capture PNG)"
             >
-              {isCapturing ? '⏳' : '📸'}
+              {isCapturing ? '⏳' : <CameraIcon size={19} />}
             </button>
             <button
               className="icon-action-btn btn-excel"
               onClick={handleExportExcel}
               disabled={isExporting}
-              title="ดาวน์โหลดข้อมูลเป็นไฟล์ Excel (.xlsx)"
+              title="ดาวน์โหลดข้อมูลเป็นไฟล์ Microsoft Excel (.xlsx)"
             >
-              {isExporting ? '⏳' : '📊'}
+              {isExporting ? '⏳' : <ExcelIcon size={20} />}
             </button>
           </div>
         )}
