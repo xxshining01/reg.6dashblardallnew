@@ -344,6 +344,7 @@ function SapDonutChart({
 
 /* ── Main App ─────────────────────────────────────────────────── */
 function App() {
+  const [portalTab, setPortalTab] = useState('monthly'); // 'monthly' | 'weekly' | 'customer'
   const [meta, setMeta] = useState(null);
   // Default to BI mode
   const [mode, setMode] = useState('BI');
@@ -974,81 +975,165 @@ function App() {
 
   return (
     <main>
-      <header>
-        <div className="header-left">
-          <h1>{modeIcon} Dashboard ผลการดำเนินงาน ปข.6 <span className="mode-badge">{modeLabel}</span></h1>
-          <p>
-            {mode === 'BI' ? 'ข้อมูล BI รายได้และค่าใช้จ่ายระดับภาพรวมและที่ทำการ' : 'ข้อมูลรวม SAP + COD + FUZE + LOTTO + e-Commerce + DIT พร้อมเจาะลึกหลายมิติ'}
-            <span className="data-note">{meta?.filesLoaded || 0} ไฟล์</span>
-          </p>
-        </div>
-        <div className="header-right">
-          <div className="header-actions">
+      {/* ── Top Portal Navigation Bar (โหมดใหญ่หลาย Dashboard) ── */}
+      <div className="portal-top-bar no-capture">
+        <nav className="portal-tabs" aria-label="Portal Dashboards">
+          <button
+            className={`portal-tab-btn ${portalTab === 'monthly' ? 'active' : ''}`}
+            onClick={() => setPortalTab('monthly')}
+          >
+            <span className="portal-tab-icon">📈</span>
+            <span>ผลการดำเนินงานรายเดือน</span>
+          </button>
+          <button
+            className={`portal-tab-btn ${portalTab === 'weekly' ? 'active' : ''}`}
+            onClick={() => setPortalTab('weekly')}
+          >
+            <span className="portal-tab-icon">⏱️</span>
+            <span>ติดตามผลงานรายสัปดาห์</span>
+          </button>
+          <button
+            className={`portal-tab-btn ${portalTab === 'customer' ? 'active' : ''}`}
+            onClick={() => setPortalTab('customer')}
+          >
+            <span className="portal-tab-icon">👥</span>
+            <span>ติดตามข้อมูลลูกค้า</span>
+          </button>
+        </nav>
+
+        {portalTab === 'monthly' && (
+          <div className="portal-top-actions">
             <button
-              className="action-btn btn-capture"
+              className="icon-action-btn btn-capture"
               onClick={handleCaptureScreenshot}
               disabled={isCapturing}
-              title="บันทึกภาพหน้าจอ Dashboard ทั้งหมดเป็นไฟล์รูปภาพ PNG"
+              title="บันทึกภาพหน้าจอ Dashboard (Capture PNG)"
             >
-              {isCapturing ? '⏳ กำลังบันทึกภาพ...' : '📸 บันทึกภาพหน้าจอ'}
+              {isCapturing ? '⏳' : '📸'}
             </button>
             <button
-              className="action-btn btn-excel"
+              className="icon-action-btn btn-excel"
               onClick={handleExportExcel}
               disabled={isExporting}
-              title="ดาวน์โหลดข้อมูลสรุปและตารางทั้งหมดเป็นไฟล์ Excel (.xlsx)"
+              title="ดาวน์โหลดข้อมูลเป็นไฟล์ Excel (.xlsx)"
             >
-              {isExporting ? '⏳ กำลังส่งออก...' : '📊 ดาวน์โหลด Excel'}
+              {isExporting ? '⏳' : '📊'}
             </button>
           </div>
-          <div className="mode-toggle">
-            <button className={mode === 'BI' ? 'active' : ''} onClick={() => setMode('BI')}>📊 โหมด BI</button>
-            <button className={mode === 'SAP' ? 'active' : ''} onClick={() => setMode('SAP')}>🏢 โหมด SAP</button>
-          </div>
-        </div>
-      </header>
-
-      {/* Summary KPI Cards (Overall System Total - Decoupled from sub-filters) */}
-      <div className="summary">
-        {summary && (
-          <>
-            <Card
-              label="รายได้รวมทั้งระบบ"
-              value={summary.totalRevenue}
-              detail={`เป้าหมายทั้งปี: ${money(summary.revenueTargetAmount)} (${pct(summary.revenueAchievementPct)})`}
-              tone="up"
-            />
-            <Card
-              label="ค่าใช้จ่ายรวมทั้งระบบ"
-              value={summary.totalExpense}
-              detail={`เป้าหมายทั้งปี: ${money(summary.expenseTargetAmount)} (${pct(summary.expenseAchievementPct)})`}
-              tone="down"
-            />
-            <Card
-              label="กำไร / ขาดทุนสุทธิทั้งระบบ"
-              value={summary.netProfit}
-              detail="ภาพรวมทั้งระบบ (คงที่ตามปี พ.ศ.)"
-              tone={summary.netProfit >= 0 ? 'up' : 'down'}
-            />
-          </>
         )}
       </div>
 
-      {/* Filter Control Box */}
-      <section className="filter-box panel">
-        <div className="filter-header">
-          <div className="filter-title">
-            <strong>🔍 ตัวกรองข้อมูล (Filters)</strong>
-            {hasActiveFilters && <span className="filter-active-pill">มีตัวกรองทำงานอยู่</span>}
+      {portalTab === 'weekly' && (
+        <section className="embedded-dashboard-panel">
+          <div className="embedded-header">
+            <div className="embedded-title">
+              <span style={{ fontSize: '22px' }}>⏱️</span>
+              <div>
+                <h2>Dashboard ติดตามผลงานรายสัปดาห์</h2>
+                <p style={{ margin: 0, fontSize: '13px', color: '#64748B' }}>ระบบติดตามผลการดำเนินงานรายสัปดาห์ ปข.6</p>
+              </div>
+            </div>
+            <a
+              href="https://reg-6-weekly-dashboard.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="embedded-open-btn"
+            >
+              เปิดในหน้าต่างใหม่ ↗
+            </a>
           </div>
-          <button
-            className="filter-reset-btn"
-            onClick={resetAllFilters}
-            title="คืนค่าตัวกรองเริ่มต้นทั้งหมด"
-          >
-            ↺ รีเซ็ตตัวกรองเริ่มต้น (Reset Filter)
-          </button>
-        </div>
+          <iframe
+            src="https://reg-6-weekly-dashboard.vercel.app/"
+            title="Dashboard ติดตามผลงานรายสัปดาห์"
+            className="embedded-iframe"
+          />
+        </section>
+      )}
+
+      {portalTab === 'customer' && (
+        <section className="embedded-dashboard-panel">
+          <div className="embedded-header">
+            <div className="embedded-title">
+              <span style={{ fontSize: '22px' }}>👥</span>
+              <div>
+                <h2>Dashboard ติดตามข้อมูลลูกค้า</h2>
+                <p style={{ margin: 0, fontSize: '13px', color: '#64748B' }}>ระบบวิเคราะห์และติดตามข้อมูลลูกค้า ปข.6</p>
+              </div>
+            </div>
+            <a
+              href="https://post-dash.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="embedded-open-btn"
+            >
+              เปิดในหน้าต่างใหม่ ↗
+            </a>
+          </div>
+          <iframe
+            src="https://post-dash.vercel.app/"
+            title="Dashboard ติดตามข้อมูลลูกค้า"
+            className="embedded-iframe"
+          />
+        </section>
+      )}
+
+      {portalTab === 'monthly' && (
+        <>
+          <header>
+            <div className="header-left">
+              <h1>{modeIcon} Dashboard ผลการดำเนินงาน ปข.6 <span className="mode-badge">{modeLabel}</span></h1>
+              <p>
+                {mode === 'BI' ? 'ข้อมูล BI รายได้และค่าใช้จ่ายระดับภาพรวมและที่ทำการ' : 'ข้อมูลรวม SAP + COD + FUZE + LOTTO + e-Commerce + DIT พร้อมเจาะลึกหลายมิติ'}
+                <span className="data-note">{meta?.filesLoaded || 0} ไฟล์</span>
+              </p>
+            </div>
+            <div className="mode-toggle">
+              <button className={mode === 'BI' ? 'active' : ''} onClick={() => setMode('BI')}>📊 โหมด BI</button>
+              <button className={mode === 'SAP' ? 'active' : ''} onClick={() => setMode('SAP')}>🏢 โหมด SAP</button>
+            </div>
+          </header>
+
+          {/* Summary KPI Cards (Overall System Total - Decoupled from sub-filters) */}
+          <div className="summary">
+            {summary && (
+              <>
+                <Card
+                  label="รายได้รวมทั้งระบบ"
+                  value={summary.totalRevenue}
+                  detail={`เป้าหมายทั้งปี: ${money(summary.revenueTargetAmount)} (${pct(summary.revenueAchievementPct)})`}
+                  tone="up"
+                />
+                <Card
+                  label="ค่าใช้จ่ายรวมทั้งระบบ"
+                  value={summary.totalExpense}
+                  detail={`เป้าหมายทั้งปี: ${money(summary.expenseTargetAmount)} (${pct(summary.expenseAchievementPct)})`}
+                  tone="down"
+                />
+                <Card
+                  label="กำไร / ขาดทุนสุทธิทั้งระบบ"
+                  value={summary.netProfit}
+                  detail="ภาพรวมทั้งระบบ (คงที่ตามปี พ.ศ.)"
+                  tone={summary.netProfit >= 0 ? 'up' : 'down'}
+                />
+              </>
+            )}
+          </div>
+
+          {/* Filter Control Box */}
+          <section className="filter-box panel">
+            <div className="filter-header">
+              <div className="filter-title">
+                <strong>🔍 ตัวกรองข้อมูล (Filters)</strong>
+                {hasActiveFilters && <span className="filter-active-pill">มีตัวกรองทำงานอยู่</span>}
+              </div>
+              <button
+                className="filter-reset-btn"
+                onClick={resetAllFilters}
+                title="คืนค่าตัวกรองเริ่มต้นทั้งหมด"
+              >
+                ↺ รีเซ็ต
+              </button>
+            </div>
 
         {/* Row 1: Category, Year, Month Range, Province, Postcode */}
         <div className="filters-grid">
@@ -1661,18 +1746,17 @@ function App() {
           🚨 แสดงเฝ้าระวัง ({filteredWatchlist.length})
         </button>
       )}
+        </>
+      )}
 
-      {/* ── Dashboard Footer Credit ───────────────────────────────────── */}
-      <footer className="dashboard-footer">
-        <div className="footer-content">
-          <div className="footer-credit">
-            <span className="footer-icon">📮</span>
-            <span>จัดทำโดย: <strong>ส่วนการตลาดและบริการลูกค้า สำนักงานไปรษณีย์เขต 6</strong> | ทีมสร้าง: <strong>ฮ.ฮูก ทีม</strong></span>
-          </div>
-          <div className="footer-meta">
-            <span>Dashboard ผลการดำเนินงาน ปข.6 • ข้อมูลเชื่อมต่อ MongoDB Atlas</span>
-          </div>
-        </div>
+      {/* ── Text-Only Plain Footer Credit (No Box / Pure Text) ───────── */}
+      <footer className="dashboard-footer-plain">
+        <p className="credit-text">
+          จัดทำโดย: <strong>ส่วนการตลาดและบริการลูกค้า สำนักงานไปรษณีย์เขต 6</strong> | ทีมสร้าง: <strong>ฮ.ฮูก ทีม</strong>
+        </p>
+        <p className="credit-subtext">
+          Dashboard ผลการดำเนินงาน ปข.6 • ข้อมูลเชื่อมต่อ MongoDB Atlas
+        </p>
       </footer>
     </main>
   );
