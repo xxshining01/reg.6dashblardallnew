@@ -397,17 +397,27 @@ const api = express.Router();
 /* ── Health ─────────────────────────────────────────────── */
 api.get(['/health', '/status'], async (req, res) => {
   let master = null;
-  try { master = await getMasterData(); } catch (e) {}
+  let loadError = null;
+  try {
+    master = await getMasterData();
+  } catch (e) {
+    loadError = {
+      message: e.message,
+      name: e.name,
+      code: e.code,
+    };
+  }
   res.json({
-    status: 'ok',
+    status: master ? 'ok' : 'degraded',
     hasMongoUri: !!process.env.MONGODB_URI,
     mongoDbName: process.env.MONGODB_DB_NAME || 'reg6_revenue',
     diagnostics: dbDiagnostics,
     isLoaded: !!master,
+    error: loadError || dbDiagnostics.error,
     source: 'MongoDB Atlas',
     counts: master
       ? { offices: master.offices.length, services: master.services.length, totalRecords: master.totalRecords }
-      : 'Loading...',
+      : 'Loading/Failed (Check error property for details)',
   });
 });
 

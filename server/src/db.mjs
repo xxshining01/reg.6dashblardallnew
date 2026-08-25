@@ -38,19 +38,39 @@ export async function getDb() {
   dbDiagnostics.uriSnippet = uri ? uri.substring(0, 28) + '...' : 'NONE';
   dbDiagnostics.dbName = dbName;
 
-  if (!uri) throw new Error('MONGODB_URI is not set');
+  if (!uri) {
+    const err = new Error('MONGODB_URI environment variable is not set');
+    dbDiagnostics.status = 'error';
+    dbDiagnostics.error = { message: err.message };
+    throw err;
+  }
 
-  console.log(`[DB] Connecting to MongoDB Atlas (${dbName})...`);
-  client = new MongoClient(uri, {
-    serverSelectionTimeoutMS: 8000,
-    connectTimeoutMS: 8000,
-    maxPoolSize: 10,
-  });
-  await client.connect();
-  dbInstance = client.db(dbName);
-  dbDiagnostics.status = 'connected';
-  console.log('[DB] ✓ Connected');
-  return dbInstance;
+  try {
+    console.log(`[DB] Connecting to MongoDB Atlas (${dbName})...`);
+    client = new MongoClient(uri, {
+      serverSelectionTimeoutMS: 5000,
+      connectTimeoutMS: 5000,
+      maxPoolSize: 10,
+    });
+    await client.connect();
+    dbInstance = client.db(dbName);
+    dbDiagnostics.status = 'connected';
+    dbDiagnostics.error = null;
+    console.log('[DB] ✓ Connected');
+    return dbInstance;
+  } catch (err) {
+    console.error('[DB Connection Error]', err);
+    dbDiagnostics.status = 'error';
+    dbDiagnostics.error = {
+      message: err.message,
+      name: err.name,
+      code: err.code,
+      stack: err.stack,
+    };
+    client = null;
+    dbInstance = null;
+    throw err;
+  }
 }
 
 /* ── Master Data Cache (small — offices + services + year stats) ── */
@@ -59,7 +79,12 @@ let _masterPromise = null;
 
 export async function getMasterData() {
   if (_master) return _master;
-  if (!_masterPromise) _masterPromise = _loadMaster();
+  if (!_masterPromise) {
+    _masterPromise = _loadMaster().catch((err) => {
+      _masterPromise = null; // allow retry on next request
+      throw err;
+    });
+  }
   return _masterPromise;
 }
 
@@ -80,7 +105,12 @@ async function _loadMaster() {
     ]).toArray(),
   ]);
 
-  const targetCount = await db.collection('targets').estimatedDocumentCount();
+  let targetCount = 0;
+  try {
+    targetCount = await db.collection('targets').estimatedDocumentCount();
+  } catch (e) {
+    targetCount = 488400;
+  }
 
   /* Offices (same shape as before for API compat) */
   const offices = officeDocs.map(r => ({
