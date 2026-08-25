@@ -15,6 +15,8 @@ import {
 } from 'recharts';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import html2canvas from 'html2canvas';
+import * as XLSX from 'xlsx';
 import Region6Map from './Region6Map.jsx';
 import {
   PROVINCE_CENTERS,
@@ -665,12 +667,16 @@ function App() {
     setMonthTo(String(latestM)); // เดือนล่าสุดที่มีข้อมูลเสมอ
   };
 
+  const [isCapturing, setIsCapturing] = useState(false);
+  const [isExporting, setIsExporting] = useState(false);
+
   const resetAllFilters = () => {
     const latestY = meta?.yearsBE?.length ? String(meta.yearsBE.at(-1)) : '2569';
     setYearBE(latestY);
     setMonthFrom('1');
     const latestM = meta?.latestMonthByYearBE?.[latestY] || 6;
     setMonthTo(String(latestM));
+    setCategory('REVENUE');
     setProvince('');
     setPostcode('');
     setSelectedSources(DEFAULT_SOURCES);
@@ -678,6 +684,162 @@ function App() {
     setFilterEvm('');
     setFilterAccount('');
     setPreviousFilterState(null);
+    setDimension('service');
+    setDrillLevel(null);
+    setDrillGroup(null);
+    setDrillEvm(null);
+    setDrillProvince(null);
+  };
+
+  /* ── Capture Dashboard Screenshot Function ───────────────────── */
+  const handleCaptureScreenshot = async () => {
+    setIsCapturing(true);
+    try {
+      const el = document.querySelector('main') || document.body;
+      const canvas = await html2canvas(el, {
+        scale: 2,
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: '#F1F5F9',
+        logging: false,
+        ignoreElements: (element) => {
+          return (
+            element.classList.contains('floating-watchlist-wrap') ||
+            element.classList.contains('floating-show-btn') ||
+            element.classList.contains('no-capture')
+          );
+        },
+      });
+
+      const dataUrl = canvas.toDataURL('image/png');
+      const link = document.createElement('a');
+      const timeStr = `${yearBE}_${monthFrom}-${monthTo}`;
+      const locStr = postcode ? `_ที่ทำการ${postcode}` : province ? `_จังหวัด${province}` : '';
+      link.download = `Dashboard_ปณข6_${mode}_${category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย'}_${timeStr}${locStr}.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (err) {
+      console.error('Screenshot capture failed:', err);
+      alert('เกิดข้อผิดพลาดในการบันทึกภาพหน้าจอ: ' + err.message);
+    } finally {
+      setIsCapturing(false);
+    }
+  };
+
+  /* ── Export Multi-Sheet Excel Function ────────────────────────── */
+  const handleExportExcel = () => {
+    setIsExporting(true);
+    try {
+      const wb = XLSX.utils.book_new();
+
+      // Sheet 1: สรุปภาพรวม (Overview Summary)
+      const overviewRows = [
+        ['รายงานผลการดำเนินงาน สำนักงานไปรษณีย์เขต 6'],
+        ['วันที่ส่งออกข้อมูล', new Date().toLocaleString('th-TH')],
+        ['โหมดข้อมูล', mode === 'BI' ? 'BI' : 'SAP'],
+        ['ประเภท', category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย'],
+        ['ปี พ.ศ.', yearBE],
+        ['ช่วงเดือน', `${THAI_MONTHS.find((m) => m.value === Number(monthFrom))?.name || monthFrom} ถึง ${THAI_MONTHS.find((m) => m.value === Number(monthTo))?.name || monthTo}`],
+        ['พื้นที่', postcode ? `ที่ทำการ ${postcode} (${availablePostcodes.find((p) => p.postcode === postcode)?.postname || ''})` : province ? `จังหวัด ${province}` : 'ทุกจังหวัด (ปณข.6)'],
+        [],
+        ['รายการภาพรวมทั้งระบบ', 'จำนวนเงิน (บาท)', 'เป้าหมาย (บาท)', 'คิดเป็น (% เทียบเป้า)'],
+        ['รายได้รวมทั้งระบบ', summary?.totalRevenue || 0, summary?.revenueTargetAmount || 0, summary?.revenueAchievementPct ? `${summary.revenueAchievementPct.toFixed(2)}%` : '—'],
+        ['ค่าใช้จ่ายรวมทั้งระบบ', summary?.totalExpense || 0, summary?.expenseTargetAmount || 0, summary?.expenseAchievementPct ? `${summary.expenseAchievementPct.toFixed(2)}%` : '—'],
+        ['กำไร / ขาดทุนสุทธิทั้งระบบ', summary?.netProfit || 0, '—', '—'],
+        [],
+        ['มุมมองที่เลือกปัจจุบัน (ตาม Filter)', 'จำนวนเงิน (บาท)', 'เป้าหมาย (บาท)', '% เทียบเป้า', 'ปีก่อนหน้า (บาท)', '% YoY'],
+        [
+          category === 'REVENUE' ? 'ผลงานจริง (รายได้)' : 'ผลงานจริง (ค่าใช้จ่าย)',
+          detail?.actual || 0,
+          detail?.targetAmount || 0,
+          detail?.targetAchievementPct != null ? `${detail.targetAchievementPct.toFixed(2)}%` : '—',
+          detail?.lastYearAmount || 0,
+          detail?.yoyGrowthPct != null ? `${detail.yoyGrowthPct.toFixed(2)}%` : '—',
+        ],
+      ];
+      const wsOverview = XLSX.utils.aoa_to_sheet(overviewRows);
+      wsOverview['!cols'] = [{ wch: 32 }, { wch: 22 }, { wch: 22 }, { wch: 20 }, { wch: 22 }, { wch: 18 }];
+      XLSX.utils.book_append_sheet(wb, wsOverview, 'สรุปภาพรวม');
+
+      // Sheet 2: รายละเอียด (Breakdown Table)
+      if (detail?.breakdown && detail.breakdown.length > 0) {
+        const breakdownHeader = [
+          isServiceDim ? 'รายการ / กลุ่มบริการ' : 'จังหวัด / ที่ทำการ',
+          'ผลการดำเนินงานจริง (บาท)',
+          'เป้าหมาย (บาท)',
+          '% บรรลุเป้าหมาย',
+          'ผลงานปีก่อนหน้า (บาท)',
+          '% เติบโต (YoY)',
+        ];
+        const breakdownData = detail.breakdown.map((r) => [
+          r.name,
+          r.actual || 0,
+          r.target || 0,
+          r.achievementPct != null ? Number(r.achievementPct.toFixed(2)) : '—',
+          r.lastYearAmount || 0,
+          r.yoyGrowthPct != null ? Number(r.yoyGrowthPct.toFixed(2)) : '—',
+        ]);
+        const wsBreakdown = XLSX.utils.aoa_to_sheet([breakdownHeader, ...breakdownData]);
+        wsBreakdown['!cols'] = [{ wch: 38 }, { wch: 24 }, { wch: 22 }, { wch: 18 }, { wch: 24 }, { wch: 18 }];
+        XLSX.utils.book_append_sheet(wb, wsBreakdown, 'รายละเอียด_Breakdown');
+      }
+
+      // Sheet 3: ข้อมูลรายเดือน (Monthly Trend)
+      if (trend && trend.length > 0) {
+        const trendHeader = ['เดือน', 'ผลการดำเนินงานจริง (บาท)', 'เป้าหมาย (บาท)', 'ปีก่อนหน้า (บาท)'];
+        const trendData = trend.map((m) => [
+          m.monthName || `เดือน ${m.month}`,
+          m.currentAmount || 0,
+          m.targetAmount || 0,
+          m.lastYearAmount || 0,
+        ]);
+        const wsTrend = XLSX.utils.aoa_to_sheet([trendHeader, ...trendData]);
+        wsTrend['!cols'] = [{ wch: 18 }, { wch: 25 }, { wch: 22 }, { wch: 22 }];
+        XLSX.utils.book_append_sheet(wb, wsTrend, 'แนวโน้มรายเดือน_Trend');
+      }
+
+      // Sheet 4: สรุปตามแหล่งข้อมูล SAP (ถ้ามีในโหมด SAP)
+      if (mode === 'SAP' && detail?.sourceSummary && detail.sourceSummary.length > 0) {
+        const srcHeader = ['แหล่งข้อมูล', 'ผลงานจริง (บาท)', 'เป้าหมาย (บาท)', '% บรรลุเป้า', 'ปีก่อนหน้า (บาท)', '% YoY'];
+        const srcData = detail.sourceSummary.map((s) => [
+          s.label || s.source,
+          s.actual || 0,
+          s.target || 0,
+          s.achievementPct != null ? Number(s.achievementPct.toFixed(2)) : '—',
+          s.lastYearAmount || 0,
+          s.yoyGrowthPct != null ? Number(s.yoyGrowthPct.toFixed(2)) : '—',
+        ]);
+        const wsSrc = XLSX.utils.aoa_to_sheet([srcHeader, ...srcData]);
+        wsSrc['!cols'] = [{ wch: 20 }, { wch: 24 }, { wch: 22 }, { wch: 18 }, { wch: 24 }, { wch: 18 }];
+        XLSX.utils.book_append_sheet(wb, wsSrc, 'แหล่งข้อมูล_SAP');
+      }
+
+      // Sheet 5: ข้อมูลรายที่ทำการ (All Offices / Watchlist)
+      if (watchlistData && watchlistData.length > 0) {
+        const officeHeader = ['รหัสไปรษณีย์', 'ชื่อที่ทำการ', 'จังหวัด', 'ผลงานจริง (บาท)', 'เป้าหมาย (บาท)', '% บรรลุเป้า', 'ปีก่อนหน้า (บาท)', '% YoY'];
+        const officeData = watchlistData.map((o) => [
+          o.postcode,
+          o.postname,
+          o.province,
+          o.actual || 0,
+          o.target || 0,
+          o.targetAchievementPct != null ? Number(o.targetAchievementPct.toFixed(2)) : '—',
+          o.lastYearAmount || 0,
+          o.yoyGrowthPct != null ? Number(o.yoyGrowthPct.toFixed(2)) : '—',
+        ]);
+        const wsOffices = XLSX.utils.aoa_to_sheet([officeHeader, ...officeData]);
+        wsOffices['!cols'] = [{ wch: 14 }, { wch: 28 }, { wch: 18 }, { wch: 22 }, { wch: 20 }, { wch: 16 }, { wch: 22 }, { wch: 16 }];
+        XLSX.utils.book_append_sheet(wb, wsOffices, 'รายที่ทำการ_Offices');
+      }
+
+      const timeStr = `${yearBE}_${monthFrom}-${monthTo}`;
+      XLSX.writeFile(wb, `รายงานผลการดำเนินงาน_ปณข6_${mode}_${timeStr}.xlsx`);
+    } catch (err) {
+      console.error('Export Excel failed:', err);
+      alert('เกิดข้อผิดพลาดในการส่งออกไฟล์ Excel: ' + err.message);
+    } finally {
+      setIsExporting(false);
+    }
   };
 
   const defaultLatestMonth = meta?.latestMonthByYearBE?.[yearBE] ? String(meta.latestMonthByYearBE[yearBE]) : '6';
@@ -813,16 +975,36 @@ function App() {
   return (
     <main>
       <header>
-        <div>
+        <div className="header-left">
           <h1>{modeIcon} Dashboard ผลการดำเนินงาน ปณข.6 <span className="mode-badge">{modeLabel}</span></h1>
           <p>
             {mode === 'BI' ? 'ข้อมูล BI รายได้และค่าใช้จ่ายระดับภาพรวมและที่ทำการ' : 'ข้อมูลรวม SAP + COD + FUZE + LOTTO + e-Commerce + DIT พร้อมเจาะลึกหลายมิติ'}
             <span className="data-note">{meta?.filesLoaded || 0} ไฟล์</span>
           </p>
         </div>
-        <div className="mode-toggle">
-          <button className={mode === 'BI' ? 'active' : ''} onClick={() => setMode('BI')}>📊 โหมด BI</button>
-          <button className={mode === 'SAP' ? 'active' : ''} onClick={() => setMode('SAP')}>🏢 โหมด SAP</button>
+        <div className="header-right">
+          <div className="header-actions">
+            <button
+              className="action-btn btn-capture"
+              onClick={handleCaptureScreenshot}
+              disabled={isCapturing}
+              title="บันทึกภาพหน้าจอ Dashboard ทั้งหมดเป็นไฟล์รูปภาพ PNG"
+            >
+              {isCapturing ? '⏳ กำลังบันทึกภาพ...' : '📸 บันทึกภาพหน้าจอ'}
+            </button>
+            <button
+              className="action-btn btn-excel"
+              onClick={handleExportExcel}
+              disabled={isExporting}
+              title="ดาวน์โหลดข้อมูลสรุปและตารางทั้งหมดเป็นไฟล์ Excel (.xlsx)"
+            >
+              {isExporting ? '⏳ กำลังส่งออก...' : '📊 ดาวน์โหลด Excel'}
+            </button>
+          </div>
+          <div className="mode-toggle">
+            <button className={mode === 'BI' ? 'active' : ''} onClick={() => setMode('BI')}>📊 โหมด BI</button>
+            <button className={mode === 'SAP' ? 'active' : ''} onClick={() => setMode('SAP')}>🏢 โหมด SAP</button>
+          </div>
         </div>
       </header>
 
@@ -859,11 +1041,13 @@ function App() {
             <strong>🔍 ตัวกรองข้อมูล (Filters)</strong>
             {hasActiveFilters && <span className="filter-active-pill">มีตัวกรองทำงานอยู่</span>}
           </div>
-          {hasActiveFilters && (
-            <button className="filter-reset-btn" onClick={resetAllFilters}>
-              ↺ ล้างตัวกรองทั้งหมด
-            </button>
-          )}
+          <button
+            className="filter-reset-btn"
+            onClick={resetAllFilters}
+            title="คืนค่าตัวกรองเริ่มต้นทั้งหมด"
+          >
+            ↺ รีเซ็ตตัวกรองเริ่มต้น (Reset Filter)
+          </button>
         </div>
 
         {/* Row 1: Category, Year, Month Range, Province, Postcode */}
@@ -1477,6 +1661,19 @@ function App() {
           🚨 แสดงเฝ้าระวัง ({filteredWatchlist.length})
         </button>
       )}
+
+      {/* ── Dashboard Footer Credit ───────────────────────────────────── */}
+      <footer className="dashboard-footer">
+        <div className="footer-content">
+          <div className="footer-credit">
+            <span className="footer-icon">📮</span>
+            <span>จัดทำโดย: <strong>ส่วนการตลาดและบริการลูกค้า สำนักงานไปรษณีย์เขต 6</strong> | ทีมสร้าง: <strong>ฮ.ฮูก ทีม</strong></span>
+          </div>
+          <div className="footer-meta">
+            <span>Dashboard ผลการดำเนินงาน ปณข.6 • ข้อมูลเชื่อมต่อ MongoDB Atlas</span>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

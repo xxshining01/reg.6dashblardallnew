@@ -1474,4 +1474,149 @@ tfoot td {
   .criteria-grid {
     grid-template-columns: 1fr;
   }
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
+
+/* ── Header Actions (Screenshot & Excel Export) ─────────────────── */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+}
+
+.action-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.action-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+/* Capture Button */
+.btn-capture {
+  background: #F8FAFC;
+  color: #1E293B;
+  border-color: #CBD5E1;
+}
+
+.btn-capture:hover:not(:disabled) {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  border-color: #93C5FD;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.15);
+}
+
+/* Excel Button */
+.btn-excel {
+  background: #ECFDF5;
+  color: #065F46;
+  border-color: #A7F3D0;
+}
+
+.btn-excel:hover:not(:disabled) {
+  background: #D1FAE5;
+  color: #047857;
+  border-color: #6EE7B7;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.2);
+}
+
+/* Filter Reset Button enhancements */
+.filter-reset-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #F8FAFC;
+  border: 1px solid #CBD5E1;
+  color: #475569;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.filter-reset-btn:hover {
+  background: #FEE2E2;
+  color: #B91C1C;
+  border-color: #FCA5A5;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.15);
+}
+
+.filter-reset-btn:active {
+  transform: scale(0.97);
+}
+
+/* ── Dashboard Footer Credit ───────────────────────────────────── */
+.dashboard-footer {
+  margin-top: 36px;
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 18px 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-sub);
+}
+
+.footer-credit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-icon {
+  font-size: 18px;
+}
+
+.footer-credit strong {
+  color: #0F172A;
+}
+
+.footer-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
