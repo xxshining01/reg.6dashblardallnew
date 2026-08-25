@@ -2,33 +2,18 @@ import { MongoClient } from 'mongodb';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
-import { readdir, readFile } from 'node:fs/promises';
 import dns from 'node:dns';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 if (process.platform === 'win32' && !process.env.VERCEL) {
-  try {
-    dns.setServers(['8.8.8.8', '1.1.1.1']);
-  } catch (e) {}
+  try { dns.setServers(['8.8.8.8', '1.1.1.1']); } catch (e) {}
 }
 
 dotenv.config({ path: resolve(__dirname, '../.env') });
 
-const root = resolve(__dirname, '../..');
-const databaseDir = resolve(root, 'database');
-
 const categoryByThai = { 'รายได้': 'REVENUE', 'ค่าใช้จ่าย': 'EXPENSE' };
-const sourcesMap = {
-  sap: 'SAP',
-  bi: 'BI',
-  cod: 'COD',
-  'e-Commerce': 'ECOMMERCE',
-  fuze: 'FUZE',
-  lotto: 'LOTTO',
-  dit: 'DIT',
-};
 
 export let dbDiagnostics = {
   status: 'initializing',
@@ -36,27 +21,15 @@ export let dbDiagnostics = {
   uriSnippet: null,
   dbName: null,
   error: null,
-  source: null,
+  source: 'MongoDB Atlas',
 };
 
-let cachedData = null;
-let loadPromise = null;
+/* ── MongoDB Connection Pool (persists across warm starts) ─── */
+let client = null;
+let dbInstance = null;
 
-export async function loadData() {
-  if (cachedData) return cachedData;
-  if (!loadPromise) {
-    loadPromise = doLoadData().then((data) => {
-      cachedData = data;
-      dbDiagnostics.source = data.source;
-      dbDiagnostics.status = 'ready';
-      return data;
-    });
-  }
-  return loadPromise;
-}
-
-async function doLoadData() {
-  let client = null;
+export async function getDb() {
+  if (dbInstance) return dbInstance;
   const rawUri = process.env.MONGODB_URI || '';
   const uri = rawUri.replace(/^["']|["']$/g, '').trim();
   const dbName = (process.env.MONGODB_DB_NAME || 'reg6_revenue').replace(/^["']|["']$/g, '').trim();
@@ -65,140 +38,119 @@ async function doLoadData() {
   dbDiagnostics.uriSnippet = uri ? uri.substring(0, 28) + '...' : 'NONE';
   dbDiagnostics.dbName = dbName;
 
-  if (uri) {
-    try {
-      console.log(`[Database] Connecting to MongoDB Atlas (${dbName})...`);
-      client = new MongoClient(uri, {
-        serverSelectionTimeoutMS: 8000,
-        connectTimeoutMS: 8000,
-      });
-      await client.connect();
-      const db = client.db(dbName);
+  if (!uri) throw new Error('MONGODB_URI is not set');
 
-      const officeCount = await db.collection('master_offices').countDocuments();
-      if (officeCount > 0) {
-        console.log(`[Database] ✓ Connected to MongoDB Atlas! Fetching dataset...`);
-        const [officesDoc, servicesDoc, actualsDoc, targetsDoc] = await Promise.all([
-          db.collection('master_offices').find({}, { projection: { _id: 0, office_code: 1, office_name: 1, province: 1 } }).toArray(),
-          db.collection('master_services').find({}, { projection: { _id: 0, sap_account_code: 1, account_name: 1, category: 1, business_group: 1, evm_service: 1 } }).toArray(),
-          db.collection('transactions_monthly').find({}, { projection: { _id: 0, year: 1, month: 1, office_code: 1, sap_account_code: 1, amount: 1, source_type: 1 }, batchSize: 50000 }).toArray(),
-          db.collection('targets').find({}, { projection: { _id: 0, year: 1, month: 1, office_code: 1, sap_account_code: 1, target_amount: 1 }, batchSize: 50000 }).toArray(),
-        ]);
+  console.log(`[DB] Connecting to MongoDB Atlas (${dbName})...`);
+  client = new MongoClient(uri, {
+    serverSelectionTimeoutMS: 8000,
+    connectTimeoutMS: 8000,
+    maxPoolSize: 10,
+  });
+  await client.connect();
+  dbInstance = client.db(dbName);
+  dbDiagnostics.status = 'connected';
+  console.log('[DB] ✓ Connected');
+  return dbInstance;
+}
 
-        const offices = officesDoc.map((r) => ({
-          postcode: r.office_code,
-          postname: r.office_name,
-          province: r.province,
-        }));
+/* ── Master Data Cache (small — offices + services + year stats) ── */
+let _master = null;
+let _masterPromise = null;
 
-        const services = servicesDoc.map((r) => ({
-          accountcode: r.sap_account_code,
-          accountname: r.account_name,
-          category: r.category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย',
-          'bussiness group': r.business_group,
-          'evm service': r.evm_service,
-        }));
+export async function getMasterData() {
+  if (_master) return _master;
+  if (!_masterPromise) _masterPromise = _loadMaster();
+  return _masterPromise;
+}
 
-        const serviceByAccount = new Map(services.map((row) => [String(row.accountcode), row]));
+async function _loadMaster() {
+  const db = await getDb();
+  const t0 = Date.now();
 
-        const actuals = actualsDoc.map((r) => {
-          const accountcode = String(r.sap_account_code);
-          const service = serviceByAccount.get(accountcode);
-          return {
-            year: r.year,
-            month: r.month,
-            postcode: r.office_code,
-            accountcode,
-            amount: r.amount,
-            source: r.source_type,
-            category: categoryByThai[service?.category] ?? categoryByThai[accountcode],
-          };
-        });
+  const [officeDocs, serviceDocs, yearStats] = await Promise.all([
+    db.collection('master_offices').find({}, {
+      projection: { _id: 0, office_code: 1, office_name: 1, province: 1 }
+    }).toArray(),
+    db.collection('master_services').find({}, {
+      projection: { _id: 0, sap_account_code: 1, account_name: 1, category: 1, business_group: 1, evm_service: 1 }
+    }).toArray(),
+    db.collection('transactions_monthly').aggregate([
+      { $group: { _id: '$year', maxMonth: { $max: '$month' }, count: { $sum: 1 } } },
+      { $sort: { _id: 1 } }
+    ]).toArray(),
+  ]);
 
-        const targets = targetsDoc.map((r) => ({
-          year: r.year,
-          month: r.month,
-          postcode: r.office_code,
-          accountcode: String(r.sap_account_code),
-          amount: r.target_amount,
-        }));
+  const targetCount = await db.collection('targets').estimatedDocumentCount();
 
-        console.log(`[Database] ✓ Loaded ${actuals.length} transactions and ${targets.length} targets from MongoDB Atlas.`);
-        return { offices, services, actuals, targets, source: 'MongoDB Atlas' };
-      } else {
-        console.log('[Database] MongoDB Atlas is connected but collections are empty.');
-        dbDiagnostics.notice = 'MongoDB Atlas connected but collections are empty';
-      }
-    } catch (err) {
-      console.error(`[Database Error] MongoDB Atlas connection error: ${err.message}`);
-      dbDiagnostics.error = {
-        message: err.message,
-        name: err.name,
-        code: err.code,
-      };
-    } finally {
-      if (client) await client.close().catch(() => {});
-    }
-  } else {
-    dbDiagnostics.error = { message: 'MONGODB_URI is not set in environment variables' };
+  /* Offices (same shape as before for API compat) */
+  const offices = officeDocs.map(r => ({
+    postcode: r.office_code,
+    postname: r.office_name,
+    province: r.province,
+  }));
+  const officeByPostcode = new Map(offices.map(o => [String(o.postcode), o]));
+
+  /* Services (same shape as before) */
+  const services = serviceDocs.map(r => ({
+    accountcode: r.sap_account_code,
+    accountname: r.account_name,
+    category: r.category === 'REVENUE' ? 'รายได้' : 'ค่าใช้จ่าย',
+    'bussiness group': r.business_group,
+    'evm service': r.evm_service,
+  }));
+  const serviceByAccount = new Map(services.map(s => [String(s.accountcode), s]));
+
+  /* Category → accountcode lists */
+  const revenueAccounts = serviceDocs.filter(s => s.category === 'REVENUE').map(s => s.sap_account_code);
+  const expenseAccounts = serviceDocs.filter(s => s.category === 'EXPENSE').map(s => s.sap_account_code);
+  const revenueAccountSet = new Set(revenueAccounts);
+  const expenseAccountSet = new Set(expenseAccounts);
+
+  /* Province → postcodes */
+  const postcodesByProvince = {};
+  for (const o of offices) {
+    const p = o.province || 'อื่นๆ';
+    (postcodesByProvince[p] ??= []).push(String(o.postcode));
   }
 
-  // Fallback to local files if available
-  try {
-    console.log('[Database] Checking local /database/*.json files...');
-    const readJson = (name) => readFile(resolve(databaseDir, name), 'utf8').then(JSON.parse);
-    const files = await readdir(databaseDir);
-    const actualFiles = files.filter((name) =>
-      /^(sap|bi|cod|e-Commerce|fuze|lotto|dit)_\d{4}_\d+\.json$/.test(name)
-    );
-    const targetFiles = files.filter((name) => /^target_\d{4}_\d+\.json$/.test(name));
-
-    const [offices, services, actualRaw, targetRaw] = await Promise.all([
-      readJson('master_post.json'),
-      readJson('master_service.json'),
-      Promise.all(actualFiles.map(readJson)),
-      Promise.all(targetFiles.map(readJson)),
-    ]);
-
-    const serviceByAccount = new Map(services.map((row) => [String(row.accountcode), row]));
-    const sourceFromFile = (name) => sourcesMap[name.match(/^(.+?)_\d{4}_\d+\.json$/)?.[1]];
-
-    const actuals = actualRaw.flatMap((rows, index) =>
-      rows.map((row) => {
-        const accountcode = String(row.accountcode ?? row.code ?? '');
-        const service = serviceByAccount.get(accountcode);
-        return {
-          year: Number(row.year),
-          month: Number(row.month),
-          postcode: String(row.postcode ?? ''),
-          accountcode,
-          amount: Number(row.actual) || 0,
-          source: sourceFromFile(actualFiles[index]),
-          category: categoryByThai[service?.category] ?? categoryByThai[accountcode],
-        };
-      })
-    );
-
-    const targets = targetRaw.flatMap((rows) =>
-      rows.map((row) => ({
-        year: Number(row.year),
-        month: Number(row.month),
-        postcode: String(row.postcode ?? ''),
-        accountcode: String(row.accountcode),
-        amount: Number(row.target) || 0,
-      }))
-    );
-
-    return { offices, services, actuals, targets, source: 'Local JSON Files' };
-  } catch (fsErr) {
-    console.warn(`[Database] Local files not available (${fsErr.message})`);
-    dbDiagnostics.fsError = fsErr.message;
-    return {
-      offices: [],
-      services: [],
-      actuals: [],
-      targets: [],
-      source: 'Empty (Database Connection Failed)',
-    };
+  /* Service hierarchy (for /meta/filters) */
+  const serviceHierarchy = {};
+  for (const svc of services) {
+    const cat = categoryByThai[svc.category];
+    if (!cat) continue;
+    ((serviceHierarchy[cat] ??= {})[svc['bussiness group']] ??= {})[svc['evm service']] ??= [];
+    serviceHierarchy[cat][svc['bussiness group']][svc['evm service']].push({
+      accountcode: svc.accountcode, accountname: svc.accountname,
+    });
   }
+
+  /* Source → accountcode mapping (for target source attribution) */
+  const sourceAccountcodes = {
+    COD: new Set(['COD_FEE']),
+    ECOMMERCE: new Set(['e-Commerce']),
+    FUZE: new Set(['Fuze']),
+    LOTTO: new Set(['สลาก']),
+    DIT: new Set(['DIT']),
+  };
+
+  /* Year statistics */
+  const latestActualYear = yearStats.length > 0 ? Math.max(...yearStats.map(r => r._id)) : 2026;
+  const yearsBE = yearStats.map(r => r._id + 543);
+  const yearMonthMap = Object.fromEntries(yearStats.map(r => [r._id + 543, r.maxMonth]));
+  const totalTransactions = yearStats.reduce((s, r) => s + r.count, 0);
+
+  _master = {
+    offices, services,
+    officeByPostcode, serviceByAccount,
+    revenueAccounts, expenseAccounts,
+    revenueAccountSet, expenseAccountSet,
+    postcodesByProvince, serviceHierarchy,
+    sourceAccountcodes,
+    latestActualYear, yearsBE, yearMonthMap,
+    totalRecords: totalTransactions + targetCount,
+  };
+
+  dbDiagnostics.status = 'ready';
+  console.log(`[DB] ✓ Master loaded in ${Date.now() - t0}ms — ${offices.length} offices, ${services.length} services, latest year ${latestActualYear}`);
+  return _master;
 }
