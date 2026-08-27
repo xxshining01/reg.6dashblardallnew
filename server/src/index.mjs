@@ -614,6 +614,130 @@ api.get('/dashboard/watchlist', async (req, res) => {
   res.json({ success: true, data: list });
 });
 
+/* ── Weekly Dashboard Data ─────────────────────────────── */
+function mapWeeklyBusinessGroup(rawGroup) {
+  let g = rawGroup || '';
+  g = g.replace('กลุ่มธุรกิจ', '');
+  g = g.replace('กลุ่มบริการ', '');
+  g = g.trim();
+
+  if (g.includes('1.1') || g.includes('ไปรษณียภัณฑ์')) return 'ไปรษณียภัณฑ์';
+  if (g.includes('1.2') || g.toLowerCase().includes('pickup') || g.includes('ขนส่ง') || g.includes('โลจิสติกส์')) return 'ขนส่งและโลจิสติกส์';
+  if (g.includes('1.4.1') || g.includes('1.4.2') || g.includes('ค้าปลีก') || g.includes('การเงิน')) return 'ค้าปลีกและการเงิน';
+  if (g.includes('1.3') || g.includes('ระหว่างประเทศ')) return 'ระหว่างประเทศ';
+  if (g.includes('1.6') || g.includes('รายได้อื่น')) return 'รายได้อื่น';
+  if (g.includes('1.5') || g.includes('อื่นๆ')) return 'อื่นๆ';
+
+  return g;
+}
+
+let weeklyCache = null;
+let weeklyCacheTime = 0;
+const WEEKLY_CACHE_TTL = 5 * 60 * 1000;
+
+api.get(['/dashboard-data', '/weekly-dashboard-data'], async (req, res) => {
+  try {
+    const now = Date.now();
+    if (weeklyCache && (now - weeklyCacheTime < WEEKLY_CACHE_TTL)) {
+      return res.json(weeklyCache);
+    }
+
+    const db = await getDb();
+    const [offices, services, targets, monthlyTx, dailyTx] = await Promise.all([
+      db.collection('master_offices').find({}).toArray(),
+      db.collection('master_services').find({ category: 'REVENUE' }).toArray(),
+      db.collection('targets').find(
+        { target_amount: { $gt: 0 } },
+        { projection: { year: 1, month: 1, office_code: 1, sap_account_code: 1, target_amount: 1 } }
+      ).toArray(),
+      db.collection('transactions_monthly').find(
+        { source_type: 'BI', sap_account_code: 'รายได้' }
+      ).toArray(),
+      db.collection('transactions_daily').find(
+        {},
+        { projection: { date: 1, postcode: 1, office_code: 1, business_group: 1, amount: 1 } }
+      ).toArray()
+    ]);
+
+    const officeMap = new Map();
+    for (const o of offices) {
+      officeMap.set(String(o.office_code), o);
+    }
+
+    const serviceMap = new Map();
+    for (const s of services) {
+      serviceMap.set(String(s.sap_account_code), s);
+    }
+
+    const rawTargets = [];
+    for (const t of targets) {
+      const svc = serviceMap.get(String(t.sap_account_code));
+      if (!svc) continue;
+
+      const off = officeMap.get(String(t.office_code));
+      const province = off?.province || '';
+      const officeName = off?.office_name ? `${t.office_code} ${off.office_name}` : String(t.office_code);
+      const mappedBg = mapWeeklyBusinessGroup(svc.business_group);
+
+      rawTargets.push({
+        province,
+        office: officeName,
+        businessGroup: mappedBg,
+        target: Number(t.target_amount) || 0,
+        month: Number(t.month),
+        year: Number(t.year),
+      });
+    }
+
+    const monthlyRows = [];
+    for (const row of monthlyTx) {
+      const off = officeMap.get(String(row.office_code));
+      const province = off?.province || (row.office_code ? '' : 'ส่วนกลาง');
+      const officeName = off?.office_name ? `${row.office_code} ${off.office_name}` : (row.office_code ? String(row.office_code) : 'ส่วนกลาง');
+      const dateStr = `${row.year}-${String(row.month).padStart(2, '0')}-01`;
+
+      monthlyRows.push({
+        date: dateStr,
+        province,
+        office: officeName,
+        businessGroup: 'รวม',
+        revenue: Number(row.amount) || 0,
+        target: 0,
+      });
+    }
+
+    const dailyRows = [];
+    for (const d of dailyTx) {
+      const off = officeMap.get(String(d.office_code || d.postcode));
+      const province = off?.province || '';
+      const officeName = off?.office_name ? `${d.office_code} ${off.office_name}` : String(d.office_code || d.postcode);
+      const mappedBg = mapWeeklyBusinessGroup(d.business_group);
+
+      dailyRows.push({
+        date: d.date,
+        revenue: Number(d.amount) || 0,
+        province,
+        office: officeName,
+        businessGroup: mappedBg,
+      });
+    }
+
+    const payload = {
+      dailyRows,
+      monthlyRows,
+      rawTargets,
+    };
+
+    weeklyCache = payload;
+    weeklyCacheTime = Date.now();
+
+    res.json(payload);
+  } catch (err) {
+    console.error('[API /dashboard-data Error]:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
 /* ── Mount under all path variants ─────────────────────── */
 app.use('/api/v1', api);
 app.use('/v1', api);

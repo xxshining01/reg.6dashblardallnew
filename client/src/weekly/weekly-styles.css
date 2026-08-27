@@ -1,0 +1,153 @@
+/* ── Weekly Dashboard Design System (UI/UX Aligned with docs/03-ui-ux-design-system.md) ── */
+.weekly-container {
+  /* Canvas & Surfaces */
+  --canvas-bg: #F1F5F9;
+  --surface-card: #FFFFFF;
+  --surface-soft: #F8FAFC;
+  --surface-hover: #F1F5F9;
+  --border-line: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  /* Brand Accent Tokens */
+  --primary-turquoise: #2DBDB6;
+  --primary-active: #25A29C;
+  --primary-disabled: #A5E3E0;
+  --primary-blue: #1E3A8A;
+
+  /* Text & Ink Tokens */
+  --ink-main: #181A20;
+  --ink-soft: #64748B;
+  --ink-muted: #94A3B8;
+
+  /* Trading Semantics & Status */
+  --trading-up: #0ECB81;
+  --trading-up-soft: #E8FBF4;
+  --trading-down: #F6465D;
+  --trading-down-soft: #FEE2E2;
+  --status-warning: #F59E0B;
+  --status-warning-soft: #FEF9C3;
+
+  /* Shadows & Radius */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+
+  background-color: var(--canvas-bg);
+  color: var(--ink-main);
+  font-family: 'Prompt', 'Noto Sans Thai', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.weekly-container * {
+  box-sizing: border-box;
+}
+
+.weekly-container .card {
+  background-color: var(--surface-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-line);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.weekly-container .card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.weekly-container .card-soft {
+  background-color: var(--surface-soft);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-line);
+}
+
+.weekly-container .filter-select {
+  appearance: none;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-line);
+  border-radius: var(--radius-sm);
+  padding: 7px 30px 7px 12px;
+  font-size: 13.5px;
+  color: var(--ink-main);
+  font-family: inherit;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748B' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  min-width: 130px;
+}
+
+.weekly-container .filter-select:focus {
+  outline: none;
+  border-color: var(--primary-turquoise);
+  box-shadow: 0 0 0 2px rgba(45, 189, 182, 0.2);
+}
+
+.weekly-container .date-input {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-line);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 13.5px;
+  color: var(--ink-main);
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.weekly-container .date-input:focus {
+  outline: none;
+  border-color: var(--primary-turquoise);
+  box-shadow: 0 0 0 2px rgba(45, 189, 182, 0.2);
+}
+
+/* Skeleton shimmer */
+.weekly-container .skeleton {
+  background: linear-gradient(90deg, #E2E8F0 25%, #F1F5F9 50%, #E2E8F0 75%);
+  background-size: 200% 100%;
+  animation: weekly-shimmer 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+@keyframes weekly-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Gauge */
+.weekly-container .gauge-track {
+  position: relative;
+  width: 100%;
+}
+
+.weekly-container .gauge-checkpoint {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--border-line);
+  transform: translateX(-50%);
+}
+
+/* Responsive Grid layout */
+.weekly-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+  padding: 16px 20px 24px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .weekly-grid-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 16px 24px;
+  }
+}

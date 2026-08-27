@@ -172,10 +172,10 @@ export default function Region6Map({
       maxZoom: 14,
     });
 
-    // Clean, minimalist Positron / CartoDB Light Tile
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-      subdomains: 'abcd',
-      maxZoom: 19,
+    // Clean, minimalist ESRI Light Gray / OSM basemap (Free, No API Key required, No watermark)
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 16,
+      attribution: '© Esri, HERE, Garmin, © OpenStreetMap contributors',
     }).addTo(map);
 
     geojsonLayerRef.current = L.layerGroup().addTo(map);

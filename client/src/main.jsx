@@ -18,6 +18,7 @@ import 'leaflet/dist/leaflet.css';
 import html2canvas from 'html2canvas';
 import * as XLSX from 'xlsx';
 import Region6Map from './Region6Map.jsx';
+import WeeklyDashboard from './weekly/WeeklyDashboard.jsx';
 import {
   PROVINCE_CENTERS,
   REGION6_CENTER,
@@ -698,6 +699,7 @@ function App() {
 
   const [isCapturing, setIsCapturing] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
+  const weeklyActionsRef = useRef(null);
 
   const resetAllFilters = () => {
     const latestY = meta?.yearsBE?.length ? String(meta.yearsBE.at(-1)) : '2569';
@@ -1020,89 +1022,44 @@ function App() {
             <span className="portal-tab-icon">⏱️</span>
             <span>ติดตามผลงานรายสัปดาห์</span>
           </button>
-          <button
-            className={`portal-tab-btn ${portalTab === 'customer' ? 'active' : ''}`}
-            onClick={() => setPortalTab('customer')}
+          <a
+            href="https://post-dash.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="portal-tab-btn"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+            title="เปิด Dashboard ติดตามข้อมูลลูกค้าในแท็บใหม่ (https://post-dash.vercel.app/)"
           >
             <span className="portal-tab-icon">👥</span>
             <span>ติดตามข้อมูลลูกค้า</span>
-          </button>
+            <span style={{ fontSize: '11px', opacity: 0.65, marginLeft: '2px' }}>↗</span>
+          </a>
         </nav>
 
-        {portalTab === 'monthly' && (
+        {(portalTab === 'monthly' || portalTab === 'weekly') && (
           <div className="portal-top-actions">
             <button
               className="icon-action-btn btn-capture"
-              onClick={handleCaptureScreenshot}
-              disabled={isCapturing}
-              title="บันทึกภาพหน้าจอ Dashboard ทั้งหมด (Capture PNG)"
+              onClick={portalTab === 'monthly' ? handleCaptureScreenshot : () => weeklyActionsRef.current?.capture()}
+              disabled={portalTab === 'monthly' ? isCapturing : weeklyActionsRef.current?.isCapturing}
+              title={portalTab === 'monthly' ? "บันทึกภาพหน้าจอ Dashboard ทั้งหมด (Capture PNG)" : "บันทึกภาพหน้าจอ Dashboard รายสัปดาห์ (Capture PNG)"}
             >
-              {isCapturing ? '⏳' : <CameraIcon size={19} />}
+              {(portalTab === 'monthly' ? isCapturing : weeklyActionsRef.current?.isCapturing) ? '⏳' : <CameraIcon size={19} />}
             </button>
             <button
               className="icon-action-btn btn-excel"
-              onClick={handleExportExcel}
-              disabled={isExporting}
-              title="ดาวน์โหลดข้อมูลเป็นไฟล์ Microsoft Excel (.xlsx)"
+              onClick={portalTab === 'monthly' ? handleExportExcel : () => weeklyActionsRef.current?.exportExcel()}
+              disabled={portalTab === 'monthly' ? isExporting : weeklyActionsRef.current?.isExporting}
+              title={portalTab === 'monthly' ? "ดาวน์โหลดข้อมูลเป็นไฟล์ Microsoft Excel (.xlsx)" : "ดาวน์โหลดข้อมูลรายสัปดาห์เป็นไฟล์ Microsoft Excel (.xlsx)"}
             >
-              {isExporting ? '⏳' : <ExcelIcon size={20} />}
+              {(portalTab === 'monthly' ? isExporting : weeklyActionsRef.current?.isExporting) ? '⏳' : <ExcelIcon size={20} />}
             </button>
           </div>
         )}
       </div>
 
       {portalTab === 'weekly' && (
-        <section className="embedded-dashboard-panel">
-          <div className="embedded-header">
-            <div className="embedded-title">
-              <span style={{ fontSize: '22px' }}>⏱️</span>
-              <div>
-                <h2>Dashboard ติดตามผลงานรายสัปดาห์</h2>
-                <p style={{ margin: 0, fontSize: '13px', color: '#64748B' }}>ระบบติดตามผลการดำเนินงานรายสัปดาห์ ปข.6</p>
-              </div>
-            </div>
-            <a
-              href="https://reg-6-weekly-dashboard.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="embedded-open-btn"
-            >
-              เปิดในหน้าต่างใหม่ ↗
-            </a>
-          </div>
-          <iframe
-            src="https://reg-6-weekly-dashboard.vercel.app/"
-            title="Dashboard ติดตามผลงานรายสัปดาห์"
-            className="embedded-iframe"
-          />
-        </section>
-      )}
-
-      {portalTab === 'customer' && (
-        <section className="embedded-dashboard-panel">
-          <div className="embedded-header">
-            <div className="embedded-title">
-              <span style={{ fontSize: '22px' }}>👥</span>
-              <div>
-                <h2>Dashboard ติดตามข้อมูลลูกค้า</h2>
-                <p style={{ margin: 0, fontSize: '13px', color: '#64748B' }}>ระบบวิเคราะห์และติดตามข้อมูลลูกค้า ปข.6</p>
-              </div>
-            </div>
-            <a
-              href="https://post-dash.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="embedded-open-btn"
-            >
-              เปิดในหน้าต่างใหม่ ↗
-            </a>
-          </div>
-          <iframe
-            src="https://post-dash.vercel.app/"
-            title="Dashboard ติดตามข้อมูลลูกค้า"
-            className="embedded-iframe"
-          />
-        </section>
+        <WeeklyDashboard actionsRef={weeklyActionsRef} />
       )}
 
       {portalTab === 'monthly' && (
