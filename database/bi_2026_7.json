@@ -1,1549 +1,1549 @@
 [
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60000",
     "code": "ค่าใช้จ่าย",
-    "actual": 5142629.22
+    "actual": 4142189.48
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60000",
     "code": "รายได้",
-    "actual": 5942308.22
+    "actual": 6164798.05
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60000-00",
     "code": "ค่าใช้จ่าย",
-    "actual": -4078831.15
+    "actual": 11961290.24
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60000-00",
     "code": "รายได้",
-    "actual": 4608080.66
+    "actual": 642709.98
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60001",
     "code": "ค่าใช้จ่าย",
-    "actual": 409828.52
+    "actual": 298034.44
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60001",
     "code": "รายได้",
-    "actual": 1214498.58
+    "actual": 1195048.15
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60002",
     "code": "ค่าใช้จ่าย",
-    "actual": 370556.26
+    "actual": 423623.28
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60002",
     "code": "รายได้",
-    "actual": 1551397.9
+    "actual": 2169739.46
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60010",
     "code": "ค่าใช้จ่าย",
-    "actual": 3413852.35
+    "actual": 2882594.97
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60010",
     "code": "รายได้",
-    "actual": 5258.97
+    "actual": 8566.47
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60110",
     "code": "ค่าใช้จ่าย",
-    "actual": 574913.19
+    "actual": 433652.49
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60110",
     "code": "รายได้",
-    "actual": 258353.19
+    "actual": 223719.65
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60120",
     "code": "ค่าใช้จ่าย",
-    "actual": 669667.49
+    "actual": 484656.49
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60120",
     "code": "รายได้",
-    "actual": 291835.61
+    "actual": 309370.25
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60130",
     "code": "ค่าใช้จ่าย",
-    "actual": 1061616.91
+    "actual": 783583.18
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60130",
     "code": "รายได้",
-    "actual": 427101.18
+    "actual": 473651.87
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60140",
     "code": "ค่าใช้จ่าย",
-    "actual": 915566.58
+    "actual": 628588.42
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60140",
     "code": "รายได้",
-    "actual": 561615.79
+    "actual": 599648.89
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60150",
     "code": "ค่าใช้จ่าย",
-    "actual": 1597485.24
+    "actual": 770137.31
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60150",
     "code": "รายได้",
-    "actual": 898882.85
+    "actual": 765566.52
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60160",
     "code": "ค่าใช้จ่าย",
-    "actual": 961274.51
+    "actual": 484549.55
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60160",
     "code": "รายได้",
-    "actual": 318239.81
+    "actual": 342736.04
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60170",
     "code": "ค่าใช้จ่าย",
-    "actual": 547820
+    "actual": 383427.69
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60170",
     "code": "รายได้",
-    "actual": 439372.07
+    "actual": 514824.66
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60180",
     "code": "ค่าใช้จ่าย",
-    "actual": 1439281.97
+    "actual": 586021.79
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60180",
     "code": "รายได้",
-    "actual": 349364.08
+    "actual": 339215.58
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60190",
     "code": "ค่าใช้จ่าย",
-    "actual": 492166.38
+    "actual": 362448.97
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60190",
     "code": "รายได้",
-    "actual": 371543.28
+    "actual": 400666.54
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60210",
     "code": "ค่าใช้จ่าย",
-    "actual": 349796.81
+    "actual": 243775.37
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60210",
     "code": "รายได้",
-    "actual": 125085.73
+    "actual": 148907.42
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60220",
     "code": "ค่าใช้จ่าย",
-    "actual": 700508.67
+    "actual": 450112.82
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60220",
     "code": "รายได้",
-    "actual": 274871.63
+    "actual": 290283.4
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60230",
     "code": "ค่าใช้จ่าย",
-    "actual": 372700.57
+    "actual": 324107.65
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60230",
     "code": "รายได้",
-    "actual": 388739.26
+    "actual": 315648.71
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60240",
     "code": "ค่าใช้จ่าย",
-    "actual": 401359.75
+    "actual": 299917.98
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60240",
     "code": "รายได้",
-    "actual": 235606.1
+    "actual": 328805.35
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60250",
     "code": "ค่าใช้จ่าย",
-    "actual": 249740.46
+    "actual": 229518.84
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60250",
     "code": "รายได้",
-    "actual": 74394.93
+    "actual": 83413.93
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60260",
     "code": "ค่าใช้จ่าย",
-    "actual": 213793.26
+    "actual": 165968.66
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "60260",
     "code": "รายได้",
-    "actual": 48014.91
+    "actual": 49798.43
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61000",
     "code": "ค่าใช้จ่าย",
-    "actual": 1479205.55
+    "actual": 1155536.15
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61000",
     "code": "รายได้",
-    "actual": 1852979.99
+    "actual": 1946777.7
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61110",
     "code": "ค่าใช้จ่าย",
-    "actual": 605850.82
+    "actual": 502546.14
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61110",
     "code": "รายได้",
-    "actual": 353571.5
+    "actual": 320948.79
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61120",
     "code": "ค่าใช้จ่าย",
-    "actual": 460725.51
+    "actual": 398651.21
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61120",
     "code": "รายได้",
-    "actual": 159313.14
+    "actual": 188474.02
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61130",
     "code": "ค่าใช้จ่าย",
-    "actual": 274862.64
+    "actual": 236741.48
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61130",
     "code": "รายได้",
-    "actual": 82635.76
+    "actual": 100441.09
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61140",
     "code": "ค่าใช้จ่าย",
-    "actual": 591105.19
+    "actual": 486547.27
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61140",
     "code": "รายได้",
-    "actual": 555509.09
+    "actual": 947881.92
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61150",
     "code": "ค่าใช้จ่าย",
-    "actual": 295879.3
+    "actual": 268241.68
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61150",
     "code": "รายได้",
-    "actual": 260509.28
+    "actual": 272956.17
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61160",
     "code": "ค่าใช้จ่าย",
-    "actual": 789279.06
+    "actual": 576125.76
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61160",
     "code": "รายได้",
-    "actual": 347261.03
+    "actual": 323913
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61170",
     "code": "ค่าใช้จ่าย",
-    "actual": 420996.9
+    "actual": 430728.57
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61170",
     "code": "รายได้",
-    "actual": 173418.72
+    "actual": 230458.17
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61180",
     "code": "ค่าใช้จ่าย",
-    "actual": 462345.48
+    "actual": 348196.55
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "61180",
     "code": "รายได้",
-    "actual": 160935.57
+    "actual": 178435.58
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62000",
     "code": "ค่าใช้จ่าย",
-    "actual": 3790257.45
+    "actual": 2767868.45
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62000",
     "code": "รายได้",
-    "actual": 3065673.77
+    "actual": 3316491.61
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62110",
     "code": "ค่าใช้จ่าย",
-    "actual": 665434.39
+    "actual": 554453.72
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62110",
     "code": "รายได้",
-    "actual": 508068.89
+    "actual": 670043
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62120",
     "code": "ค่าใช้จ่าย",
-    "actual": 1089293.56
+    "actual": 522693.89
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62120",
     "code": "รายได้",
-    "actual": 522610.36
+    "actual": 465808.71
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62130",
     "code": "ค่าใช้จ่าย",
-    "actual": 357157.54
+    "actual": 258586.92
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62130",
     "code": "รายได้",
-    "actual": 351334.92
+    "actual": 330947.47
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62140",
     "code": "ค่าใช้จ่าย",
-    "actual": 488951.08
+    "actual": 374601.97
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62140",
     "code": "รายได้",
-    "actual": 535294.11
+    "actual": 455823.67
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62150",
     "code": "ค่าใช้จ่าย",
-    "actual": 517345.91
+    "actual": 373913.9
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62150",
     "code": "รายได้",
-    "actual": 213533.2
+    "actual": 240727.97
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62160",
     "code": "ค่าใช้จ่าย",
-    "actual": 203390.11
+    "actual": 161625.99
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62160",
     "code": "รายได้",
-    "actual": 178629.81
+    "actual": 184479.12
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62170",
     "code": "ค่าใช้จ่าย",
-    "actual": 361807.03
+    "actual": 342656.7
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62170",
     "code": "รายได้",
-    "actual": 455605.36
+    "actual": 494434.5
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62180",
     "code": "ค่าใช้จ่าย",
-    "actual": 647934.82
+    "actual": 486355.77
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62180",
     "code": "รายได้",
-    "actual": 368086.87
+    "actual": 419292.25
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62190",
     "code": "ค่าใช้จ่าย",
-    "actual": 320010.46
+    "actual": 313435.94
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62190",
     "code": "รายได้",
-    "actual": 145021.32
+    "actual": 136482.3
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62210",
     "code": "ค่าใช้จ่าย",
-    "actual": 299839.45
+    "actual": 234607.76
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "62210",
     "code": "รายได้",
-    "actual": 243432.12
+    "actual": 313284.57
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63000",
     "code": "ค่าใช้จ่าย",
-    "actual": 2759878.59
+    "actual": 2518934.1999999997
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63000",
     "code": "รายได้",
-    "actual": 5063560.21
+    "actual": 6828825.67
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63110",
     "code": "ค่าใช้จ่าย",
-    "actual": 2759440.5
+    "actual": 1913792.16
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63110",
     "code": "รายได้",
-    "actual": 3923170.97
+    "actual": 4182299.19
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63111",
     "code": "ค่าใช้จ่าย",
-    "actual": 265527.45
+    "actual": 207970.55
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63111",
     "code": "รายได้",
-    "actual": 1004271.45
+    "actual": 947554.75
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63120",
     "code": "ค่าใช้จ่าย",
-    "actual": 380144.01
+    "actual": 329595.14
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63120",
     "code": "รายได้",
-    "actual": 493337.19
+    "actual": 458119.3
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63130",
     "code": "ค่าใช้จ่าย",
-    "actual": 300067.27
+    "actual": 258381.69
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63130",
     "code": "รายได้",
-    "actual": 470146.76
+    "actual": 562461.25
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63140",
     "code": "ค่าใช้จ่าย",
-    "actual": 453356.47
+    "actual": 512908.69
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63140",
     "code": "รายได้",
-    "actual": 383089.79
+    "actual": 350962.58
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63150",
     "code": "ค่าใช้จ่าย",
-    "actual": 427402.63
+    "actual": 274305.11
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63150",
     "code": "รายได้",
-    "actual": 321481.86
+    "actual": 206504.37
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63160",
     "code": "ค่าใช้จ่าย",
-    "actual": 570909.67
+    "actual": 444888.77
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63160",
     "code": "รายได้",
-    "actual": 561325.87
+    "actual": 566012.23
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63170",
     "code": "ค่าใช้จ่าย",
-    "actual": 377795.45
+    "actual": 481968.28
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63170",
     "code": "รายได้",
-    "actual": 243025.73
+    "actual": 216367.87
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63180",
     "code": "ค่าใช้จ่าย",
-    "actual": 313077.45
+    "actual": 274728.79
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "63180",
     "code": "รายได้",
-    "actual": 363985.82
+    "actual": 374013.33
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64000",
     "code": "ค่าใช้จ่าย",
-    "actual": 2161528.32
+    "actual": 1683202.35
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64000",
     "code": "รายได้",
-    "actual": 2237924.82
+    "actual": 2336319.41
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64110",
     "code": "ค่าใช้จ่าย",
-    "actual": 1523520.04
+    "actual": 1283006.57
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64110",
     "code": "รายได้",
-    "actual": 974091.85
+    "actual": 955185.35
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64120",
     "code": "ค่าใช้จ่าย",
-    "actual": 999766.41
+    "actual": 773845.2
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64120",
     "code": "รายได้",
-    "actual": 798004.81
+    "actual": 786821.18
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64130",
     "code": "ค่าใช้จ่าย",
-    "actual": 1236726.52
+    "actual": 1038572.72
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64130",
     "code": "รายได้",
-    "actual": 677297.63
+    "actual": 1290949.08
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64140",
     "code": "ค่าใช้จ่าย",
-    "actual": 650233.21
+    "actual": 561755.4
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64140",
     "code": "รายได้",
-    "actual": 325322.99
+    "actual": 348446.26
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64150",
     "code": "ค่าใช้จ่าย",
-    "actual": 498864.28
+    "actual": 444736.19
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64150",
     "code": "รายได้",
-    "actual": 444261.89
+    "actual": 428293.72
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64160",
     "code": "ค่าใช้จ่าย",
-    "actual": 808801.71
+    "actual": 598195.2
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64160",
     "code": "รายได้",
-    "actual": 400631.83
+    "actual": 440035
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64170",
     "code": "ค่าใช้จ่าย",
-    "actual": 736826.72
+    "actual": 489768.36
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64170",
     "code": "รายได้",
-    "actual": 547254.09
+    "actual": 571556.68
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64180",
     "code": "ค่าใช้จ่าย",
-    "actual": 410347.31
+    "actual": 306317.59
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64180",
     "code": "รายได้",
-    "actual": 374274.23
+    "actual": 320220.29
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64190",
     "code": "ค่าใช้จ่าย",
-    "actual": 294668.9
+    "actual": 231384.21
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64190",
     "code": "รายได้",
-    "actual": 213813.57
+    "actual": 291615.72
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64210",
     "code": "ค่าใช้จ่าย",
-    "actual": 349636.21
+    "actual": 301219.93
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64210",
     "code": "รายได้",
-    "actual": 212790.07
+    "actual": 289071.88
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64220",
     "code": "ค่าใช้จ่าย",
-    "actual": 378285.56
+    "actual": 279885.72
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64220",
     "code": "รายได้",
-    "actual": 199701.29
+    "actual": 280250.36
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64230",
     "code": "ค่าใช้จ่าย",
-    "actual": 237088.87
+    "actual": 213610.36
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "64230",
     "code": "รายได้",
-    "actual": 168845.06
+    "actual": 219726.08
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65000",
     "code": "ค่าใช้จ่าย",
-    "actual": 9202846.77
+    "actual": 7682921.01
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65000",
     "code": "รายได้",
-    "actual": 11520832.45
+    "actual": 12410185.55
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65001",
     "code": "ค่าใช้จ่าย",
-    "actual": 344006.06
+    "actual": 287056.21
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65001",
     "code": "รายได้",
-    "actual": 425038.44
+    "actual": 439610.93
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65010",
     "code": "ค่าใช้จ่าย",
-    "actual": 5317932.23
+    "actual": 4584003.15
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65010",
     "code": "รายได้",
-    "actual": 1489766.03
+    "actual": 2337554.91
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65110",
     "code": "ค่าใช้จ่าย",
-    "actual": 372247.67
+    "actual": 303253.41
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65110",
     "code": "รายได้",
-    "actual": 236757.36
+    "actual": 250974.66
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65120",
     "code": "ค่าใช้จ่าย",
-    "actual": 950009.61
+    "actual": 862860.42
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65120",
     "code": "รายได้",
-    "actual": 535073.45
+    "actual": 674686.93
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65130",
     "code": "ค่าใช้จ่าย",
-    "actual": 1042955
+    "actual": 856051.46
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65130",
     "code": "รายได้",
-    "actual": 1032240.71
+    "actual": 1034428.32
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65140",
     "code": "ค่าใช้จ่าย",
-    "actual": 909616.44
+    "actual": 650369.18
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65140",
     "code": "รายได้",
-    "actual": 828525.33
+    "actual": 944626.66
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65150",
     "code": "ค่าใช้จ่าย",
-    "actual": 741859.67
+    "actual": 610159.57
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65150",
     "code": "รายได้",
-    "actual": 351155.22
+    "actual": 376314.31
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65160",
     "code": "ค่าใช้จ่าย",
-    "actual": 409749.71
+    "actual": 352237.5
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65160",
     "code": "รายได้",
-    "actual": 435525.31
+    "actual": 352726.94
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65170",
     "code": "ค่าใช้จ่าย",
-    "actual": 754013.04
+    "actual": 472805.25
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65170",
     "code": "รายได้",
-    "actual": 214346.15
+    "actual": 314054.67
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65180",
     "code": "ค่าใช้จ่าย",
-    "actual": 429038.24
+    "actual": 329733.59
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65180",
     "code": "รายได้",
-    "actual": 328717.98
+    "actual": 400200.66
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65190",
     "code": "ค่าใช้จ่าย",
-    "actual": 448337.95
+    "actual": 377521.58
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65190",
     "code": "รายได้",
-    "actual": 400666.29
+    "actual": 441372.75
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65210",
     "code": "ค่าใช้จ่าย",
-    "actual": 283276.1
+    "actual": 259681.39
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65210",
     "code": "รายได้",
-    "actual": 71302.23
+    "actual": 108091.81
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65220",
     "code": "ค่าใช้จ่าย",
-    "actual": 297478.38
+    "actual": 285902.7
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65220",
     "code": "รายได้",
-    "actual": 282481.25
+    "actual": 374328.82
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65230",
     "code": "ค่าใช้จ่าย",
-    "actual": 311533.05
+    "actual": 245359.18
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65230",
     "code": "รายได้",
-    "actual": 155113.51
+    "actual": 218767.04
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65240",
     "code": "ค่าใช้จ่าย",
-    "actual": 232339.48
+    "actual": 177262.53
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "65240",
     "code": "รายได้",
-    "actual": 90345.14
+    "actual": 94328.47
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66000",
     "code": "ค่าใช้จ่าย",
-    "actual": 2624516.39
+    "actual": 1739013.03
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66000",
     "code": "รายได้",
-    "actual": 2277645.68
+    "actual": 2245353.63
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66110",
     "code": "ค่าใช้จ่าย",
-    "actual": 1043253.78
+    "actual": 702389.21
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66110",
     "code": "รายได้",
-    "actual": 834217.03
+    "actual": 902016.69
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66120",
     "code": "ค่าใช้จ่าย",
-    "actual": 627673.81
+    "actual": 550373.73
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66120",
     "code": "รายได้",
-    "actual": 667173.36
+    "actual": 567421.94
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66130",
     "code": "ค่าใช้จ่าย",
-    "actual": 1017161.28
+    "actual": 657805.07
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66130",
     "code": "รายได้",
-    "actual": 343261.75
+    "actual": 361914.79
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66140",
     "code": "ค่าใช้จ่าย",
-    "actual": 804354.67
+    "actual": 535032.66
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66140",
     "code": "รายได้",
-    "actual": 535470.05
+    "actual": 485439.12
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66150",
     "code": "ค่าใช้จ่าย",
-    "actual": 396378.72
+    "actual": 282184.23
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66150",
     "code": "รายได้",
-    "actual": 511920.08
+    "actual": 443427.23
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66160",
     "code": "ค่าใช้จ่าย",
-    "actual": 450220
+    "actual": 383591.92
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66160",
     "code": "รายได้",
-    "actual": 656962.58
+    "actual": 618139.2
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66170",
     "code": "ค่าใช้จ่าย",
-    "actual": 323472
+    "actual": 242127.32
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66170",
     "code": "รายได้",
-    "actual": 147320.16
+    "actual": 188080.46
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66180",
     "code": "ค่าใช้จ่าย",
-    "actual": 243100.76
+    "actual": 244243.04
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66180",
     "code": "รายได้",
-    "actual": 151040.97
+    "actual": 194959.22
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66190",
     "code": "ค่าใช้จ่าย",
-    "actual": 816207.45
+    "actual": 435523.82
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66190",
     "code": "รายได้",
-    "actual": 395668.08
+    "actual": 465459.08
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66210",
     "code": "ค่าใช้จ่าย",
-    "actual": 407571.88
+    "actual": 367380.26
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66210",
     "code": "รายได้",
-    "actual": 206408.68
+    "actual": 181879.77
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66220",
     "code": "ค่าใช้จ่าย",
-    "actual": 250709.15
+    "actual": 188640.52
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66220",
     "code": "รายได้",
-    "actual": 148102.71
+    "actual": 149832.63
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66230",
     "code": "ค่าใช้จ่าย",
-    "actual": 322362.54
+    "actual": 280339.77
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "66230",
     "code": "รายได้",
-    "actual": 616575.06
+    "actual": 501178.53
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67000",
     "code": "ค่าใช้จ่าย",
-    "actual": 3573007.65
+    "actual": 2648910.73
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67000",
     "code": "รายได้",
-    "actual": 2503918.01
+    "actual": 3048101.83
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67110",
     "code": "ค่าใช้จ่าย",
-    "actual": 1809765.18
+    "actual": 1096510.05
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67110",
     "code": "รายได้",
-    "actual": 1060352.65
+    "actual": 1120004.63
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67120",
     "code": "ค่าใช้จ่าย",
-    "actual": 766369.27
+    "actual": 619797
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67120",
     "code": "รายได้",
-    "actual": 458302.27
+    "actual": 518861.39
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67130",
     "code": "ค่าใช้จ่าย",
-    "actual": 635282.71
+    "actual": 573583.84
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67130",
     "code": "รายได้",
-    "actual": 463494.35
+    "actual": 438434.28
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67140",
     "code": "ค่าใช้จ่าย",
-    "actual": 916609.73
+    "actual": 745390.1
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67140",
     "code": "รายได้",
-    "actual": 646554.12
+    "actual": 621555.71
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67150",
     "code": "ค่าใช้จ่าย",
-    "actual": 542680.78
+    "actual": 567543.82
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67150",
     "code": "รายได้",
-    "actual": 289321.37
+    "actual": 294801.53
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67160",
     "code": "ค่าใช้จ่าย",
-    "actual": 806194.52
+    "actual": 640615.26
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67160",
     "code": "รายได้",
-    "actual": 423324.7
+    "actual": 485588.56
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67170",
     "code": "ค่าใช้จ่าย",
-    "actual": 721909.4
+    "actual": 667760.8
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67170",
     "code": "รายได้",
-    "actual": 317865.52
+    "actual": 265750.15
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67180",
     "code": "ค่าใช้จ่าย",
-    "actual": 372736.71
+    "actual": 330026.15
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67180",
     "code": "รายได้",
-    "actual": 220502.4
+    "actual": 274674.23
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67190",
     "code": "ค่าใช้จ่าย",
-    "actual": 384177.65
+    "actual": 315922.77
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67190",
     "code": "รายได้",
-    "actual": 217507.9
+    "actual": 195810.21
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67210",
     "code": "ค่าใช้จ่าย",
-    "actual": 437497.13
+    "actual": 379803.43
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67210",
     "code": "รายได้",
-    "actual": 244410.75
+    "actual": 223165.14
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67220",
     "code": "ค่าใช้จ่าย",
-    "actual": 392066.9
+    "actual": 246339.39
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67220",
     "code": "รายได้",
-    "actual": 172101.6
+    "actual": 193699.01
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67230",
     "code": "ค่าใช้จ่าย",
-    "actual": 231069.7
+    "actual": 190443.54
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67230",
     "code": "รายได้",
-    "actual": 155555.88
+    "actual": 200204.99
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67240",
     "code": "ค่าใช้จ่าย",
-    "actual": 459601.23
+    "actual": 319469.79
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67240",
     "code": "รายได้",
-    "actual": 172276.65
+    "actual": 189860.23
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67250",
     "code": "ค่าใช้จ่าย",
-    "actual": 483937.39
+    "actual": 266572.36
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67250",
     "code": "รายได้",
-    "actual": 350920.7
+    "actual": 352009.26
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67260",
     "code": "ค่าใช้จ่าย",
-    "actual": 309525.64
+    "actual": 395177.54
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67260",
     "code": "รายได้",
-    "actual": 221500.09
+    "actual": 278821.47
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67270",
     "code": "ค่าใช้จ่าย",
-    "actual": 459971.76
+    "actual": 351740.11
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67270",
     "code": "รายได้",
-    "actual": 327157.97
+    "actual": 432546.93
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67280",
     "code": "ค่าใช้จ่าย",
-    "actual": 437730.04
+    "actual": 352879.8
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "67280",
     "code": "รายได้",
-    "actual": 398756.95
+    "actual": 387556.59
   },
   {
     "year": 2026,
-    "month": 6,
+    "month": 7,
     "postcode": "รายได้อื่น",
     "code": "รายได้",
-    "actual": 73550.02
+    "actual": 143860.44
   }
 ]
