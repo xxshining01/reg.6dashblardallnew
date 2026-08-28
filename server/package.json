@@ -6,7 +6,8 @@
     "start": "node src/index.mjs",
     "test:mongo": "node src/testMongo.mjs",
     "migrate:mongo": "node src/migrateToMongo.mjs",
-    "upload": "node src/uploadDataFile.mjs"
+    "upload": "node src/uploadDataFile.mjs",
+    "upload:weekly": "node ../scripts/upload-data.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
